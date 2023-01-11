@@ -1,0 +1,1158 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2023-01-11T08:42:20-05:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Drop your dataset — part 2</title><link href="http://localhost:4000/blog/2022/12/06/Drop-dataset-part-2.html" rel="alternate" type="text/html" title="Drop your dataset — part 2" /><published>2022-12-06T00:00:00-05:00</published><updated>2022-12-06T00:00:00-05:00</updated><id>http://localhost:4000/blog/2022/12/06/Drop-dataset-part-2</id><content type="html" xml:base="http://localhost:4000/blog/2022/12/06/Drop-dataset-part-2.html"><![CDATA[<h1 id="drop-your-dataset--part-2">Drop your dataset — part 2</h1>
+
+<p><img src="/assets/2022-12-06-Drop-dataset-part-2/1*0DJ3aWBrsOsU7Iky8ePimA.png" alt="" /></p>
+
+<p>In the previous post I have given some ideas on how we can overcome the limitation of current neural network training without using supervised datasets. I want to go into more details here to provide more ideas and insights into the evolution of neural network training: neural nets v2.0 or software v3.0.</p>
+
+<h2 id="relationships">relationships</h2>
+
+<p>First of all let us remember that in machine learning the focus is to learn relationships in the data. Training data is in the form of one or multiple samples: {input, desired_output} and the machine learning algorithm has to learn a relationship between “input” and “desired_output”. That is to say that if you give it: “input”, the machine learning algorithm will provide you with: “desired_output”.</p>
+
+<p>This is simple dataset and a point-to-point application of machine learning. A neural network model can be used as “black box” to learn the above relationship. Other machine learning models can be used also but I will not discuss those here.</p>
+
+<h2 id="generalization">generalization</h2>
+
+<p>Neural networks today are mostly trained using the “relationships” approach of learning, fed with supervised data from a static dataset. We have hoped that point-to-point application of our dataset would generalize and interpret a large number of new data even if it was not identical to the exact examples in the dataset.</p>
+
+<p>The issues with a static dataset and current neural network training techniques are:</p>
+
+<ul>
+  <li>dataset generally do not evolve, are static</li>
+  <li>neural network training cannot use new samples because of  <a href="https://en.wikipedia.org/wiki/Catastrophic_interference">forgetting</a></li>
+  <li>we do not have labels for  <a href="https://en.wikipedia.org/wiki/Online_machine_learning">online learning</a> — who labels unseen data?</li>
+</ul>
+
+<p>These issues limit applicability only in confined and fixed domains where a dataset can be provided and such dataset is applicable to future online data.</p>
+
+<p><img src="/assets/2022-12-06-Drop-dataset-part-2/1*4chmqjWyBwZdG3JPcRFQmQ.jpeg" alt="" /></p>
+
+<p>label “cat”</p>
+
+<h2 id="what-is-a-label-anyway">what is a label anyway?</h2>
+
+<p>But it may be interesting to try to first think of what is a “label” for our data. For example the input is a picture of a cat, and the label is the word “cat”.</p>
+
+<p>The concept of “cat” exists even without the word and if you happened to grow up alone observing the world, you would likely know what a cat is, but maybe have no word for it. Humans use word to communicate between each other because they all have disconnected brains and need words to share knowledge.</p>
+
+<p>So in a way, we are training neural networks with supervised dataset just to learn our language! So that the neural network output is something we can understand. But this is not the only way. We can use unsupervised learning techniques like clustering which will, for example, put all pictures of cats in a category, and other pictures of dogs in another, and so forth. But these categories will not have a name because we have not given it one yet. But they will exist and be useful nevertheless. After all all we need is to see one sample input from the cat category to recognize: yes, that is a picture of a cat, and all pictures in this category are pictures of a cat, so this category is “cat”!</p>
+
+<h2 id="language">language</h2>
+
+<p>At the beginning of neural networks, late 2000s we started learning the relationship {images, label}. In teh dataset  <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a>, for example, there are pictures of digits and the labels are “0”, ”1”, ”2”, etc. Later in 2002 onward, we had ImageNet with picture of dogs and the labels were “terrrier”, “pomeranian”, etc. Then in 2014 or so we moved to image captioning, to learn more complex relationship between our human language and some data (pictures). We are thus forming a multi-modal interaction of images and words.</p>
+
+<p>The large language models neural networks that are popular these days (12/2022  <a href="https://openai.com/blog/chatgpt/">ChatGPT</a>, for example) are not trained supervised on couple of {input, desired_outputs}. They are trained to predict the next word in a sentence, unsing single-modal training on text only. This self-supervised technique is much preferred to a curated dataset, but will require more data to learn — not a problem for text, as we have huge amount of human data online and digitized!</p>
+
+<p>The large neural network language models are impressive because they somehow look like conversational entities that are human-like, and can report and provide useful information through dialogues-like interactions and even some reasoning!</p>
+
+<p>But these models were trained on text only, so we cannot the expect to really understand the world we live in without all the rest of sensing modalities. So if you find the recent large language models impressive, imagine what they could be if they were trained on text, images, videos, audio, more all together!</p>
+
+<h2 id="multiple-modalities">multiple modalities</h2>
+
+<p>We want to use neural networks applied to our world, and therefore we will likely start from a human-like perception. Vision, auditory, touch, smell, etc. there will be many sensing modalities that we need to use to acquire a large knowledge of the world in a way that we can scale it and continue to adapt it to the world during the neural network “life”.</p>
+
+<p>I proposed the architecture  <a href="https://medium.com/@culurciello/how-can-we-build-an-artificial-brain-from-our-knowledge-of-the-human-brain-48fbd1ed82ca">Mix-Match</a>  before in another post to be able to absorb all the world’s data into a single neural network. This network is trained on a dataset, yes, but not a curated dataset of inputs/outputs samples. Rather is fed multi-modal data that is sparsely labeled, and mostly self-labeled by co-occurrence of multi-modal data in pace or time.</p>
+
+<p>I believe that the future of applicable neural networks is in the training with multi-modal data, where the relationship between different data modalities are combined into powerful  embedding of concepts. This can be done by simply applying a  Hebbian-like learning  regularization. This regularization strengthens the connection of multiple concepts occurring closely in space or in time, as for example a figure in a paper and its caption, or a video of walking and the sound of feet hitting the ground.</p>
+
+<p>Supervision happens automatically in multi-modal data trained this way because all the modality, including textual descriptions are embedded in the same space. This is a great advantage to a curated but limited dataset.</p>
+
+<h2 id="intelligence">intelligence</h2>
+
+<p>Suppose we define intelligence as the ability to solve new problem based on our acquired knowledge. Without knowledge of any sort there is no intelligence, so we will have to start from somewhere.</p>
+
+<p>The question one can ask on the Mix-Match model is how do we encode data from ultiple modalities, can we use pre-trained encoders. And the answer is we should not, because by doing so we are constrained to a set of neural networks that are trained supervised. But if we fine-tune or let these encoder evolve, maybe… I think these encoders should be trained from scratch on the new multi-modal set of data, and maybe shared across multiple training systems.</p>
+
+<p>The other bug question is: will Mix-Match experience final concepts embeddings drift when trained? For example if we embed the knowledge of “cat” via image, videos, text, will a new set of documents and data move this embedding so much that it will be “forgotten”? I do not not yet have an answer to this question, but I see that data trained with contrastive embeddings in a similar way is more robust to learning shifts than training on a standard supervised dataset (see  <a href="https://arxiv.org/abs/2111.01124">here</a>  for example).</p>
+
+<p>If we think that new large natural language models with neural network provide some kind of intelligent behavior (for example solving simple math problems), I think you can understand that Mix-Match models will be able to do much more of that, and also reason about what they see and hear, thus providing a real robot brain!</p>
+
+<h1 id="about-the-author">about the author</h1>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://culurciello.medium.com/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Drop your dataset — part 2]]></summary></entry><entry><title type="html">Why we fill our day by filling forms?</title><link href="http://localhost:4000/blog/2022/11/16/Why-filling-forms.html" rel="alternate" type="text/html" title="Why we fill our day by filling forms?" /><published>2022-11-16T00:00:00-05:00</published><updated>2022-11-16T00:00:00-05:00</updated><id>http://localhost:4000/blog/2022/11/16/Why-filling-forms</id><content type="html" xml:base="http://localhost:4000/blog/2022/11/16/Why-filling-forms.html"><![CDATA[<h1 id="why-we-fill-our-day-by-filling-forms">Why we fill our day by filling forms?</h1>
+
+<p><img src="/assets/2022-11-16-Why-filling-forms/1*aRItl7e-elF90HHF1hhcdg.jpeg" alt="" /></p>
+
+<p>I do not know about you, but one of the worst way to spend time for me is  <em>filling forms</em>.</p>
+
+<p>Yet it almost looks like we humans have evolved to hurt ourselves, and this time by creating more and more forms to fill!</p>
+
+<blockquote>
+  <p>Why? Cry!</p>
+</blockquote>
+
+<p><img src="/assets/2022-11-16-Why-filling-forms/1*-oXHcLdb8MA03aJttbYvpg.jpeg" alt="" /></p>
+
+<p>You get a form on the web, fill your shipping information, your credit card, etc. Luckily most computers OS does this for us to some extend. It is not confident enough sometimes, even though filling web forms is the easiest today for a computer. Yet it still ask us input by input, click away!</p>
+
+<p>And yes I complain much less about that, because we do have some automation that somehow works (not all the times) and save us time.</p>
+
+<blockquote>
+  <p>Kudos to us! We did that!</p>
+</blockquote>
+
+<p>On the other hand, you sometimes get actual documents to fill today, in the old times you had to do it with paper and pencil, and there we go: there was and there is no automation there in sight. None has seen a robot, let alone one capable of writing. Luckily again we have computers, so many of these forms we can fill today on a computer. Most of these are PDF forms, some fillable — great! Some are computer generated and you can jump form to form and input text by typing, but some forms are scanned and they do not allow you to fill them easily. You have to create boxes and input text, manually — that is super painful!</p>
+
+<p>And yet we still communicate with this inferior form of data transmission to this day! Let alone we have millions of forms scanned or in paper form sitting in our data warehouses, and one day we will have to digitize them and even transcribe the… good luck. We do not have any of these tools today, even though computer vision experts have been at it for decades!</p>
+
+<p><img src="/assets/2022-11-16-Why-filling-forms/1*rFlUGS0GDoobPGJMI67xdw.png" alt="" /></p>
+
+<p>But back to filling forms!!! Imagine a dream system:</p>
+
+<ul>
+  <li>you put all your private document into a folder</li>
+  <li>you input a form to the dream system</li>
+  <li>the dream system goes and fetches all data the form needs from your folder of documents</li>
+  <li>it then pastes all in the form</li>
+  <li>and presents the form to you, filled</li>
+  <li>heart full of joy!</li>
+</ul>
+
+<p>Why, oh why can’t we have that today?</p>
+
+<p>Oh I guess I’ll have to work on it…</p>
+
+<h1 id="about-the-author">about the author</h1>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://culurciello.medium.com/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Why we fill our day by filling forms?]]></summary></entry><entry><title type="html">Clean your social network</title><link href="http://localhost:4000/blog/2022/11/13/Clean-your-social-network.html" rel="alternate" type="text/html" title="Clean your social network" /><published>2022-11-13T00:00:00-05:00</published><updated>2022-11-13T00:00:00-05:00</updated><id>http://localhost:4000/blog/2022/11/13/Clean%20your%20social%20network</id><content type="html" xml:base="http://localhost:4000/blog/2022/11/13/Clean-your-social-network.html"><![CDATA[<h1 id="clean-your-social-network">Clean your social network</h1>
+
+<p><img src="/assets/2022-11-13-Clean your social network/1*vBzxRgRTXb2lYpOGDypyug.png" alt="" /></p>
+
+<p>Do you feel like your social network is not what it used to be? The messages and community you once enjoyed are not giving you the warm feeling they once did?</p>
+
+<blockquote>
+  <p>it may be partly your fault…</p>
+</blockquote>
+
+<p>Selecting the right people and connection after all, is the foundation of a social network. Initially, in the early days of your social networking, you had fewer connections and it was about sharing passion and good times. But then, over time you connected with people that think more like you in one extreme or the other. Oftentimes in periods of negativity you can accumulate several negative connections that will then bring you down and keep you down even in more positive times!</p>
+
+<p><img src="/assets/2022-11-13-Clean your social network/1*bXhIwXwdHC6bmd7f4_8d-Q.jpeg" alt="" /></p>
+
+<p>But there is an easy fix: every once in a while,  <em>clean your social network!</em></p>
+
+<p>What do I mean by clean? You may need to go over all of the people or groups you follow, and ask yourself:</p>
+
+<ul>
+  <li>do I recognize this person?</li>
+  <li>does this person bring a positive feeling?</li>
+  <li>does this person contribute to my learning or self-improvement?</li>
+  <li>does this person connect me with other like-minded positive people?</li>
+</ul>
+
+<p>If your answers are mostly no, whether with solid proof or by gut feeling, then remove than social connection from your network!</p>
+
+<p>It may take a while, as year by year you have accumulated 10s, hundreds, thousands of connections. It may take 2–3 hours of work, sifting through all your social network, but the good news is that it does not need to be completed in one session. You can take a few minutes per day over some time, and get the cleaning done!</p>
+
+<p>In some cases it may be easier to just delete your account and start fresh, but it is not always easy or for the faint of heart!</p>
+
+<p>Regardless, make sure you complete the process and repeat it once a year or two. This will clean your social network!</p>
+
+<p>What should you expect after?</p>
+
+<ul>
+  <li>you will be connected to more likely minded people</li>
+  <li>you will feel part of a close-knit again</li>
+  <li>you will receive the information you want</li>
+  <li>you will find it warmer in your heart</li>
+  <li>it may be like an extension of your home</li>
+</ul>
+
+<p>This should be a Spring-cleaning type of yearly task that we should often perform to feel better and restore our network!</p>
+
+<p>9</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Clean your social network]]></summary></entry><entry><title type="html">Astrophotography for beginners</title><link href="http://localhost:4000/blog/2022/11/13/Astrophotography-beginners.html" rel="alternate" type="text/html" title="Astrophotography for beginners" /><published>2022-11-13T00:00:00-05:00</published><updated>2022-11-13T00:00:00-05:00</updated><id>http://localhost:4000/blog/2022/11/13/Astrophotography-beginners</id><content type="html" xml:base="http://localhost:4000/blog/2022/11/13/Astrophotography-beginners.html"><![CDATA[<h1 id="astrophotography-for-beginners">Astrophotography for beginners</h1>
+
+<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*EKFerO_B6iguC65dYl84OA.jpeg" alt="" /></p>
+
+<p>This guide is designed to help people interested in astrophotography to hit the ground running without making mistakes or reading thousands of hours of forums.</p>
+
+<p>When I started I could not find a single guide or website with all the information I needed. Most of the site are of too many details and there are too many options for equipment, software. Here is a simpler list for you to get started with!</p>
+
+<p>Needless to say there is a great advantage on doing some research of your own, allowing you to:</p>
+
+<ul>
+  <li>spend more time as hobby and not rush to conclusions</li>
+  <li>learn more about all aspects of astronomy and astrophotography</li>
+  <li>give you something to do during the majority of time that the night sky is not clear or observable</li>
+</ul>
+
+<p>I will divide this into <em>phases</em> which you may want to follow to enjoy your journey and have more fun and collect more knowledge on the way. If you have absolute desire to just get some image and be done, then find and read phase 3 or 4 below only. But do not skip phase 1 unless you already have that knowledge!</p>
+
+<blockquote>
+  <p>Note: I am still a beginner and am learning myself, so please check this blog for updates again in the future</p>
+</blockquote>
+
+<h2 id="phase-1---learning-the-basics-and-having-fun"><strong>Phase 1</strong>  -learning the basics and having fun:</h2>
+
+<p>This is the basic setup that will cost you not more than 25–30$ but allow you to hit the ground running.</p>
+
+<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*er9G2oxn-PHqUrwHM2Fyfw.jpeg" alt="" /></p>
+
+<p>a great book</p>
+
+<ul>
+  <li>buy a nice book: like  <a href="https://www.goodreads.com/en/book/show/104139.Nightwatch"><em>NightWatch</em>  by Terence Dickinson</a>, for the cloudy nights and the long days. This will allow you to learn all the basics and be ready to enjoy the night skies!</li>
+  <li>go out and learn the dark night skies: use the sky maps in the book above, and a cell-phone virtual reality app like  <a href="https://www.fifthstarlabs.com/"><em>Sky Guide</em></a>  is one I found effective</li>
+</ul>
+
+<p>Why: because you will be able to enjoy the night sky and recognize objects without a telescope or camera, and share your knowledge with others as you walk outside at night!</p>
+
+<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*tqxUc8slzMXDdt_3_mfNLg.png" alt="" /></p>
+
+<p>initial telescope setup</p>
+
+<h2 id="phase-2--get-a-simple-telescope-and-tripod">Phase 2 — get a simple telescope and tripod</h2>
+
+<p>This setup will cost you ~150–500$.</p>
+
+<ul>
+  <li>beginner telescope and tripod like the:  <a href="https://www.celestron.com/products/powerseeker-127eq-telescope">Celestron PowerSeeker 127EQ</a>which is enough to start learning how to point a telescope and how the sky rotate around you and you have to manually track it! It will be hard to see planets in detail with this, but you can get really good observing the moon, and bright targets like Andromeda, and the Orion Nebula.</li>
+  <li>be aware that this is not easy but it can be fun and leads to some quality time spent outside, especially in Fall or Spring when temperatures and mosquitoes are not a bother.</li>
+  <li>Another options is also the  <a href="https://www.svbony.com/sv48p-90mm-f5-5-refractor-telescope/">SVBONY SV48P Telescope</a>, but requires you to buy a separate tripod and objective lenses. It is a more advanced step, but the advantage is that this telescope can also be used for the next 1–2 phases!</li>
+  <li>A tripod I really liked and that can be used for more phases later is this:  <a href="https://astronomy-imaging-camera.com/product/zwo-tc40-carbon-fiber-pipe-tripod">ZWO TC40 Carbon Fiber Tripod</a>. There are much cheaper options online, albeit not as light and stable as this one.</li>
+</ul>
+
+<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*7dmEq-pZpDDEGddt4kUSWQ.png" alt="" /></p>
+
+<p>simple setup</p>
+
+<h2 id="phase-3--simple-astrophotography">Phase 3 — simple astrophotography</h2>
+
+<p>This setup will cost you ~1,000–1,500$.</p>
+
+<ul>
+  <li>A photography camera like the  <a href="https://www.usa.canon.com/shop/p/eos-rp?color=Black&amp;type=New">Canon EOR Rp</a>, or Rebel t7, i90D, depending on budget. An APS-C camera is enough but if you like to be full-frame and ready for the next steps I recommend a full-frame camera like the EOR R/Rp or similar. The best cameras are the one with large pixels and that do not suffer from self-heating. The Canon EOS Rp is a good compromise of large pixels, decent pixel count and low self-heating.</li>
+  <li>A camera telephoto zoom lens, like the Canon EF 75–300MM f/4–5.6 III USM or the Rokinon / Samyang 135mm f2 lens that is adored by nigh-sky photographers!</li>
+  <li>A camera sky tracker, like the <a href="https://www.ioptron.com/product-p/3550.htm">iOptron Skyguider Pro</a>  is needed to move the camera and be able to perform long exposures. This will require you to get a sturdy tripod, but hopefully you will already have this from a previous phase. In order to use this mount you will have to polar alight it — meaning you align the mount to the Earth’s axis of rotation. This mount has a small telescope inside to see Polaris and align to it, best if using a cell-phone app like PS Align. This is a required step if you want the mount to track your stars and targets. It will require some good knowledge of where Polaris is and a 5–10 minutes to properly align. Your knowledge from Phase 1 will come handy to find Polaris, and you will need patience to correctly align. If you are off in your alignment your stars and targets will trail and smear your photo. I suggest getting practice, but be aware that kneeling down to find Polaris is sometimes a bit of a struggle and you want to get going — but resist the urge and align well!</li>
+  <li>After correct alignment with Polaris, you will be able to shoot photos with long exposure of a few minutes. I often use 30s, 60s, 180s or 5 minutes. The longer you expose and the more stable and aligned you need to be. I found 60–180s to be the best spot for this setup.</li>
+</ul>
+
+<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*Z9arDI7x1vDa10Rz43hVrg.png" alt="" /></p>
+
+<p>an advanced setup</p>
+
+<h2 id="phase-4--more-advanced-astrophotography">Phase 4 — more advanced astrophotography</h2>
+
+<p>This setup will cost you ~4,000–5,000$.</p>
+
+<ul>
+  <li>a better astrophotography telescope capable of full-frame photos is the  <a href="https://williamoptics.com/products/telescope/zenithstar">William Optics Zenithstar</a>  series</li>
+  <li>Full frame imaging will require you also to buy a field flattener like the  <a href="https://williamoptics.com/2019-all-new-adjustable-flat6aiii-t-mount-not-included">William Optics FLAT6AIII</a>, so you stars will be point-like and not distorted even at the edge of your full frame camera (in photography this undesired effect is called vignetting). If you have a APS-C camera and do not care too much of getting a large field, you can do without a flattener.</li>
+  <li>a computer controlled go-to mount, like the:  <a href="https://astronomy-imaging-camera.com/product/zwo-am5-harmonic-equatorial-mount">ZWO AM5 Harmonic Drive Hybrid AZ/EQ Mount</a>, is a superb upgrade from what you are used to before, allowing you to simply align to polaris and then use the go-to functions to directly and accurately point to any objects in the sky. This makes targeting a breeze, but also takes away some of the fun of finding targets, and does not build your knowledge of the sky.</li>
+</ul>
+
+<p>I also recommend the following extras to make observing easy and even more accurate:</p>
+
+<ul>
+  <li><a href="https://astronomy-imaging-camera.com/product/asiair-plus">ZWO ASIAir Plus Wireless Camera Controller</a>  for Astrophotography. This is a full computer controller, but makes you life so much easier if you want to take long session of hours! It allows you to control your mount, camera and more with a call-phone or tablet app, and even helps you in polar alignment, finding targets, etc. I highly recommend this computer because it can amplify your abilities and really remove a lot of frustrations.</li>
+  <li>There is a less expensive option for computer control:  <a href="https://www.astroberry.io/">https://www.astroberry.io/</a>  but will require you to spend more time to set-up and test and make sure all your equipment is supported. In case of a Canon EOS Rp camera for examples, I was not able to make the astroberry work, but the ASIAir was perfect and a breeze!</li>
+  <li>a guide-camera and small telescope, like the: ZWO 30 mm f/4 Guide Scope and ZWO ASI290MM Guide Camera i necessary if you want a more refined tracking of targets, so your images are even shaper!</li>
+</ul>
+
+<h2 id="phase-5--the-ultimate-setup">Phase 5 — the ultimate setup</h2>
+
+<p>This setup is for professional astrophotographers with a large budget of ~10,000$ or more.</p>
+
+<ul>
+  <li>Celestron EdgeHD 11” OTA — a very capable telescope that can be used with f10 for deep sky targets and f2 for larger targets!</li>
+  <li>ZWO ASI6200mm pro — a professional camera</li>
+  <li>filter wheel — to image different wavelengths separately</li>
+  <li>iOptron HEM44 with High Precision Encoder (HEM44EC) — a more powerful mount to support the heavier telescope and equipment</li>
+</ul>
+
+<h2 id="processing-photos">Processing photos</h2>
+
+<p>Do not waste money on software, the best is luckily free. I used some paid alignment software and it was highly inferior or not working at all! GIMP is a free photo editor like PhotoShop.</p>
+
+<ul>
+  <li>align photots with  <a href="http://www.hnsky.org/astap.htm">ASTAP</a>. Use AstroM white star to avoid saturation in de-mosaic methods.</li>
+  <li>process photos with  <a href="https://www.gimp.org/">GIMP</a></li>
+</ul>
+
+<h1 id="references">References</h1>
+
+<h2 id="books">Books</h2>
+
+<ul>
+  <li><a href="https://www.goodreads.com/en/book/show/104139.Nightwatch">NightWatch by Terence Dickinson</a></li>
+</ul>
+
+<h2 id="websites">Websites:</h2>
+
+<ul>
+  <li><a href="https://www.cloudynights.com/">https://www.cloudynights.com/</a>  — best site overall for posts, classified ads, and massive number of reviews and posts (be aware, needs long hours to read and search!)</li>
+  <li><a href="https://astrobackyard.com/7-astrophotography-tips/">https://astrobackyard.com/</a>– really good for beginners, but became too large and too many video and equipment review that can be confusing</li>
+</ul>
+
+<h2 id="equipment">Equipment:</h2>
+
+<ul>
+  <li><a href="https://www.celestron.com/products/powerseeker-127eq-telescope">Celestron PowerSeeker 127EQ</a></li>
+  <li><a href="https://www.usa.canon.com/shop/p/eos-rp?color=Black&amp;type=New">Canon EOR Rp</a></li>
+  <li><a href="https://www.ioptron.com/product-p/3550.htm">iOptron Skyguider Pro</a></li>
+  <li><a href="https://williamoptics.com/products/telescope/zenithstar">William Optics Zenithstar</a></li>
+  <li><a href="https://williamoptics.com/2019-all-new-adjustable-flat6aiii-t-mount-not-included">William Optics FLAT6AIII</a></li>
+  <li><a href="https://astronomy-imaging-camera.com/product/zwo-am5-harmonic-equatorial-mount">ZWO AM5 Harmonic Drive Hybrid AZ/EQ Mount</a></li>
+</ul>
+
+<h2 id="computers">Computers</h2>
+
+<ul>
+  <li><a href="https://astronomy-imaging-camera.com/product/asiair-plus">ZWO ASIAir Plus Wireless Camera Controller</a></li>
+  <li><a href="https://www.astroberry.io/">https://www.astroberry.io/</a>  if you want to make your own computer with a Raspberry Pi</li>
+</ul>
+
+<h2 id="apps--software">Apps / Software:</h2>
+
+<ul>
+  <li><a href="https://www.fifthstarlabs.com/">https://www.fifthstarlabs.com/</a>  — Sky Guide cell-phone App</li>
+  <li>Align photos:  <a href="http://www.hnsky.org/astap.htm">http://www.hnsky.org/astap.htm</a>  — this is the best software and it is free! Do not spend money on some inferior software, learn and use this!</li>
+  <li>GIMP  <a href="https://www.gimp.org/">https://www.gimp.org/</a></li>
+  <li><a href="https://www.cloudynights.com/topic/607208-basic-gimp-29-guide-for-quick-astro-photo-editing/">https://www.cloudynights.com/topic/607208-basic-gimp-29-guide-for-quick-astro-photo-editing/</a>  — this is what I use to process images with GIMP. This is one of the simplest ways!</li>
+  <li><a href="https://www.youtube.com/watch?v=Tl4Ie92MuTs">https://www.youtube.com/watch?v=Tl4Ie92MuTs</a>  — GIMP processing tutorial I leaned and use!</li>
+</ul>
+
+<h1 id="about-the-author">about the author</h1>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>I spend some of my free time, especially in the late Fall, Winter, early Spring months to look at the sky.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Astrophotography for beginners]]></summary></entry><entry><title type="html">Drop the dataset</title><link href="http://localhost:4000/blog/2022/11/09/drop-the-dataset.html" rel="alternate" type="text/html" title="Drop the dataset" /><published>2022-11-09T00:00:00-05:00</published><updated>2022-11-09T00:00:00-05:00</updated><id>http://localhost:4000/blog/2022/11/09/drop-the-dataset</id><content type="html" xml:base="http://localhost:4000/blog/2022/11/09/drop-the-dataset.html"><![CDATA[<h1 id="drop-the-dataset">drop the dataset</h1>
+
+<p><em>How to escape the limitation imposed by a dataset when dealing with real-life machine learning applications</em></p>
+
+<h1 id="do-you-want-your-machine-learning-to-work">do you want your machine learning to work?</h1>
+
+<p>If you have worked on machine learning in the recent years, you are familiar with a dataset, a large set of samples, pairs of inputs and desired outputs.</p>
+
+<p>The goal of this post is to make you think next time you use a dataset, and setting us on course to drop them all entirely!</p>
+
+<p><img src="/assets/2022-11-09-drop-the-dataset/1*HXE-6tsZUihRcacvG9rFbA.jpeg" alt="" /></p>
+
+<p>an object categorization dataset from images</p>
+
+<h1 id="drive-your-dataset">drive your dataset</h1>
+
+<p>Say you wanted to make some machine learning algorithm that helps your car to drive automatically, or maybe just warn you in case you are a distracted driver. Say you start with this task: detect traffic signs and pedestrian. Both important in case a driver lost focus, as the vehicle capable of detecting them can alert you. Say we use a camera to detect the targets.</p>
+
+<p>In standard supervised machine learning you would need a dataset, a set of images and possibly labels. You can organize each target category in a folder of images:</p>
+
+<ul>
+  <li>signs: stop, yield, speed limits, …</li>
+  <li>people / pedestrians</li>
+</ul>
+
+<p>Then you train your algorithm, maybe a neural network, to recognize these target categories. Needless to say this example of driving assistance with traffic signs and people detection is a true example in the history of modern machine learning and automotive applications. This is what MobilEye started doing in 1999!</p>
+
+<p>History will tell us that this approach did not work well, because in an automotive camera view there is much more than traffic signs and people. There are other important categories of targets we should detect, like other cars, vehicles, cycles. And also roads, lane markings, road work, random obstacles on the road (I once had to run over a ladder in a highway…). You see where this is going. Your dataset needs to include all sort of categories. Actually you need to include ALL categories of objects, because god knows one day you will find it outside your windshield!</p>
+
+<p>So you may be tempted to just create a giant dataset with all categories of things that one can find on the road. And in machine learning history this is precisely what has happened since the creation of MNIST in 1998 and ImageNet in 2006 and even much before (<a href="https://arxiv.org/abs/1905.05055">https://arxiv.org/abs/1905.05055</a>)!</p>
+
+<p><img src="/assets/2022-11-09-drop-the-dataset/1*5v3i8NA5KGhuYCcNnlJZEw.jpeg" alt="" /></p>
+
+<p>have you included this in your dataset?</p>
+
+<p>Well the issue is… you cannot possibly have a dataset of ALL objects you will ever see, because some objects that you will need to see are not even created yet, or are a combination of other object that you have not seen before.</p>
+
+<p>And one popular way to train and create massive dataset for autonomous driving today is to train on synthetic data, like the one you can get from a driving video game. It does make it easier now that we have super-realistic graphics and rendering techniques, but it does not save us from detecting new and weird things we have not seen before if we did not have those in our simulator!</p>
+
+<p><img src="/assets/2022-11-09-drop-the-dataset/1*f80UFPVLRxfvN7OY30RetA.png" alt="" /></p>
+
+<p>real or fake? (<a href="https://blogs.nvidia.com/blog/2021/04/12/nvidia-drive-sim-omniverse-early-access/">https://blogs.nvidia.com/blog/2021/04/12/nvidia-drive-sim-omniverse-early-access/</a>)</p>
+
+<p>It gets even worse — and this is why I am writing this post! If you want to make self-driving cars, not only you will have to recognize a myriad of objects, but you also need to plan and understand the behavior of a myriad of other free agents that are sharing the road with you. You have to deal with a infinite number of combination of events that could occur on the road, most of the them “normal” driving scenarios, but occasionally rare events that no dataset will ever contain. For example: a strong rainpour that impedes you from seeing the road, snow covering the border between roads and sidewalks, a car in front of you tipping and starting to roll over, a road bridge terminated by a earthquake, a flying item carried by a strong wind. You get the idea: extreme events that you do not often see yourself, but that millions of drivers together end up seeing many thousands of times, and definitely something that our self-driving algorithm should know!</p>
+
+<blockquote>
+  <p>This is the reason why self-driving cars are not here yet!</p>
+</blockquote>
+
+<p>And we are there now in a time of crisys for self-driving cars: many car companies that started working on driver assistance and self-driving 5 years ago, most thinking it would be a few years job, have recanted their story, after they realized that trying to train supervised system for every possible circumstance is not possible. I was also optimistic about this field and did not fully comprehend these problems 5–10 years ago.</p>
+
+<p><em>What is the problem? How do we solve this?</em> Even us daily driver have not seen every single object in the world, yet if we see anything on the road in front of us we break, even before recognizing what that is. Why? Why can we find the road in the snow sometimes, when all becomes just a flat white surfaces? Why can we sometimes react to millisecond events we have not seen before?</p>
+
+<p>We call it “common sense”, whatever that means, but really it is a form of intelligence: to be able to predict danger and situations we have not encountered before. We cannot build this with a dataset, because there is no dataset!</p>
+
+<p><img src="/assets/2022-11-09-drop-the-dataset/1*_OzC0TFc11QSXEy8fP2KfQ.png" alt="" /></p>
+
+<p>understand any of this?</p>
+
+<h1 id="tables-everywhere">Tables everywhere</h1>
+
+<p>I started with the previous example of a self-driving car because it is glamorous, but there is a much easier example that comes close to our daily lives: understanding documents with machine learning. I mean reading papers and documents designed for human consumption, but with an algorithm.</p>
+
+<p>Say you want your machine learning algorithm to extract data from a table, plot or a diagram in a paper, so that later you can ask a question, to interpret it. Seems straightforward ah?</p>
+
+<blockquote>
+  <p>today we cannot do this!</p>
+</blockquote>
+
+<p>We do not have machine learning tools today that can understand and read every kind of printed tables, for example! There are just too many types of tables, with too many ways of creating columns and rows of data and delimiters and color schemes and tables formats, tables in tables, etc. You can also see that it is the same for schematic diagrams and also for scientific plots. We can read them easily ourselves, but we do not have ready algorithms that can scale to recognizing and interpreting ALL possible document parts out there.</p>
+
+<p>You can see a parallel theme with the previous self-driving example: we can make a dataset to train these systems with supervision, but we will never have ALL the samples, all the categories. Sometimes we do not even know what those may be! For example if I want to create a machine learning tool that turns a paper into a patent, or a folder of data into a paper, you can see how much harder or impossible it is to define a dataset for these tasks, especially at scale. The key word here is “scale”:</p>
+
+<blockquote>
+  <p>a dataset will never have all the examples you will ever need</p>
+</blockquote>
+
+<p>And there is the case for general robotics also, where the number of tasks and objects and tools needed to perform daily acitvity is even much greater that the one for a self-driving robot car. The problem is the same: too many things to learn, and the need to be constantly learning them as we go!</p>
+
+<h1 id="give-up-never">Give up? Never!</h1>
+
+<p><em>I believe our limitation is truly the dataset.</em>  We are at the beginning of time in the field of machine learning, and we have enjoyed some “victories” using datasets and supervised learning so far. Do not get me wrong, some of these victories are useful and will always be. Every time we can create a dataset that is self-sufficient and can work in real-life scenarios, we should do that. Usually this happens in controlled environments where we can artificially limit the number of objects and situations that the algorithms needs to see. There are many of these situations and we should continue to exploit them. But there are also many other situations, like the examples above, where we cannot.</p>
+
+<p>In addition, the dataset and supervised mind-set has been somehow stuck in a local minima for machine learning. It has made us lazy — why bother thinking about unsupervised, or self-supervised techniques, or even continual and life-long “scale” learning if we can just use a dataset and press a button?</p>
+
+<blockquote>
+  <p>self-supervised and continual learning are inevitable</p>
+</blockquote>
+
+<p>So if we cannot use a dataset what should we do? We will need to think of the alternatives…</p>
+
+<h1 id="alternatives-in-text">alternatives in text</h1>
+
+<p>For example  <em>self-supervision</em>, when possible! This is how the best natural language processing (NLP) and large language models (LLM) like GPT-x are trained today after all! They are trained to predict the next word in a sentence. One could say there is a dataset — the sentences, but the key here is that we do not need a label, we can just use the next word! Even if we do not know that word or is a made-up word we can make this work. yes we will need a “dictionary” in some cases, and yes we cannot learn all possible future languages, but at least we can place new items in a “bin” that is unlabeled, and assign a label later when we can get sparse supervision.</p>
+
+<h1 id="-and-in-images">… and in images</h1>
+
+<p>In the world of images or video we can apply the same self-supervised techniques. In a video we can predict the next frames, or the position of objects in the future. In images we can occlude parts and try to predict them or reconstruct them. And many of these techniques have been studied and are indeed in use in machine learning applied to images and videos.</p>
+
+<p>Looks like  <em>prediction</em>  is a key component of self-supervision, and in fact it is one of the prominent theories of how our brain works (<a href="https://en.wikipedia.org/wiki/Predictive_coding">https://en.wikipedia.org/wiki/Predictive_coding</a>).</p>
+
+<p>Porting predicting self-supervised techniques to document analysis is possible, as human readable documents are composed mainly of text and images (plots, diagrams, photos), but it is also not yet clear how one can use self-supervision to learn tables or diagrams today.</p>
+
+<p><img src="/assets/2022-11-09-drop-the-dataset/1*6uW5Fi4aZ6QBbjjKXFkmGg.jpeg" alt="" /></p>
+
+<p>i want to be more useful</p>
+
+<h1 id="keep-on-adding">keep on adding</h1>
+
+<p>There is another problem here that hinders machine learning today and is tied to the use of dataset and supervised learning: continual learning. We still do not have good ways to continue to evolve a neural network, say, to new examples, new categories, new tasks. There are many proposed techniques, but none is capable of supporting life-long learning to the scale needed in a self-driving car or document understanding scenarions. I feel this problem is part of the same set of issues around dataset, and that if we keep on insisting on relying on dataset, we will not focus on solving them once and for all.</p>
+
+<p>We need to strive to a goal of sharing trained machine learning models rather than datasets: share a trained neural network so that you can add your own training step, and share it again! This would make training efficient and models more useful for all of us. Sharing a dataset does not help us build more knowledge, they are a static snapshot in time.</p>
+
+<h1 id="common-sense">common sense</h1>
+
+<p>So what is “common sense” after all? Is it just our ability to predict the future? Or to generalize from what we know to what is unknown?</p>
+
+<p>I believe it is up to us to evolve self-supervised techniques in ways that one day can be self-supported also! Today we can find clever ways to learn pieces of data from other pieces of the same set, or by correlating “concepts” into a common embedding space, or by predicting the next data from the ones we have just received. All of this has to come together into a contrastive system that can grow as needed, when we obtain new data. For a robot or a car, that may be all the time!</p>
+
+<p>I believe the future are neural network learning systems that can learn autonomously new categories by embedding multi-modal data into “bins” that will become useful in later tasks, or that later task will refine, re-order, re-shape. This can be done by connecting any data that refers to the same “concepts” in a large knowledge graph that is somehow independent of datasets, tasks, objectives, but that is constantly refined by them. The key may just be  <em>contrastive learning</em>, or its evolution.</p>
+
+<h1 id="see-also">See also:</h1>
+
+<p><a href="https://culurciello.medium.com/data-that-bundles-together-is-learned-together-5db9629ac861"></a></p>
+
+<h2 id="data-that-bundles-together-is-learned-together">Data that bundles together, is learned together</h2>
+
+<h3 id="early-days">early days</h3>
+
+<p>culurciello.medium.com</p>
+
+<p><a href="https://culurciello.medium.com/at-the-limits-of-learning-46122b99dfc5"></a></p>
+
+<h2 id="at-the-limits-of-learning">At the limits of learning</h2>
+
+<h3 id="deep-learning-success-lies-with-the-promises-of-neural-networks-being-able-to-learn-from-data-this-is-in-contrast-with">Deep learning success lies with the promises of neural networks being able to learn from data. This is in contrast with…</h3>
+
+<p>culurciello.medium.com</p>
+
+<p><a href="https://towardsdatascience.com/a-new-kind-of-deep-neural-networks-749bcde19108?source=user_profile---------47----------------------------">https://towardsdatascience.com/a-new-kind-of-deep-neural-networks-749bcde19108</a></p>
+
+<h1 id="about-the-author">about the author</h1>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[drop the dataset]]></summary></entry><entry><title type="html">How can we build an artificial brain from our knowledge of the human brain?</title><link href="http://localhost:4000/blog/2022/10/19/build-brain.html" rel="alternate" type="text/html" title="How can we build an artificial brain from our knowledge of the human brain?" /><published>2022-10-19T00:00:00-04:00</published><updated>2022-10-19T00:00:00-04:00</updated><id>http://localhost:4000/blog/2022/10/19/build-brain</id><content type="html" xml:base="http://localhost:4000/blog/2022/10/19/build-brain.html"><![CDATA[<h1 id="how-can-we-build-an-artificial-brain-from-our-knowledge-of-the-human-brain">How can we build an artificial brain from our knowledge of the human brain?</h1>
+
+<p><img src="/assets/2022-10-19-build-brain/1*vajK8QkTrcG1EKAt6HXEEA.jpeg" alt="" /></p>
+
+<p>I have been excited about reproducing the human brain in hardware and software since I read an article on neuromorphic engineering in the mid 1990s. I read much about neuroscience and psychology and of course machine learning algorithms, always with the goal of creating an artificial brain that can sense and understand the world as we humans do, or better, hopefully way better one day!</p>
+
+<p>After several years, I got frustrated when I found out that we are unable to understand the brain wiring and activity of enough neurons to really be able to reverse-engineer it. When I think about ideas and a framework to replicate the brain in software, all we have today is a growing number of ideas and experiments and conjectures and even grand visions, but nothing that is unified and cohesive, and even less on a potential strategy to tackle this problem.</p>
+
+<p>On the other hand, machine learning has progressed enormously in the last 10–15 years, guided by the same goals of replicating human abilities in computing machines. 15 years ago we were dreaming of identifying a human being, their posture, their actions from a camera view. Today this is only too easy! 15 years ago we were dabbling with probabilistic chains trying to unravel written human language. Today we have conversational systems that can almost pass for fellow humans. By the way, with “machine learning algorithm” here in this post I am referring to “neural networks”.</p>
+
+<p>And indeed neuroscience and psychology have been a major inspiration for machine learning, even when not enough is known about our human brain, much can be tested and tried out with computer algorithms. And so it goes, 10 years of endless trials and errors, an evolution of machine learning algorithms trying not to necessarily reverse engineer the brain, as much as trying to adapt all our ideas to solving the problem of learning with algorithms. This is a  <em>key point,</em> while there are religious faction trying to copy exactly the human brain with certified “brain approved” branding, the goal of many other has simply been: let us use any knowledge we have to engineer an artificial brain, be that a good model of our human brain or not!</p>
+
+<p>Here I want to describe a framework for intelligence and learning that I call “<strong>Mix-Match</strong>”. Mix-Match is an algorithm and knowledge acquisition framework that is scalable and can explain how one could design the core knowledge graph acquisition in an artificial brain.</p>
+
+<p>First I will describe what artificial and real brain concepts are the foundation of Mix-Match below. I will describe how artificial and real learning are similar (together) or different (apart).</p>
+
+<p><img src="/assets/2022-10-19-build-brain/1*VHIV0xsJVlixYtn1IDXdxA.gif" alt="" /></p>
+
+<h1 id="together">Together</h1>
+
+<p>Yet I can see there are many really strong ideas from neuroscience and psychology that are one of the fundamental reason why machine learning got so good recently. I will discuss some with you below.</p>
+
+<h2 id="neural-networks">Neural networks</h2>
+
+<p>Well hello! Neural networks are at the core of machine learning today, powering the most sophisticated learning machines we have! Artificial neural networks or ANN, as they called them, are real-valued output neurons that are modeled after biological neurons. They are the fundamental building block of computation and memory in the brain, both real and artificial. They have the ability to take multiple inputs weighted by learned kernels, and can the combine them into a non-linear output. Non-linearity is important to create any complex functions, and possibly unavoidable in real brains.</p>
+
+<h2 id="feed-forward-visual-system">Feed-forward visual system</h2>
+
+<p>Neural networks are what they are today because of many people, but if I had to pick a moment it would be because of the work of Yann LeCun in mid 1990s, where they devised a model of the human visual processing system in the form of LeNet5, the very first convolutional neural network. This network was used to learn to identify handwritten characters, and was a breakthrough not only because of its architecture, but also because it advanced gradient descent learning techniques, the core of most machine learning today. LeNet5 was modeled after the mammalian visual system processing information via simple and them more and more complex cells, extracting a hierarchy of information. LeNet5, gradient-descent, and their ability to learn and perform inspired the artificial neural network revolution of the 2010s — today.</p>
+
+<h2 id="cortex-and-micro-columns">Cortex and micro-columns</h2>
+
+<p>One of the most delightful ideas is that the human neocortex is composed of the same basic circuit repeated ad libitum: the cortical micro-circuit. It does make sense to some extent: the neocortex is a flat disk of 2–4 mm of tissue, and it structure seems to be composed on many “micro columns”.</p>
+
+<p>In terms of neural circuit connectivity, these micro-columns are a few layers deep, say 6, but definitely not very deep like some modern neural networks. One can thus think of a “shallow” network that is well connected to a large number of similar units.</p>
+
+<p>What really inspired me about cortical micro-circuits is not just that we could break down understanding of the neocortex into a smaller step: understanding the columns. But also it reminded me of many processes in parallel requiring the concept of “attention” to sort them into useful bits.</p>
+
+<h2 id="attention">Attention</h2>
+
+<p>Attention is a key concept in psychology and neuroscience because it is the process that allow us to focus on some information that is important rather than other information that is not.</p>
+
+<p>Attention in neural networks arrived later than we expected, say in around year ~2016. In reality any neural network performs attention: because the weights are in fact selecting specific signals from an array of inputs.</p>
+
+<p>But really the key innovation in artificial neural networks arrived with the Transformer model in 2017. This model was using attention for almost everything, and it inspired the use of neural attention for many tasks, starting from natural language processing to vision and more.</p>
+
+<p>If you look at the neural attention circuit with attention (pun intended!) you will notice it may very well be a good approximate model of cortical column circuitry. Its multi-headed attention module, in particular, is a good suitable model of how a column would process information, and find connection between sets of data. Of course it is not a 1–1 model comparison, it will never be! But to me it resonates: artificial neural attention == cortical columns.</p>
+
+<p><img src="/assets/2022-10-19-build-brain/1*Cix0nMSHYyphJbURI9qjlQ.png" alt="" /></p>
+
+<h1 id="apart">Apart</h1>
+
+<p>And there are many areas in which biological and artificial learning differ. After all why should they be the same, they are based on completely different foundational computing substrates (technologies?).</p>
+
+<h2 id="learning">Learning</h2>
+
+<p>Learning algorithms in artificial and real neural networks are clearly different. They are different in learning algorithms, continual capabilities, scope and architecture.</p>
+
+<p>Artificial neural network use back-propagation and gradient descent algorithms to learn from examples. Back-propagation creates an error data-point at the output of a neural network, and that error is then used an propagated back throughput the network to adapt neural weights. Real neural network learning algorithms are not well understood, and often it is referred to Hebbian learning as a potential candidate. Hebbian learning works like this: it strongly connects neurons that fire in short succession, and depresses connections that happen non-causally or long after a cell spikes. It is normal that learning algorithms can differ, after all real and artificial neurons live in different media, with different characteristics and opportunities. If artificial network can use metal and well-insulated circuits to propagate signal farther away than real ones, then why not use that ability?</p>
+
+<p>Continual learning is the ability to continue to learn at every instant and retain previous important information. So far we are in the dark on how to achieve this in artificial neural networks, and it has to do with the current supervised learning algorithms we use. I suspect that large-scale contrastive techniques, for example, have the ability to learn continuously — but in a world where they are stimulated by constant inputs and examples of all kinds. A bit like us on a daily basis. We do not yet know how to achieve the continual and life-long learning that powers our real brains, but we have an opportunity to keep searching and exploring a way to do so. This opportunity is Mix-Match, as described below. This new knowledge gathering architecture can in fact continue to learn indefinitely.</p>
+
+<p>Scope and architecture of artificial neural network cannot yet take advantage or billions of years of evolution, and so machine learning researchers are left with the tedious search by trials and errors. This is a depressing proposal, but let us face the facts: we really do not yet know how to connect these artificial blocks to create anything intelligent of capable or solving multiple tasks and learning continuously, but Mix-Match can help, as we will see below. But one positive comes out of this: it allows us to refine and define the blocks that are most promising and create neural architectures that can solve low-hanging fruits. And we have done this for the last 10 years, slowly creating neural networks that conquered image categorization, natural speech and textual language, photo-realistic image creation, playing Go and other games, driving your car. Sure they are all disparate neural networks that only work on one task each, and we do need to work further on multi-modal, multi-tasks networks. The real issues there is that creatures are embodied in a set of sensors and physical configuration, and our neural networks are still living without a body, most incapable of movement, still residing inside our computer processors. This is a huge limitation to learning opportunities also due to the fact that we are far from being able to devise an artificial brain for artificial embodies entities (robots). Maybe the closest example we have today is an autonomous car — an opportunity!</p>
+
+<h2 id="inhibition">Inhibition</h2>
+
+<p>Real neurons use inhibition to depress the activity of neighbors and inhibitory neurons outputs are in fact a vast majority of a neurons outputs. This is due to the fact that spiking neurons cannot output negative values, as negative spike rates do not make sense. Instead, artificial neural networks  <em>can</em>  have negative outputs due to the range of the output numerical format and precision.</p>
+
+<h2 id="spiking"><strong>Spiking</strong></h2>
+
+<p>Real neurons spike because that is the best way to send signal across many centimeters of leaky goo. Evolution discovered that cells that can spike are able to communicate to many more neurons and thus allow attention networks to be more efficient and process a much larger amount of data. Instead artificial neurons live in silicon and metal, and their conductors are well insulated, to the point that even sending analog voltages over many centimeters is possible. And digital neurons are even better: they can transmit data without errors across the world and to far space! So there we go — we will use this ability and do away with pulsating neural networks!</p>
+
+<p><img src="/assets/2022-10-19-build-brain/1*qHwpzm3sLAsoTdB0rIBmMA.jpeg" alt="" /></p>
+
+<h1 id="joining-forces-mix-match">Joining Forces: Mix-Match</h1>
+
+<p>In my opinion, the the concept that connects both artificial and real brains and has the potential to be a key ingredient to building brains and intelligence, is the concept of attention and learning to co-locate knowledge nuggets or events — I call this architecture  <strong>Mix-Match</strong>.</p>
+
+<p>I mentioned above that multi-headed attention is the circuit we can use to address multiple applications. In fact today, artificial neural attention a la Transformer is the closest we have to an universal neural network architecture that can make sense of heterogeneous types of data. It is in fact an architecture that addresses: text, speech and vision together in one unified neural processing solution. Artificial neural attention is maybe the neural architecture diagram that comes closer to cortical columns, as it represents a  <em>lego-block</em>  of artificial neural architecture, one that replicates in the same way that our cortex is composed of many many cortical micro-circuits. Artificial neural attention is the building block of a large artificial brain that uses the same principle to sense and process all kinds of information, abstracting away the sensing domain and the format of the inputs data, and rather focusing on understanding it and correlating it that what is already known. In fact attention is a way to identifying inputs by locating them in our knowledge space, a space designed and constructed by co-locating data!</p>
+
+<p><strong>Mix-Match</strong>  is in my opinion the best theory of the brain and intelligence we have today. This framework is still in development and is still highly speculative, but it is important to mention it early on so we can later claimed we predicted the future! Co-locating information is simply connecting information that occurs close in space or time in the same space. It is like giving it a “name” in language. Imagine an “event” where you see a person stomping their foot and making a peculiar noise. And suppose someone observes this and says “they are stomping!” Now in the Mix-Match co-locating space, all three events: (1) the noise, (2) the video feed and (3) the words uttered because of the event will all combine into a tight embedding space. now we have co-located three sensing modalities into one. Suppose you do this for all experiences in your life, all data you ever come to sense or perceive.</p>
+
+<blockquote>
+  <p>This is Mix-Match!</p>
+</blockquote>
+
+<p>It is a simple learning architecture where knowledge is aggregates in its raw multi-modality, and where all components of any knowledge events come together. Modalities  <em>Mix</em>  and then are  <em>Matched</em>  to form a specific point in the embedding space.</p>
+
+<p>Mix-Match is a core ingredient for an artificial brain. It is the foundation on top of which multiple abilities can arise. It supports the development of complex learning connecting the myriad of events that we witness in our lives, and can illustrate how we interlink experiences across sensory modalities, space and time.</p>
+
+<p>A summary of Mix-Match properties are:</p>
+
+<ul>
+  <li>A common architecture for all data and knowledge — based on a large scale attention architecture</li>
+  <li>Continual learning is part of this system — since it expands the embedding space to include all new events without erasing previous ones</li>
+  <li>Application can be supervised — learning of abilities on top of the knowledge graph is a matter of connecting examples to points in the embedded space</li>
+</ul>
+
+<h1 id="final-words">Final words</h1>
+
+<p>I hope this inspires you to build an artificial brain and learn all you can from our existing brain. There is no need to refute artificial neural networks today because they are not what we want, or as capable as our brain. Also there is no need to worry if we are unable to study our own brain today, if we do not have the tools or the ability to spy inside many many neurons as we go about our day. One day we will — maybe with Mix-Match. Maybe you can help us on that front!</p>
+
+<h1 id="references">References:</h1>
+
+<p>Just a few references here, as they are too many.</p>
+
+<p><a href="https://ieeexplore.ieee.org/document/490055"></a></p>
+
+<h2 id="neuromorphic-vision-chips">Neuromorphic vision chips</h2>
+
+<h3 id="analog-circuits-based-on-resistive-networks-emulate-the-behavior-of-the-vertebrate-eye-detecting-edges">Analog circuits based on resistive networks emulate the behavior of the vertebrate eye, detecting edges…</h3>
+
+<p>ieeexplore.ieee.org</p>
+
+<p><a href="https://numenta.com/resources/on-intelligence/"></a></p>
+
+<h2 id="on-intelligence-book-by-jeff-hawkins">On Intelligence (Book) by Jeff Hawkins</h2>
+
+<h3 id="reviews--press-jeff-hawkins-and-on-intelligence-are-featured-in-fortune-magazine---written-by-david-stipp-how-do-you">Reviews &amp; Press Jeff Hawkins and On Intelligence are featured in Fortune Magazine - written by David Stipp How Do You…</h3>
+
+<p>numenta.com</p>
+
+<p><a href="https://www.goodreads.com/en/book/show/940331.From_Neuron_to_Brain"></a></p>
+
+<h2 id="from-neuron-to-brain">From Neuron to Brain</h2>
+
+<h3 id="the-best-parts-were-much-better-than-the-best-parts-of-the-cell-a-molecular-approach-while-the-worst-parts-were-worse">the best parts were much better than the best parts of The Cell: A Molecular Approach, while the worst parts were worse…</h3>
+
+<p>www.goodreads.com</p>
+
+<p><a href="https://www.penguinrandomhouse.com/books/655682/vision-science-by-stephen-e-palmer/"></a></p>
+
+<h2 id="vision-science-by-stephen-e-palmer-9780262161831--penguinrandomhousecom-books">Vision Science by Stephen E. Palmer: 9780262161831 | PenguinRandomHouse.com: Books</h2>
+
+<h3 id="get-the-latest-updates-about-stephen-e-palmer-and-go-from-well-read-to-best-read-with-book-recs-deals-and-more-in">Get the latest updates about Stephen E. Palmer And go from well-read to best read with book recs, deals and more in…</h3>
+
+<p>www.penguinrandomhouse.com</p>
+
+<p><a href="https://arxiv.org/abs/1706.03762"></a></p>
+
+<h2 id="attention-is-all-you-need">Attention Is All You Need</h2>
+
+<h3 id="the-dominant-sequence-transduction-models-are-based-on-complex-recurrent-or-convolutional-neural-networks-in-an">The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an…</h3>
+
+<p>arxiv.org</p>
+
+<p><a href="https://arxiv.org/abs/2106.14413"></a></p>
+
+<h2 id="co2l-contrastive-continual-learning">Co$^2$L: Contrastive Continual Learning</h2>
+
+<h3 id="recent-breakthroughs-in-self-supervised-learning-show-that-such-algorithms-learn-visual-representations-that-can-be">Recent breakthroughs in self-supervised learning show that such algorithms learn visual representations that can be…</h3>
+
+<p>arxiv.org</p>
+
+<h1 id="about-the-author">About the author</h1>
+
+<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How can we build an artificial brain from our knowledge of the human brain?]]></summary></entry><entry><title type="html">Data that bundles together, is learned together</title><link href="http://localhost:4000/blog/2022/09/23/data-bundles-together.html" rel="alternate" type="text/html" title="Data that bundles together, is learned together" /><published>2022-09-23T00:00:00-04:00</published><updated>2022-09-23T00:00:00-04:00</updated><id>http://localhost:4000/blog/2022/09/23/data-bundles-together</id><content type="html" xml:base="http://localhost:4000/blog/2022/09/23/data-bundles-together.html"><![CDATA[<h1 id="data-that-bundles-together-is-learned-together">Data that bundles together, is learned together</h1>
+
+<p><img src="/assets/2022-09-23-data-bundles-together/1*vAZMmK9ZRMPXh55P6WPIbQ.jpeg" alt="" /></p>
+
+<h1 id="early-days">early days</h1>
+
+<p>It was the winter 1998 and I have just moved to Baltimore from Italy. I joined prof. Ernst Niebur at the Mind Brain Institute, Johns Hopkins University. At the time I was fascinated by the neuroscience of vision, and was trying to learn from neuroscience book how the brain works, how it makes sense of the stream of sensory information. One concept that was absolutely nebulous was how a brain would “learn”, or connect the sensory stream data to actionable insights. “Hebbian learning” kept coming up — a learning theory in neuroscience stating that “neurons that fire together, wire together”.</p>
+
+<p>Fast forward to 2004, the book “On Intelligence” by Jeff Hawkins &amp; Sandra Blakeslee was really exciting to me. Mostly because it brought back up the energy and hope I had back in 1998, while at Johns Hopkins. The hope was that by studying and trying to replicate the brain, one could finally figure out how it works, how it learns.</p>
+
+<p>In the book, Hebbian learning and repeated cortical columns were concepts that struck with me. I was working on artificial spiking neural networks and the concept of neurons firing together to make visual filters was not reading material anymore, was something I built and could measure and play with. This is unlike real neurons, that are much harder to “play” and “measure” given they are embedded in large networks and in a complex biochemical environment.</p>
+
+<p><img src="/assets/2022-09-23-data-bundles-together/1*af-tNiqd-3_ResjoDOFm5A.png" alt="" /></p>
+
+<h1 id="clustering">clustering</h1>
+
+<p>Yet it took me until 2012 to have a revelation about Hebbian learning . I was then starting to really work on machine learning using Torch7 and Lua, and thought that we could implement the concept of grouping together neurons that had similar outputs. For example filters that were responding to the same stimulus could be averaged together and combined. This was the idea behind clustering-learning that we developed and tested.</p>
+
+<p>Then some years went by, and I was still trying to understand how one would be able to build a more complex brain. The trend in the year 2010–2020 was to build custom neural networks for each and every possibly application. One would get a dataset, inspect samples, craft a neural network architecture, then a cost function, and then train and modify parameters until time / resources / will would run out. After a few times of doing this, it all became very dull and almost pointless. Yes you can solve some problems if you have a fixed dataset of input-output relationships, but what if the dataset changed? What if the task changed, or a new category or new task was added? It would all fall apart!</p>
+
+<blockquote>
+  <p>I thought this was a betrayal of the paradigm “learning from data”</p>
+</blockquote>
+
+<p>I started thinking for years about how one could learn complex tasks without forgetting the previous ones, and in a way that allowed to hierarchically build upon the knowledge discovered at earlier steps. In other word, a model that can support continual-learning and life-long learning, and that would require less or no tweaking of parameters — or at least change sporadically.</p>
+
+<h1 id="multi-modal">multi-modal</h1>
+
+<p>Today Hebbian learning came back once again to help me wrap my mind on a new brain and learning model. We spent a decade using machine-learning in isolation: image to text, text to text, text to image, sound to text, etc. But in our world all of possible sensory modality come to play together into a cohesive understanding of the world around us. A bird, for example, is not represented just by one image, it is video, it is motion, it is sound, it is all of these together! Imagine a waterfall: same thing! One image of a waterfall would not really represent what it is! It would look like a static object, lifeless, soundless. Not the roaring magnificence that one can perceive with human sense s— and image what we could do with even more sensory modalities!</p>
+
+<blockquote>
+  <p>multi-modal learning is key</p>
+</blockquote>
+
+<p>The interesting thing of learning multiple modalities at once (multi-modal learning) is that you do not necessarily need a dataset! Modalities signal together when something occurs. For example when your foot hits the ground while walking, the event produces sound. These are signal that “fire together”, so maybe it would be appropriate to “wire them together”, what do you think?</p>
+
+<p>You may ask now: what is an “event”? I use that word here because in the example of your foot hitting the ground and producing a sound I can remind you of a physical every-day reality. To you that sound is an “event”, but in reality we can group signal together even if they are not singular points in time, like for example the sound of the waterfall, which is continuous.</p>
+
+<p>If we can find a  <strong>space</strong>  where different modalities could be compared and organized together, that would surely form a sound foundation of knowledge that is hierarchical and connected. We call this step “embedding” of modalities. It means that for every multi-modal group of signal, we create a numerical representation (say 512 numbers) that represent the “ensemble” of modalities together. Individual modalities can still be sensed independently and compressed with neural networks, and successively are projected into the same  <strong>embedding space</strong>  so they can be grouped and compared.</p>
+
+<h1 id="assembling-knowledge">assembling knowledge</h1>
+
+<p>From the embedding space, we can now perform a critical learning step: we can force modalities that occur together to have the same representation, the same 512 numbers. We can do this training the embedding space to push events that happen together closer, and push apart events that are uncorrelated. Sounds familiar?</p>
+
+<p>Well today, this modality, called contrastive-learning, has been a prevalent way of training a new class of neural networks and a more complex set of data. This training modality is the core of Stable Diffusion text to image models (example below).</p>
+
+<p><img src="/assets/2022-09-23-data-bundles-together/1*dPvpYVK0RUu0hrfREu-80Q.png" alt="" /></p>
+
+<p><a href="https://github.com/CompVis/stable-diffusion">https://github.com/CompVis/stable-diffusion</a></p>
+
+<p>The goal of this blog post is to possibly convince you that we need to do more of this! We need to learn more modalities than just text and images, and combine them together into a singular embedding space. To me that new embedding space is a bit like a mini-cortex, a mini-brain, where attention-based cortical columns can make sense of the complex interaction of signals arising from life and the environment around us.</p>
+
+<p>For example, think of PDF documents, fliers, brochures, medical data—what do they have in common? They aggregate text, images, videos, tables, time-series data into single documents: they co-occur together, so if we projected to the embedding space and group them, we will build hierarchical knowledge of dependent data.</p>
+
+<p>Now imagine we took all the movies or videos on youtube. Same thing: we can use their text subtitles, text description, video and sound and learn an embedding space that will cluster events together. We can now sure learn what a waterfall is, because we will see it move, hear its sound.</p>
+
+<p>Now Hebbian learning sounds quite interesting because it could be the foundation of the next “Google”. If we can connect knowledge now just by text, like the Web 1.0–2.0, but by multiple modalities, we would then have a much more sophisticated and powerful semantic search. After all what is a word? It is just a representation (and embedding) of a real concept, a mixture of sensory signals, a qualia.</p>
+
+<p>And the revelation of this post, which I stumbled upon by searching a way to replicate brains over the years, is also surfacing from many colleagues in the area with the same life goals: building a clone of the human brain. See: HuggingFaces and Jira for example. I think you may recognize some of the underlying ideas.</p>
+
+<h1 id="advantages">advantages</h1>
+
+<p>What could we do with this? After all it seems like I am only giving you a recipe to group things together… what comes next is “prediction”. A theory of the brain by Friston suggests that the brain is predicting future events all the time, and ignores most events that can be predicted, and focuses attention on what cannot be predicted.</p>
+
+<p>Imagine you see a restaurant room full of tables: nothing much to report. But now you see a table standing with only two legs. You would be “surprised”! Because that is not common! In your knowledge all tables that stand have 4 or at least 3 legs!</p>
+
+<p>Now you see: if we have grouped data together that is common, we would have an easier time to figure out what is uncommon. Machine-learning today struggles with anomaly detection tasks like this.</p>
+
+<p>In addition embedding multi-modal information should have a big advantage in continual-learning. That is because as we had more data, it will have to be embedded into the same space, in a way averaging over concepts that we have learned before. And in a continual learning scenario, we would continue to build a knowledge graph that need to be consistent with reality, and thus robust to new datapoints. All this has to be proven, it is a conjecture right now.</p>
+
+<p>The other immense advantage of multi-modal learning is that it can be trained largely unsupervised! Meaning we do not need to curate and provide a large set of examples. We still need data, yes, but all we need is multi-modal data, not the labels. Training with contrastive learning techniques thus can relieves from the immense problem of creating an input/output dataset.</p>
+
+<h1 id="applications">applications</h1>
+
+<p>With contrastive learning and a common embedding space, we can thus organize knowledge into a neural graph, as data from different modalities is connected and grouped into semantical concepts that can be queried. This is similar to building a language without a language: a language of the brain, made of codes and relative position of concepts. In this space distance is a metric of connectivity, similarly to what happens in natural language processing, where similar concepts group together (see below).</p>
+
+<p><img src="/assets/2022-09-23-data-bundles-together/1*_i12gfIu6Y78ttG02pvgUQ.png" alt="" /></p>
+
+<p>semantic grouping of words</p>
+
+<p>Using this we can open to many potential applications:</p>
+
+<ul>
+  <li>understanding complex relationship in complex multi-modal documents</li>
+  <li>generating text, sounds, video, images</li>
+  <li>organizing human knowledge and finding new connections between data</li>
+  <li>connecting different areas of knowledge that are now loosely connected</li>
+  <li>automatic discovery of knowledge</li>
+</ul>
+
+<h1 id="final">final</h1>
+
+<p>I hope these ideas have piqued your interest in artificial brains and neural networks and help you think of how we can do more with the massive amount of data we have, how to learn how to learn, how to grow a brain.</p>
+
+<h1 id="notes">notes</h1>
+
+<ul>
+  <li>Hebbian learning is just a theory</li>
+  <li>there could be multiple other ways to learn and scale</li>
+  <li><a href="https://medicalxpress.com/news/2018-11-neurons-dont-wire.html">https://medicalxpress.com/news/2018-11-neurons-dont-wire.html</a></li>
+</ul>
+
+<h1 id="about-the-author">about the author</h1>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Data that bundles together, is learned together]]></summary></entry><entry><title type="html">Semiconductors and microchip for the masses</title><link href="http://localhost:4000/blog/2022/08/08/semiconductor-for-masses.html" rel="alternate" type="text/html" title="Semiconductors and microchip for the masses" /><published>2022-08-08T00:00:00-04:00</published><updated>2022-08-08T00:00:00-04:00</updated><id>http://localhost:4000/blog/2022/08/08/semiconductor-for-masses</id><content type="html" xml:base="http://localhost:4000/blog/2022/08/08/semiconductor-for-masses.html"><![CDATA[<h1 id="semiconductors-and-microchip-for-the-masses">Semiconductors and microchip for the masses</h1>
+
+<p>In this blog post I would like to share my view on the area of semiconductors: the design of integrated circuits, the fabrication and the scalability of design to millions of units. Microchip design today should be as easy as printing a 3D object online or ordering a poster to be printed. It is not. Why?</p>
+
+<p><img src="/assets/2022-08-08-semiconductor-for-masses/1*Tt0eYq84RbbNFUv_dUt18Q.jpeg" alt="" /></p>
+
+<h1 id="background">background</h1>
+
+<p>A bit of background about me first. As a child I was gifted a Commodore 64 when I was 13. It was my dream at the time to understand the cicruit schematics it came with. Fast forward a few years, I studied Electrical Engineering and went on to do a PhD on analog and mixed-signal microchip design in the neuromorphic area.</p>
+
+<p>But after 20 of work in the area of semiconductors I am appalled at how we missed a great opportunity to extend access to more ordinary people and small groups to the magic of microchip design. Let me explain here why in this post.</p>
+
+<h1 id="terminology">terminology</h1>
+
+<p>First some microchip and semiconductors boring terminology:</p>
+
+<ul>
+  <li>circuit design: set of circuit components and connections</li>
+  <li>electronic design automation (EDA) tools: software that takes your rough circuit sketches and turns them into files that can be used by the foundry</li>
+  <li>foundry: a factory for microchip</li>
+  <li>technology node: a foundry can design microchip of different kinds, with different rules and minimum transistor sizes (5 nm, 10 nm, 28 nm, see:  <a href="https://en.wikichip.org/wiki/technology_node">https://en.wikichip.org/wiki/technology_node</a>)</li>
+  <li>foundry design kit (SDK)s: a set of rules and components that implement your design in the foundry technology nodes</li>
+  <li>wafer: is a pizza of silicon that contains many microchips, and is the basic unit of foundry processing</li>
+  <li>die / chiplet: a single microchip instance cutout from the wafer</li>
+</ul>
+
+<h1 id="how-to-make-microchips">how to make microchips</h1>
+
+<p>This is a super condensed summary of how to make an actual microchip:</p>
+
+<p>1- you first start with some schematics or block diagrams, a microchip technology node, and all the design files needed. You also need software to turn the schematics into actual physical circuits (well not physical, just a set of technical drawings or blueprints that will tell the foundry how to design your microchip), and the foundry design kits for the node</p>
+
+<p>2- then you lay out the circuits with the EDA tools either by hand (more typically in analog circuits) or by using automatic place and route EDA tools (digital circuits). These are basically drawing of every layer of the circuit and how it is connected and organized in the foundry technology node</p>
+
+<p>3- once you have drawn your circuits you use the foundry SDK to check that your design can be fabricated and it actually implements the circuit you want. You can also simulate the circuit on the foundry physical layout and make sure it performs to the specifications you need</p>
+
+<p>4- you repeat the steps 1–3 until you design and microchip does what it was designed to do, follows the exact specifications, and ultimately achieves the right performance</p>
+
+<p>5- when your design is ready, you then submit all your files to the foundry</p>
+
+<p>6- the foundry may check your design again and ask you for additional changes, and when ready will place your design in a queue. It may take 2–3 months or more to fabricate your circuit.</p>
+
+<p>7- after your design is ready you can receive it in individual dies, or you can send them to be packaged in a container that allows you to use them in a circuit board</p>
+
+<p>8- and that is all!</p>
+
+<p>Seems like fun, right? It does and with the tools we have today it should be really easy. Ideally making a microchip could be so simple that young kids and for sure teens would be able to create and fabricate their own design, submit it online and receive parts for use! A bit like 3D printing today with an online service!</p>
+
+<h1 id="barriers">barriers</h1>
+
+<p>Unfortunately it is not so easy… there are major barriers that do not allow us today to make it as easy as it could be! Let me explain the major problems:</p>
+
+<p>1-  <strong>where and why to start</strong>: you definitely need a bit of circuit knowledge to get started, but I know from first hand that even a 10 year-old can create a circuit board. Today all circuit blocks like amplifiers, micraprocessors, inputs and outputs buses and standards, communication circuits, radios, antennas, etc area all ready to be used and many are available open source:  <a href="https://opencores.org/">https://opencores.org</a>  as an example</p>
+
+<p>2 -<strong>community</strong>: 3D printers have immense communities with simple software and share designs that make for an easier start. They too require software design tools like EDA, a set of foundry rules and a foundry to send designs to get fabricated. There is no reason why circuits should be MUCH more difficult, beside the fact that they run invisible electrons and do not all spin cogs! Having a community is a great way to democratize circuits and microchips, but I think this is the easiest part because it grows organically by itself once the other barriers are removed</p>
+
+<p>2-  <strong>EDA tools</strong>: Synopsys and Cadence EDA software have been dominating the field for many decades. There are many problems with their software: 1) it is a bloated system of software that (like MS Word) does too much and hides the easy into the complex; 2)it is a hotch-potch of tools acquired from many startups over the years, with too many options and too many ways of achieving the same goal; 3) the complexity disorient the users who have to spend countless hours to learn all features and tricks before converging to the 3–4 ones that they really need; 4) it is expensive: from 100s of thousands to millions of dollar per seat (per engineer) in the most complete set of tools; 5) requires a PhD just to use and get trained. For these reasons these EDA companies are a poor chamption of the “easy design anyone can do it”! There are free EDA:  <a href="http://opencircuitdesign.com/">http://opencircuitdesign.com</a>  that has been maintained by smart folks that want to make circuit design easier and cheaper so anyone can do it. I believe EDA tools are problematic and are a large barrier, but I think they are software after all, that can become easily open source and more community-driven once the major barrier is removed.</p>
+
+<p>3-  <strong>foundry</strong>: I belive they are one of the major hurdles to really democratizing microchip design. A major issue is the closeness of the fabrication steps and that are revealed in the design files and SDK. The foundries protect their SDKs with formidable legal agreements that few people can even understand, let alone acquire and review. And also foundries are interested in big customers that can churn millions of unit of a microchip per year, and not interested in helping or servicing the little guys. As such even small research companies of groups have a hard time getting foundry access and a reservation to their queue. The closeness of the foundries is what really hinders the progress of “anyone can be a microchip designer”. To combat these issues there are middle-man companies like  <a href="https://themosisservice.com/">https://themosisservice.com</a>  and  <a href="https://efabless.com/">https://efabless.com</a>  that aggregate many designs together into shuttle runs that can then be scheduled for fabrication in low-count wafer productions</p>
+
+<p>4-  <strong>cost</strong>: needless to say making a microchip is much more expensive than a 3D printed design, 10–100 times more expensive. It today it is thus not really feasible for individuals to really create their own microchip design. But cost can be driven down with more foundries and more access to older technology nodes. Basically with more demand, and more foundries the price can be 10 times lower than it is today. Also even if individual users are not able to fabricate their very own chip, they could group together in 10–100 or users that are looking for similar design. Effectively that is what companies in microchip design do: they fabricate what many people will want to use!</p>
+
+<p>5-  <strong>the right people</strong>: while it may remain a dream tot be able to have your very own microchip, we should still try hard to lower the barriers for at least research groups and small startups, so that microchip innovation and community culture can grown and promote new ideas and openness. This means open-sourcing designs in the same way we do for software</p>
+
+<h1 id="what-can-we-do">What can we do?</h1>
+
+<ul>
+  <li>create and fuel more open-source EDA tools</li>
+  <li>ask your country representatives to make more microchip foundries in your own country!</li>
+  <li>lower the barrier to obtaining foundry design kits and tools, especially for older processes!</li>
+  <li>foundries that are government-owned can lower the barriers to SDK and also of cost to a larger user set</li>
+  <li>create and invigorate the open-source microchip community</li>
+  <li>share and open-source circuit design in blueprints, napkins, files, chiplets, so that it becomes easier and easier to create new and large design from individual components</li>
+  <li>never give up!</li>
+</ul>
+
+<h1 id="about-the-author">About the author</h1>
+
+<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Semiconductors and microchip for the masses]]></summary></entry><entry><title type="html">How much money or salary is enough?</title><link href="http://localhost:4000/blog/2022/07/11/how-much-salary.html" rel="alternate" type="text/html" title="How much money or salary is enough?" /><published>2022-07-11T00:00:00-04:00</published><updated>2022-07-11T00:00:00-04:00</updated><id>http://localhost:4000/blog/2022/07/11/how-much-salary</id><content type="html" xml:base="http://localhost:4000/blog/2022/07/11/how-much-salary.html"><![CDATA[<h1 id="how-much-money-or-salary-is-enough">How much money or salary is enough?</h1>
+
+<p><img src="/assets/2022-07-11-how-much-salary/1*5PE7SUaWKz4LB8qgjYaMXQ.jpeg" alt="" /></p>
+
+<p>How much salary is enough? I hear many people complain that some others make too much, and often it is true.</p>
+
+<p>Imagine someone making 100 k$/year or 250, or 500 or 1M. Do you need all that? Are we taking too much? Will others be envious?</p>
+
+<p>Reality is that most families of 4 live comfortable with 50–100 k$/year. What do people need? A house, 2 cars, 1–2 nice holidays per year… most people make it work thus so.</p>
+
+<p>Far too often I see people long for more. We are a greddy animal. Gathering is in our genes, a remnant of times where abundance was not on the table. We will glady have 3–4 cars, even though we can drive only one at a time. We will gladly buy another home, even though we can only spend 3–4 weeks a year in it. We will fill our homes will multiple TV and devices, tools and amenities to live in ease. And for that we are the definition of middle-class, one that lives comfortably but can always have more.</p>
+
+<p>How much more? If we look at a household with 250 k$/year what changes? Maybe bigger house, with rooms we barely use. Maybe another car, used not 10% of the day but 5% of the day. Maybe more gadgets and nicer holidays. but we can also buy better food and east out more often. Some of this is a nice addition, but the most is maybe just the waste of living large.</p>
+
+<p>500 k$/year or more? Now we can afford another house, and hire people to maintain it. Splurge on fancier holidays, and have even more waste. Maybe we do not have to think twice about buying something on a whim — but is that thing going to be useful? Did we really think it over enough? Somehow doing some research and allowing time to really want something is an important part of enjoying that very thing.</p>
+
+<p>There are people that make 1 M$/year or more, and I know they spend too much time at work or worrying about work, or worrying about how to use their money. Yes that is a thing! When you have more meny that you can use you will park it in an investment or in property. That means more worry. Will it go up or down, appreciate or depreciate? Can I afford a new mansion? When? Trust me that is a lot of stress for money you are not even using and often do not even have a plan to use it. Yes! Most people will gather more and more and long for more and more interest, but will then leave most of it to charity or to their kids. Kids that will be spoiled and often never find a meaning in life because they never had to try hard. Is that a good legacy?</p>
+
+<p>I think the worse part of our society is that it makes us think that earning more if being more. But rarely that is the case. In actuality, the richer people are more miserable. You may have everything, but do you really enjoy things like when you were poorer? Having more money makes you more selective towards people, more isolated and lonely. You do not have to put up with some people and places anymore because you can afford “better” ones. More manicured and artificial places, but also miss our on the genuinely of the people and the places that are more common. Richer people also work less, and too much free time is also not healthy because you do not know how to fill your day, what to do, or how to feel useful and fullfilled.</p>
+
+<p>I see many colleagues tied to jobs only because of the money trickling in. Living lives that are so miserable that it hurts to see. Yet they will drag themselves to an office to do many silly things they do not believe in just to earn that bonus, that extra payment. To raise up to a new job level, because that $ 10,000 more is REALLY going to make a difference.</p>
+
+<p>From my experience and the people I observed, it is much better to have a mid-level job and career that allows more free time, and a better balance of life and career. More time with kids and family, more investment in nice experiences. Any job 100–250 k$/year will give you that if you can get it. Also not working is not as fun as most people think. It is actually horrendous for some active people. Better to see a better balance and never get sick of work and what you do! So a middle-ground where you can have more control on the hours you put in and do sprints and walks is the right recipe.</p>
+
+<p>One issue that many middle-class people do not understand about richer people is the power of peer-pressure. Richer people will often have reacher friends, who often buy, invest, collect more things, property, etc. Then they visit each other house and long for a better kitchen, 1000 sqft more space, 5 car garage, or maybe even a house with a landing strip! So in a way it is a vicious circle of wanting more and gathering more and envying more. We are all in this greed cycle to some extent. It is in our genes to want more for our family, our tribe. To gather more, whether we use it or not, because you never know…</p>
+
+<p>And if you try to convince you should aim lower, you will feel guilty, maybe I am not doing enough for my family? Maybe I should be more like my neighbor? It is not easy even to try to break away from the greed cycle because we like living in wealth and ease and abundance. All of us.</p>
+
+<p>What is your goal? What is your comfortable range? Or better, what is your social network comfortable range?</p>
+
+<p>Your move…</p>
+
+<h1 id="about-the-author">About the author</h1>
+
+<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How much money or salary is enough?]]></summary></entry><entry><title type="html">Should I consider a startup in 3D content creation, Metaverse?</title><link href="http://localhost:4000/blog/2022/04/22/startup-3d.html" rel="alternate" type="text/html" title="Should I consider a startup in 3D content creation, Metaverse?" /><published>2022-04-22T00:00:00-04:00</published><updated>2022-04-22T00:00:00-04:00</updated><id>http://localhost:4000/blog/2022/04/22/startup-3d</id><content type="html" xml:base="http://localhost:4000/blog/2022/04/22/startup-3d.html"><![CDATA[<h1 id="should-i-consider-a-startup-in-3d-content-creation-metaverse">Should I consider a startup in 3D content creation, Metaverse?</h1>
+
+<p><em>The startups and ideas ecosystem in the 3d content generation, artists assistance tools landscape.</em></p>
+
+<p><img src="/assets/2022-04-22-startup-3d/1*baZBY4yJPG9EYWKJBDoEEQ.jpeg" alt="" /></p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>First off the base: drawing is hard. Drawing in 2 dimensions is what we are used to do growing up. Pencil at hand, trying to sketch a dog — our dog. The first results? Oh well…</p>
+
+<p>Fast forward some years, you wonder how some artists can draw a dog with just 2–3 lines…</p>
+
+<p><img src="/assets/2022-04-22-startup-3d/1*NucS6sEBFTUSM2dszQLttA.jpeg" alt="" /></p>
+
+<p>Even as an adult, some of us can do this with ease, but most others… well… not so.</p>
+
+<p>Fast forward a few more years, and you are considering a startup in the space of 3D design tools, 3D content generation, Metaverse. What the heck is that?</p>
+
+<p>Growing up I remember seeing the first 3D video game on Commodore 64.</p>
+
+<p><img src="/assets/2022-04-22-startup-3d/1*PvCsdPQQxWyscGCltxgTuQ.png" alt="" /></p>
+
+<p>It was very crude, but I remember what really captured my 12 years-old attention: someone told me that the computer was calculating all of these 3D shapes in real time, modifying them at every frame. At an early age I was somehow attracted to computers. When my father convinced my grandma to use her monthly pension to buy a C-64 for me, it opened a new world. I remember I was telling my friends, soccer enthusiast and avid players of the C-64 game “<a href="https://en.wikipedia.org/wiki/Emlyn_Hughes_International_Soccer">Emlyn Hughes International Soccer</a>”, that one day even their dear soccer game was going to be made in 3D! They laughed and told me I was crazy — how can that crappy looking wireframes morph into a beautiful soccer game? Well fast forward a few years and we got “Actua Soccer” — the first 3D soccer game…</p>
+
+<p><img src="/assets/2022-04-22-startup-3d/1*sQ4-24nuPkaY2LsYcUm-DQ.jpeg" alt="" /></p>
+
+<p>With the Sony Playstation and better graphic processors, 3D became the norm in video games and in the 2000s progressed to full 3D movies. Why? Because at some point is it harder to draw everything in 2D than it is to create 3D shapes and render them, so you can see them in every perspective without having to manually re-draw them.</p>
+
+<h1 id="the-metaverse-days">The Metaverse days</h1>
+
+<p>Today much has changed from my early days of 3D of the 1980s. 3D content is everywhere and it can even be used for full hollywood movies. In video-games it is so realistic that you get motion sickness! In fact Virtual Reality (VR) has also opened the door to more desire to create 3D scenes and environments, sculpting and arranging items as if we were in real life.</p>
+
+<p>The desire of people to stay indoor and refuge in synthetic worlds is growing. Pandemics or not, it was already growing.</p>
+
+<blockquote>
+  <p>And it is only going to get more pervasive</p>
+</blockquote>
+
+<p>What has not changed much is that creating this content is still hard, despite the enormous amount of code and tools we have today.</p>
+
+<p>Today, if a casual user wants to build a 3D scene in 30 minutes, well they can’t!</p>
+
+<h1 id="drawing-in-3d">Drawing in 3D</h1>
+
+<p>Despite the great success of 3D, how many of you have ever actually tried to make a 3D drawing with a computer? Yes there are many tools available, like  Blender, Cinema 4D, 3ds MAX, Sketchup, Maya, Mixamo, Houdini… and many more — but they all have a very steep learning curve, and unless you use them on a daily basis you will never be able to master even the simplest combination of capabilities and shortcuts they offer.</p>
+
+<blockquote>
+  <p>Drawing in 3D is hard</p>
+</blockquote>
+
+<p>very hard… beyond comprehension if you have not tried. You basically have to specify the position of each and every 3D point in your meshes. Try to draw a real car for example one day, maybe using Blender.</p>
+
+<p>Of course you do not have to draw everything. If you are happy with simple modifications, you can take already drawn assets from one of many 3D asset store, like  <a href="https://free3d.com/">https://free3d.com</a>. Here you can find many model from simple to more complex, from free to $ to $$$.</p>
+
+<p>But can you make a game or a movie this way? Maybe not — because all assets will mismatch in style and characteristics, making the scene not very visually compelling. Some modification will be needed. Some may be easy, like changing the color of a flat material, but if you want to provide complex textures and nicely touch-up colors in many parts of a mesh you will soon find yourself having to learn one the big name tools.</p>
+
+<p>If you are an artist or a person that works with these tools on a daily basis, things are of course easier, you can remember what to do. You are paid (or strive to) to learn these tools and get better at it. There are pain points of course. You still have to draw all the 3D points in a mesh, have to provide colors and textures to every part of your asset, and maybe you have to animate it also. Gets difficult very quickly.</p>
+
+<h1 id="designing-a-3d-game-scene-level">Designing a 3D game, scene, level</h1>
+
+<p>A 3D item will just sit pretty on your computer if you do not use it. Maybe you want to make a game or a illustrate a scene or make a short powerpoint-like movie animation.</p>
+
+<p>At the basic scene / level 3D design involves these steps:</p>
+
+<ul>
+  <li>storytelling and scripting</li>
+  <li>design of 3D meshes, items, landscapes, skybox, etc</li>
+  <li>embellish meshes and assets with materials and textures</li>
+  <li>scene and levels composition</li>
+  <li>animation of some meshes</li>
+  <li>coding of interactions, game logic</li>
+</ul>
+
+<p>Even if you just wanted to illustrate a dream you had last night, while the story is clear in your mind, finding the rights 3D assets and animating is not yet open to the public.</p>
+
+<p>Game and scene logic (when I open the cupboard, a ghost appeared), can be implemented in Scratch-like visual programming that is easy to learn.</p>
+
+<p>In general, ask anyone in the field and they will tell you that the most time and resources spent in 3D design is in selecting and curating individual assets, characters, scene items, lightning, animations. And most of these steps today are the domain of experts only.</p>
+
+<h1 id="would-you-want-to-create-a-startup-in-the-3d-space--metaverse">Would you want to create a startup in the 3D space / Metaverse?</h1>
+
+<p>The issue remains: 3D design is hard and not open to the public yet. Young adults and kids would like to build games in  Roblox, for example, but can’t because it is hard to design and hard to code. A tool that allows for easy scene creation and for simple dynamics is definitely needed!</p>
+
+<p>If you are considering a startup in this space, I recommend you consider these areas:</p>
+
+<ul>
+  <li><strong>3D tools that are easy-to-use</strong>: tools like  TinkerCAD  are easy to use and should be the standard entry point to any 3D design tool aimed at the general public</li>
+  <li><strong>Create 3D scenes out of existing assets</strong>: there are many websites colleting community-created 3D assets. These make the life of casual user easier, but do not provide a consistent look and feel for implementing an entire scene. These assets also mismatch in size, texture definition, polygons count. There is a need for a centralized database of 3D assets like Kenney.</li>
+  <li><strong>Create 3D assets automatically</strong>: the Holy Grail is to be able to design an asset with just text: “a blue coffee mug that look like Lego”. A bit of a CLIP / DALL-E for 3D. We may be getting closer to this today, but the way is still long before we can provide consistent style, and fine-detail programmability that artists would want. Yet it may suffice for some casual users. One of the issue is that possibly specifying each 3D point with a neural network is overkill ad ill-posed, as there are much fewer control parameters in assets that one would want to vary.</li>
+  <li><strong>Extend procedural 3D assets</strong>: the other way, that is between using fixed assets and neural network created assets, is to use procedural assets that are hierachical. These can be design with less parameters and even graphically (Geometry Nodes and Textures in Blender) and offer a hierarchy as a bonus. They may be just the perfect way to set up a large database.</li>
+  <li><strong>Placing items in a scene</strong>: once you have all your assets for your scene, the next step is where to place them. Specify rules, script arrangements, or use a neural network placer?</li>
+  <li><strong>Logic and animation</strong>: the ultimate step in 3D (and more) scene design is to be able to specify scene logic, interactions and animations purely with natural language. Today all this is done with computer code, but graphical and visual programming with blocks really helps (Scratch, Dreams, Garage Game Builder). Animations are more complicated and will require tools that can transfer them from a video to a character, or from a character to another character with different bone structure.</li>
+</ul>
+
+<p>Want more?… the future is all yours.</p>
+
+<h1 id="who-are-you-and-your-customer">Who are you and your customer?</h1>
+
+<p>The first question if you area considering a startup in this space is who are you and who is your customer (as usual…).</p>
+
+<p><strong>You</strong>: let’s say your goal is to make 3D design easier and less painful. Your experience in your personal 3D struggles and the pain-points of the industry can guide you to the tools that are most needed.</p>
+
+<p>And who is your customer or target audience:</p>
+
+<p><strong>Artists—</strong>  You will need to develop professional tools or most likely extensions to existing tools in existing ecosystems. At first, you may only target one tool ecosystem because of compatibility, licensing and deals. You may be more restricted to what artists want, which is usually a projection of the existing tools and the rigid scheme they end up imposing. Artists are usually loking for tools that remove monotonous tasks, give them ways to enhance their creativity, construct higher level abstractions and integrate in their existing framework.</p>
+
+<p><strong>Casual Users —</strong>  Visual quality may be more forgiving, but simplicity of use will win — see:  Canva. Casual users want to quickly learn to design ideas, are not so concerned with fancy graphics, but want to learn fast and realize their creation with little effort and a easy learning curve. You can develop new tools that are free from established ecosystems, and that may enhance collaboration and sharing of resources more widely than professional tools, with lower costs and wider distribution of platforms and user-base. Most importantly, you can open up a larger user base, like young teen or pre-teen artist that want to make their own 3D game or movie, or just illustrate ideas.</p>
+
+<p>Today opening 3D tools to casual users has the potential to be the most lucrative and exciting option. The reason is Canva. The question is: will there ever be as many people that want to design 3D scenes as the ones that want to design a birthday card?</p>
+
+<h1 id="what-is-out-there">What is out there?</h1>
+
+<p>The 3D design and artists tools environment is large and wide, and it is always expanding. Here we list some of the existing tools today.</p>
+
+<p><strong>Professional tools</strong>: professional tools offer all the weapons for the basic 3D steps of design listed above. Blender is largely favorite of the masses because it is free and open source. It is a powerful mesh design tool that can also do materials and animations. Professional tools have one or more specialty. An overview is here:  <a href="https://all3dp.com/1/best-free-3d-modeling-software-3d-cad-3d-design-software/">https://all3dp.com/1/best-free-3d-modeling-software-3d-cad-3d-design-software/</a></p>
+
+<p>Then there are game creation tools, movie creation tools, etc. In terms of video games Unreal and Unity dominate. They take the assets and animation and compose game logic, levels and all the user interfaces. Most large video-games today are made with these tools.</p>
+
+<p>Panda3d, threeJS, BabylonJS are game-developement tools designed for python and web browsers. They can develop entire video games using scripting languages. They are generally aimed at smaller video games and for learning to code and design games and game logic.</p>
+
+<p><strong>More casual tools</strong>:</p>
+
+<p>For game logic, I recommend looking into  <a href="https://scratch.mit.edu/">https://scratch.mit.edu</a>  which allows simple 2D games and animations with no code.</p>
+
+<p>For easy 3D drawings, I recommend looking at  <a href="https://www.tinkercad.com/">https://www.tinkercad.com</a>.</p>
+
+<p><strong>New tools / startups</strong>:</p>
+
+<p><a href="https://recroom.com/">https://recroom.com</a>  is designed to be an interactive tool for VR and social interactions</p>
+
+<p><a href="https://www.shapesxr.com/">https://www.shapesxr.com</a>  is a tool to build 3D scenes in VR with limited machine learning usage</p>
+
+<p><a href="https://www.prometheanai.com/">https://www.prometheanai.com</a>  scene composition with voice, no-code, similar to Anything.world</p>
+
+<p><a href="https://anything.world/">https://anything.world</a>  scene composition with voice, no-code, assets built-in, animation-ready, entire scenes ready (park, beach), can add items, items know by default where they should land</p>
+
+<p><a href="https://dotbigbang.com/">https://dotbigbang.com</a>  is an easy to design 3d games tool with limited machine learning usage</p>
+
+<p><a href="https://decentraland.org/">https://decentraland.org</a>  3d design tool on web, with shared assets and community</p>
+
+<p><a href="https://www.shapesxr.com/">https://www.shapesxr.com</a>  3d design in VR (like Dreams on PS4)</p>
+
+<p><a href="https://readyplayer.me/">https://readyplayer.me</a>  transfer your face to an avatar</p>
+
+<p><a href="https://www.aquifermotion.com/">https://www.aquifermotion.com</a>  makes animated 3D video for marketing, transfer motion and face tracking to 3D characters</p>
+
+<h1 id="game-making-ecosystems">Game making ecosystems</h1>
+
+<p>Unity and Unreal are the top game making frameworks, including all steps required to make a video-game or a digital 3D production. Needless to say they are a professional tool for professional coders and require entire university courses to master. Not useful for casual users!</p>
+
+<p>On the other had casual users have some other simpler options if they want to make a game:</p>
+
+<p><strong>Roblox</strong>  — need programming experience, young users cannot easily make new games</p>
+
+<p><strong>Minecraft</strong>  — block-based, restricted to own creative game types</p>
+
+<p><strong>Dreams</strong>, PS4 — can build small games with no-code, but stuck in platform</p>
+
+<p><strong>Garage game Builder</strong>, Nintendo — can build small games with no-code, but stuck in platform</p>
+
+<p>more…</p>
+
+<h1 id="references">References</h1>
+
+<p>Here are some reference I found useful to write this and survey the field:</p>
+
+<h2 id="ai-research-tools">AI research tools</h2>
+
+<p>GAN for graphics:</p>
+
+<p><a href="https://blog.floydhub.com/gans-story-so-far/"></a></p>
+
+<h2 id="generative-adversarial-networks---the-story-so-far">Generative Adversarial Networks - The Story So Far</h2>
+
+<h3 id="generative-adversarial-networks-gans-have-been-the-go-to-state-of-the-art-algorithm-to-image-generation-in-the-last">Generative adversarial networks (GANs) have been the go-to state of the art algorithm to image generation in the last…</h3>
+
+<p>blog.floydhub.com</p>
+
+<p><a href="https://hubert0527.github.io/infinityGAN/"></a></p>
+
+<h2 id="infinitygan-towards-infinite-pixel-image-synthesis">InfinityGAN: Towards Infinite-Pixel Image Synthesis</h2>
+
+<h3 id="we-present-a-novel-framework-infinitygan-for-arbitrary-sized-image-generation-the-task-is-associated-with-several">We present a novel framework, InfinityGAN, for arbitrary-sized image generation. The task is associated with several…</h3>
+
+<p>hubert0527.github.io</p>
+
+<p>2d images to 3d meshes:</p>
+
+<p><a href="https://github.com/shunsukesaito/PIFu"></a></p>
+
+<h2 id="github---shunsukesaitopifu-this-repository-contains-the-code-for-the-paper-pifu-pixel-aligned">GitHub - shunsukesaito/PIFu: This repository contains the code for the paper “PIFu: Pixel-Aligned…</h2>
+
+<h3 id="news-20200504-added-egl-rendering-option-for-training-data-generation-now-you-can-create-your-own-training-data">News: [2020/05/04] Added EGL rendering option for training data generation. Now you can create your own training data…</h3>
+
+<p>github.com</p>
+
+<p><a href="https://github.com/lingtengqiu/Open-PIFuhd"></a></p>
+
+<h2 id="github---lingtengqiuopen-pifuhd-this-is-an-implementation-of-pifuhd-based-on-pytorch">GitHub - lingtengqiu/Open-PIFuhd: This is an implementation of PIFuhd based on Pytorch</h2>
+
+<h3 id="this-is-a-unofficial-implementation-of-pifuhd-pifuhd-multi-level-pixel-aligned-implicit-function-forhigh-resolution-3d">This is a unofficial implementation of PIFuhd PIFuHD: Multi-Level Pixel-Aligned Implicit Function forHigh-Resolution 3D…</h3>
+
+<p>github.com</p>
+
+<p><a href="https://medium.com/unpackai/is-it-possible-to-combine-deep-learning-and-reinforcement-learning-for-3d-modeling-c66e4575477e"></a></p>
+
+<h2 id="is-it-possible-to-combine-deep-learning-and-reinforcement-learning-for-3d-modeling">Is It Possible to Combine Deep Learning And Reinforcement Learning For 3D Modeling</h2>
+
+<h3 id="being-very-interested-in-3d-animations-i-always-try-to-find-ways-that-might-help-to-automate-or-at-least-cut-some-edges">Being very interested in 3D animations I always try to find ways that might help to automate or at least cut some edges…</h3>
+
+<p>medium.com</p>
+
+<p><a href="http://3d-r2n2.stanford.edu/"></a></p>
+
+<h2 id="3d-r2n2-recurrent-reconstruction-neural-network">3D-R2N2: Recurrent Reconstruction Neural Network</h2>
+
+<h3 id="this-repository-contains-the-source-codes-for-the-paper-choy-et-al-3d-r2n2-a-unified-approach-for-single-and">This repository contains the source codes for the paper Choy et al., 3D-R2N2: A Unified Approach for Single and…</h3>
+
+<p>3d-r2n2.stanford.edu</p>
+
+<p>NERF</p>
+
+<p>Tree generation</p>
+
+<p><a href="https://store.speedtree.com/"></a></p>
+
+<h2 id="speedtree---3d-vegetation-modeling-and-middleware">SpeedTree - 3D Vegetation Modeling and Middleware</h2>
+
+<h3 id="new-features-and-licensing-options-are-available-now">New features and licensing options are available now!</h3>
+
+<p>store.speedtree.com</p>
+
+<p>Neural materials:</p>
+
+<p><a href="https://arxiv.org/pdf/2104.02789.pdf">https://arxiv.org/pdf/2104.02789.pdf</a></p>
+
+<p>Scene and placement:</p>
+
+<p><a href="https://xinpeng-wang.github.io/sceneformer/"></a></p>
+
+<h2 id="sceneformer-indoor-scene-generation-with-transformers">Sceneformer: Indoor Scene Generation with Transformers</h2>
+
+<h3 id="sceneformer-indoor-scene-generation-with-transformers-3dv-2021-oral-we-address-the-task-of-indoor-scene-generation-by">Sceneformer: Indoor Scene Generation with Transformers 3DV 2021 Oral We address the task of indoor scene generation by…</h3>
+
+<p>xinpeng-wang.github.io</p>
+
+<p>Images and caption</p>
+
+<p><a href="https://openai.com/blog/clip/">https://openai.com/blog/clip/</a></p>
+
+<p><a href="https://openai.com/dall-e-2/"></a></p>
+
+<h2 id="dalle-2">DALL·E 2</h2>
+
+<h3 id="thanks-to-those-who-helped-with-and-provided-feedback-on-this-release-sandhini-agarwal-sam-altman-chester-cho-peter">Thanks to those who helped with and provided feedback on this release: Sandhini Agarwal, Sam Altman, Chester Cho, Peter…</h3>
+
+<p>openai.com</p>
+
+<p>Ai-based video generation</p>
+
+<p><a href="https://www.synthesia.io/"></a></p>
+
+<h2 id="synthesia---ai-video-generation-platform">Synthesia - AI Video Generation Platform</h2>
+
+<h3 id="create-ai-videos-by-simply-typing-in-text-make-engaging-videos-for-e-learning-customer-onboarding-etc-no-need-for">Create AI videos by simply typing in text. Make engaging videos for e-learning, customer onboarding, etc. No need for…</h3>
+
+<p>www.synthesia.io</p>
+
+<p>No-code tools:</p>
+
+<p><a href="https://developers.google.com/blockly">https://developers.google.com/blockly</a></p>
+
+<p><a href="https://rete.js.org/#/"></a></p>
+
+<h2 id="retejs">Rete.js</h2>
+
+<h3 id="edit-description">Edit description</h3>
+
+<p>rete.js.org</p>
+
+<p><a href="https://nodes.io/"></a></p>
+
+<h2 id="nodes---a-new-way-to-create-with-code--httpsnodesio">Nodes - a new way to create with code | https://nodes.io</h2>
+
+<h3 id="what-if-programming-was-about-ideas-not-semicolons-compose-abstract-generalise-start-from-top-down-or-bottom-up">What if programming was about ideas, not semicolons? Compose, abstract, generalise. Start from top down or bottom up…</h3>
+
+<p>nodes.io</p>
+
+<p><a href="https://github.com/jagenjo/litegraph.js?files=1">https://github.com/jagenjo/litegraph.js</a></p>
+
+<h2 id="making-games">Making games</h2>
+
+<p>if you ever want to learn video game development this is one nice resource to start:</p>
+
+<p><a href="https://www.scratchapixel.com/"></a></p>
+
+<h2 id="scratchapixel">Scratchapixel</h2>
+
+<h3 id="-2009-2022-scratchapixel-all-rights-reserved-this-website-and-its-content-is-copyright-of-scratchapixel-the-source">@ 2009-2022 Scratchapixel (All rights reserved) This website and its content is copyright of Scratchapixel. The source…</h3>
+
+<p>www.scratchapixel.com</p>
+
+<p><a href="https://scratch.mit.edu/">https://scratch.mit.edu</a>  — learning to code for games and simple animations and interactiosn in 2D</p>
+
+<p><a href="https://www.tinkercad.com/">https://www.tinkercad.com</a>  — easy 3D drawing for 3D printers etc.</p>
+
+<h1 id="about-the-author">About the author</h1>
+
+<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Should I consider a startup in 3D content creation, Metaverse?]]></summary></entry></feed>

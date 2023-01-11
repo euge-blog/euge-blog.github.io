@@ -1,0 +1,102 @@
+
+<hr />
+<p>layout: post
+title: ‘Segmenting, localizing and counting object instances in an image’
+—</p>
+
+<h1 id="segmenting-localizing-and-counting-object-instances-in-an-image">Segmenting, localizing and counting object instances in an image</h1>
+
+<p>When we visually perceive the world, we may get a large amount of data. If you take a picture with a modern camera it is &gt; 4 Million pixels and several megabytes of data.</p>
+
+<p>But really in a picture or scene there is little interesting data we humans consume. It is task dependent, but for example in a scene we look for other animals and humans, their location, their actions. We may look for faces to gage emotions, or intensity and gravity of actions to understand the situation in the overall scene.</p>
+
+<p>When driving, we look for traversable road, behavior of other vehicles, pedestrians and moving objects, and pay attention to traffic signs, lights and road markings.</p>
+
+<p>In most cases, we look for a handful of objects, their  <em>x,y,z</em>  position, and reject the vast majority of what we call background.  Background is anything our task does not require to attend to.  People can be background if we are looking for our keys.</p>
+
+<p>Sometimes we also need to count, and be able to tell how many objects of one kind are present, and where they are.</p>
+
+<p>In most cases we look at a scene and want to get this information:</p>
+
+<p><img src="/assets/2017-10-26-segmenting-nn/1*4lBw4AvDwd2PmLjRzkHD9g.jpeg" alt="" /></p>
+
+<p>Ideal segmentation, localization and instance counting in a visual scene. Segmentation gives precise boundaries of object instances, a much more refined approach that bounding boxes.</p>
+
+<p>We may also want to get more tailed information on a second glance, for example facial key-points, position of skeletal key-points in a human figure, and more. An example:</p>
+
+<p>Our facial keypoints detector neural network in action</p>
+
+<p>We will now review how this can be done with neural networks and deep learning algorithms.</p>
+
+<p>We should understand that  human vision works on multiple passes on the visual scene.  This means we recursively  observe the visual scene in waves,first to get the most crude content in the minimum time, for time sensitive tasks. Then we may glance again and again to find more and more details, for precision tasks. For example in a driving situation we want to know if we are on the road and if there are obstacles.  We look at rough features for a fast response. We are not interested in the color or make/model of the car we are about to hit. We just need to brake fast. But if we are looking for specific person in a crowd, we will find people first, and then find their face, and then study their face with multiple glances.</p>
+
+<p>Neural network need not follow the rules and ways of the human brain, but generally it is a good idea to do so in the  first iteration of algorithms.</p>
+
+<p>Now, if you run a neural network designed to categorize objects in a large image, you will get several maps at the output. These maps contain the probability of the objects presence in multiple location. But because categorization neural network want to reduce a large amount of pixels to a small amount of data (categorize), then they also lose the ability to precisely localize object instances — to some extent. See example below:</p>
+
+<p><img src="/assets/2017-10-26-segmenting-nn/1*63WCw7D9_uzV83yBA0aJrw.jpeg" alt="" /></p>
+
+<p>Neural network raw output on a large image: probability of person category</p>
+
+<p>Note that the output you get is “for free” meaning we do need to run any other algorithms beside the neural network to find localization probabilities.  The resolution of the output map is usually low, and depends on the neural network , its input trained eye size, and the input image size.  Usually this is rough, but for many tasks it is enough. What this does not give you is precise instance segmentation of all objects, and precise boundaries.</p>
+
+<p>To get the most precise boundaries, we use segmentation neural networks, such as our  <a href="https://codeac29.github.io/projects/linknet/index.html">LinkNet</a>, here  <a href="https://medium.com/@dawood95/using-generative-ladder-networks-to-build-a-facial-keypoints-detector-7769e4dbf96a">modified</a>  to detect many different kinds of image key-points and bounding boxes.:</p>
+
+<p><img src="/assets/2017-10-26-segmenting-nn/1*Wi3sbjQvWQvJ9s7oHQc9Ww.jpeg" alt="" /></p>
+
+<p>Our  <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Network</a>  used to detect key-points in an image (facial, bounding boxes, body pose, etc…). This uses a  <a href="https://medium.com/@dawood95/using-generative-ladder-networks-to-build-a-facial-keypoints-detector-7769e4dbf96a">special new network</a>  architecture designed for maximum efficiency.</p>
+
+<p>These kind of neural networks are <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Networks</a> that use an encoder as a categorization network and a decoder to be able to provide precise localization and image segmentation on the input image plane.</p>
+
+<p>This kind of network gives the best performance for simultaneously identifying, categorizing and localizing any kind of objects.</p>
+
+<p>Here are results we can obtain with  <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Networks</a>:</p>
+
+<p><img src="/assets/2017-10-26-segmenting-nn/1*UmvIfq9YrxnhkMmKAXMizw.jpeg" alt="" /></p>
+
+<p>Typical results obtained with  <a href="https://codeac29.github.io/projects/linknet/index.html">LinkNet</a>  and  <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Networks</a>  — see videos  <a href="https://codeac29.github.io/projects/linknet/index.html/">here</a></p>
+
+<p>Generative ladder networks are not very computationally heavy, because the encoder is a standard neural network, and can be designed to be efficient, like  <a href="https://arxiv.org/abs/1606.02147">eNet</a>  or  <a href="https://codeac29.github.io/projects/linknet/index.html">LinkNet</a>. The decoder is an upsampling neural network that can be made asymettrically fast and computationally inexpensive, such as in  <a href="https://arxiv.org/abs/1606.02147">eNet</a>, or use bypass layers like  <a href="https://codeac29.github.io/projects/linknet/index.html">LinkNet</a>  for increased precision.</p>
+
+<p>Bypass layers are used to inform the decoder at each layer on how to aggregate features at multiple scales for better scene segmentation. Since the encoder layers downsample the image data in some layers, the encoder has to upsample the neural maps at each layer according to the features found in the encoder.</p>
+
+<p><strong>We have been arguing and showing for many yea</strong><strong>r</strong><strong>s that</strong> <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108"><strong>Generative Ladder Networks</strong></a> <strong>like</strong> <a href="https://codeac29.github.io/projects/linknet/index.html"><strong>LinkNet</strong></a> <strong>provide the back-bone for categorization, precise localization with segmentation.</strong>  Segmentation provides much refined localization in an image, and also provides better training examples for neural networks.  The reason is that precise boundary group objects features together more efficiently than imprecise boundaries like bounding boxes. It is obvious to notice that a bounding box will contain a lot of pixel of the background or other categories. Training a neural network with such erroneous labels will decrease the power of categorization of the network, since the background information will confuse its training. We recommend NOT TO USE bounding box.</p>
+
+<p>In the past the literature has been littered with approaches using bounding boxes, with very inefficient use of neural networks and even poor understanding of the way they work and can be used with parsimony. A list of sub-optimal methods is here:  <a href="https://pjreddie.com/darknet/yolo/">Yolo</a>,  <a href="https://arxiv.org/abs/1512.02325">SSD Single Shot Multi-Box Detector</a>,  <a href="https://arxiv.org/abs/1504.08083">R-CNN</a>. A review and comparison of these inferior methods is  <a href="https://medium.com/@phelixlau/speed-accuracy-trade-offs-for-modern-convolutional-object-detectors-bbad4e4e0718">here</a>  — we note that SSD is the only method that at least tries to use neural network as pyramids of scales to regress bounding boxes.</p>
+
+<p>A list of reasons why these methods are sub-par:</p>
+
+<ul>
+  <li>use inefficient encoder as VGG</li>
+  <li>training with bounding boxes produces worse accuracy than with more precise segmentation labels</li>
+  <li>convoluted architectures, some cannot be trained by back-propagation end-to-end</li>
+  <li>selective search of bounding boxes, cropping and regression for bounding boxes is not and elegant end-to-end approach and is reminiscent of the way computer vision was performed before deep neural networks: as a arbitrary collection of disparate methodologies</li>
+  <li>need a separate “objectness” network to find region proposals</li>
+  <li>use inefficient and large classifier at multiple scales to regress bounding boxes</li>
+</ul>
+
+<p>The recent work from:  <a href="https://arxiv.org/abs/1708.02002">Focal Loss for Dense Object Detection</a>  is more insightful, as it shows that  <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Networks</a>  can be seen as the basic framework that should drive future neural network designs for instance categorization, localization (see Note 1).</p>
+
+<p>But how can we use networks like  <a href="https://codeac29.github.io/projects/linknet/index.html">LinkNet</a>  to perform bounding box regression, key-point detections, and instance counting? This can be done by attaching subnetworks at the output of each each decoder layer as done  <a href="https://arxiv.org/abs/1708.02002">here</a>and  <a href="https://adrianbulat.com/face-alignment">here</a>. These subnetwork require minimal networks and small classifier to be fast and efficient. The design of these networks needs to be performed by experienced neural network architecture engineers. See our  <a href="https://medium.com/@dawood95/using-generative-ladder-networks-to-build-a-facial-keypoints-detector-7769e4dbf96a">recent work here</a>, where we show how one single neural network like  <a href="https://codeac29.github.io/projects/linknet/index.html">LinkNet</a>  can perform all tasks mentioned.</p>
+
+<h1 id="summary">Summary:</h1>
+
+<ul>
+  <li>do not use bounding boxes (Note 3)</li>
+  <li>use  <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Networks</a>  as main neural network (Note 1)- see  <a href="https://medium.com/@dawood95/using-generative-ladder-networks-to-build-a-facial-keypoints-detector-7769e4dbf96a">here</a></li>
+  <li>add branches to localize and segment and find key-points</li>
+  <li>use efficient encoder architectures (Note 4)</li>
+  <li>do not use these network to perform action recognition and categorization (Note 2)</li>
+</ul>
+
+<p><strong>Note 1:</strong> a  <a href="https://instancetutorial.github.io/">recent tutorial</a>  on methods for localization, segmentation and Instance-level Visual Recognition also makes a point that model like  <a href="https://codeac29.github.io/projects/linknet/index.html">LinkNet</a>are a common framework for object detection. They call  <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Networks</a>  as: Feature Pyramid Network (FPN). They recognize  <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Networks</a>  have an intrinsic pyramid of scales built in by the encoder downsampling. They also recognize the decoder can upsample images to better localization, segmentation and more tasks.</p>
+
+<p><strong>Note 2:</strong>  it is not a good idea to try to identify actions from a single image. Actions live in a video space. An image may give you an idea of an action, as it may identify a key frame that relates to an action, but it is not a substitute for the sequence learning require to accurately categorize actions. Do not use these techniques on single frames to categorize actions. You will not get accurate results. Use video-based neural network like  <a href="https://engineering.purdue.edu/elab/CortexNet/">CortexNet</a>  or  <a href="https://arxiv.org/abs/1503.08909">similar</a>.</p>
+
+<p><strong>Note 3:</strong>  Segmentation labels are more laborious to obtain than bounding boxes. It is easier to label an image with rough bounding boxes that to precisely draw contour of all objects manually. This is one reason for the long life of inferior techniques like bounding boxes, dictated by the availability of more and large datasets with bounding boxes. But there are recent techniques that can help segmenting images, albeit maybe not as precisely as human labeling, but that can produce at least a first pass in segmenting a large number of image automatically. See  <a href="https://people.eecs.berkeley.edu/~pathak/unsupervised_video/">this</a>  work (Learning Features by Watching Objects Move) and  <a href="https://arxiv.org/abs/1603.03911">this</a>  as references.</p>
+
+<p><strong>Note 4:</strong>  The encoder network for <a href="https://medium.com/towards-data-science/a-new-kind-of-deep-neural-networks-749bcde19108">Generative Ladder Networks</a> needs to be efficiently designed for realistic performance in real applications. One cannot use a segmentation neural network that takes 1 second to process one frame. Yet most results in the literature are focused on obtaining the best <em>accuracy_only. We argue the best metric is _accuracy/inference time</em> as reported here. This was the key design for our <a href="https://arxiv.org/abs/1606.02147">eNet</a> and <a href="https://codeac29.github.io/projects/linknet/index.html">LinkNet</a>. Several paper still use VGG as input network, which is the <a href="https://medium.com/towards-data-science/neural-network-architectures-156e5bad51ba">most inefficient model to date</a>.</p>
+
+<h1 id="about-the-author">About the author</h1>
+
+<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://e-lab.github.io/html/contact-eugenio-culurciello.html">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
