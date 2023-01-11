@@ -26,8 +26,8 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Sequence-to-sequence neural networks" />
 <meta property="og:description" content="Sequence-to-sequence neural networks" />
-<link rel="canonical" href="http://localhost:4000/blog/2019/04/15/sequence-to-sequence.html" />
-<meta property="og:url" content="http://localhost:4000/blog/2019/04/15/sequence-to-sequence.html" />
+<link rel="canonical" href="http://localhost:4000/2019/04/15/sequence-to-sequence.html" />
+<meta property="og:url" content="http://localhost:4000/2019/04/15/sequence-to-sequence.html" />
 <meta property="og:site_name" content="Eugenio Culurciello Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-04-15T00:00:00-04:00" />
@@ -36,7 +36,7 @@
 <meta name="twitter:site" content="@culurciello" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-04-15T00:00:00-04:00","datePublished":"2019-04-15T00:00:00-04:00","description":"Sequence-to-sequence neural networks","headline":"Sequence-to-sequence neural networks","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/blog/2019/04/15/sequence-to-sequence.html"},"url":"http://localhost:4000/blog/2019/04/15/sequence-to-sequence.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2019-04-15T00:00:00-04:00","datePublished":"2019-04-15T00:00:00-04:00","description":"Sequence-to-sequence neural networks","headline":"Sequence-to-sequence neural networks","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2019/04/15/sequence-to-sequence.html"},"url":"http://localhost:4000/2019/04/15/sequence-to-sequence.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -50,30 +50,30 @@
 
 
 
-<link rel="shortcut icon" href="/blog/assets/img/favicons/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/blog/assets/img/favicons/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/assets/img/favicons/favicon.ico" type="image/x-icon">
 
-<link rel="apple-touch-icon" href="/blog/assets/img/favicons/apple-icon.png">
-<link rel="apple-touch-icon" href="/blog/assets/img/favicons/apple-icon-precomposed.png">
-<link rel="apple-touch-icon" sizes="57x57" href="/blog/assets/img/favicons/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="/blog/assets/img/favicons/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/blog/assets/img/favicons/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="/blog/assets/img/favicons/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/blog/assets/img/favicons/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="/blog/assets/img/favicons/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="/blog/assets/img/favicons/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="/blog/assets/img/favicons/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/blog/assets/img/favicons/apple-icon-180x180.png">
+<link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon.png">
+<link rel="apple-touch-icon" href="/assets/img/favicons/apple-icon-precomposed.png">
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-icon-180x180.png">
 
-<link rel="icon" type="image/png" sizes="192x192"  href="/blog/assets/img/favicons/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/blog/assets/img/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/blog/assets/img/favicons/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/blog/assets/img/favicons/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/img/favicons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/img/favicons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
 
-<link rel="manifest" href="/blog/assets/img/favicons/manifest.json">
-<meta name='msapplication-config' content='/blog/assets/img/favicons/browserconfig.xml'>
+<link rel="manifest" href="/assets/img/favicons/manifest.json">
+<meta name='msapplication-config' content='/assets/img/favicons/browserconfig.xml'>
 <meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="/blog/assets/img/favicons/ms-icon-144x144.png">
+<meta name="msapplication-TileImage" content="/assets/img/favicons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
 
@@ -103,7 +103,7 @@
   CSS selector for site.
 -->
 
-<link rel="stylesheet" href="/blog/assets/css/style.css">
+<link rel="stylesheet" href="/assets/css/style.css">
 
 
 
@@ -126,7 +126,7 @@
 
 
 
-<script defer src="/blog/assets/js/dist/post.min.js"></script>
+<script defer src="/assets/js/dist/post.min.js"></script>
 
 
 
@@ -146,14 +146,14 @@
 
   <div class="profile-wrapper text-center">
     <div id="avatar">
-      <a href="/blog/" alt="avatar" class="mx-auto">
+      <a href="/" alt="avatar" class="mx-auto">
         
-        <img src="/blog/assets/logo.jpeg" alt="avatar" onerror="this.style.display='none'">
+        <img src="/assets/logo.jpeg" alt="avatar" onerror="this.style.display='none'">
       </a>
     </div>
 
     <div class="site-title mt-3">
-      <a href="/blog/">Eugenio Culurciello Blog</a>
+      <a href="/">Eugenio Culurciello Blog</a>
     </div>
 
     <div class="site-subtitle font-italic">Eugenio Culurciello Blog</div>
@@ -163,7 +163,7 @@
   <ul class="w-100">
     <!-- home -->
     <li class="nav-item">
-      <a href="/blog/" class="nav-link">
+      <a href="/" class="nav-link">
         <i class="fa-fw fas fa-home ml-xl-3 mr-xl-3 unloaded"></i>
         <span>HOME</span>
       </a>
@@ -213,7 +213,7 @@
       
 
       
-      <a href="/blog/feed.xml" aria-label="rss"
+      <a href="/feed.xml" aria-label="rss"
         class="order-6"
         >
         <i class="fas fa-rss"></i>
@@ -407,7 +407,7 @@
         <span>
           
           
-          <a href="/blog/2019">
+          <a href="/2019">
             2019
           </a>
         </span>
@@ -420,7 +420,7 @@
         <span>
           
           
-          <a href="/blog/04">
+          <a href="/04">
             04
           </a>
         </span>
@@ -433,7 +433,7 @@
         <span>
           
           
-          <a href="/blog/15">
+          <a href="/15">
             15
           </a>
         </span>
@@ -595,7 +595,7 @@
 
         <h1 id="sequence-to-sequence-neural-networks">Sequence-to-sequence neural networks</h1>
 
-<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/blog/assets/2019-04-15-sequence-to-sequence/1*khHvEEYdIIo1ndcAvfbg8w.png" alt="" /></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/2019-04-15-sequence-to-sequence/1*khHvEEYdIIo1ndcAvfbg8w.png" alt="" /></p>
 
 <p>This posts explain the typical sequence-to-sequence (s2s) neural networks architecture and how to use them.</p>
 
@@ -614,7 +614,7 @@
 
 <p>s2s neural network are used to translate a sequence of symbols from one input sequence to an output sequence. These neural network usually use an encoder-decoder architecture (see figure below).</p>
 
-<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/blog/assets/2019-04-15-sequence-to-sequence/1*4u6xUKymOSEfZLPwMgztcQ.png" alt="" /></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/2019-04-15-sequence-to-sequence/1*4u6xUKymOSEfZLPwMgztcQ.png" alt="" /></p>
 
 <p>Encoder-decoder neural network architecture for sequence-to-sequence learning. An input sequence Xi is encoded into a sequence vector Zi by the encoder. The decoder produces an output sequence Yi which is auto-regressive.</p>
 
@@ -630,7 +630,7 @@
 
 <p>A typical s2s RNN neural network still uses an encoder and a decoder, but they are both RNN networks. Typically they are LSTM or GRU-based neural networks with multiple layers. An example is in the figure below.</p>
 
-<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/blog/assets/2019-04-15-sequence-to-sequence/1*abJORo5XLq1YMdqv_uAWSQ.png" alt="" /></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/2019-04-15-sequence-to-sequence/1*abJORo5XLq1YMdqv_uAWSQ.png" alt="" /></p>
 
 <p>s2s neural network based on RNN encoder and decoder. An inputs sequence is input one symbol at a time to the encoder RNN network (blue) to produce a sequence vector Se. The decoder is auto-regressive and takes the previous decoder output and the Se to produce one output symbol at a time.</p>
 
@@ -646,7 +646,7 @@
 
 <p>Imagine for example we want to translate the sentence: “I am going to the bank to process a check”. When we want to translate the word “bank” in another language, we need to focus on the input words: “… going … bank … check” because these input words will disambiguate the word “bank” as a “financial institution” and not a “heap” or “slope”, “mass” or “aircraft maneuver”.</p>
 
-<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/blog/assets/2019-04-15-sequence-to-sequence/1*EM4VzhO2M5EzStTSqRzBjw.png" alt="" /></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/2019-04-15-sequence-to-sequence/1*EM4VzhO2M5EzStTSqRzBjw.png" alt="" /></p>
 
 <p>Neural attention is uses in s2s neural network to perform a weighted learned average of the input embeddings, so that the most accurate set of input symbols can be used to produce the proper output symbol.</p>
 
@@ -664,7 +664,7 @@
 
 <h1 id="donations">Donations</h1>
 
-<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/blog/assets/2019-04-15-sequence-to-sequence/1*gCbUDLiPi6SzCmfkhuqrCg.jpeg" alt="" /></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/2019-04-15-sequence-to-sequence/1*gCbUDLiPi6SzCmfkhuqrCg.jpeg" alt="" /></p>
 
 <p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>
 
@@ -701,19 +701,19 @@
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Sequence-to-sequence neural networks - Eugenio Culurciello Blog&url=http://localhost:4000/blog/2019/04/15/sequence-to-sequence.html" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=Sequence-to-sequence neural networks - Eugenio Culurciello Blog&url=http://localhost:4000/2019/04/15/sequence-to-sequence.html" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Sequence-to-sequence neural networks - Eugenio Culurciello Blog&u=http://localhost:4000/blog/2019/04/15/sequence-to-sequence.html" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Sequence-to-sequence neural networks - Eugenio Culurciello Blog&u=http://localhost:4000/2019/04/15/sequence-to-sequence.html" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text=Sequence-to-sequence neural networks - Eugenio Culurciello Blog&url=http://localhost:4000/blog/2019/04/15/sequence-to-sequence.html" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=Sequence-to-sequence neural networks - Eugenio Culurciello Blog&url=http://localhost:4000/2019/04/15/sequence-to-sequence.html" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -1640,7 +1640,7 @@
       
       
       <div class="card">
-        <a href="/blog/2022/12/06/Drop-dataset-part-2.html">
+        <a href="/2022/12/06/Drop-dataset-part-2.html">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1691,7 +1691,7 @@ In the previous post I have given some ideas on how we can overcome the limitati
       
       
       <div class="card">
-        <a href="/blog/2022/11/16/Why-filling-forms.html">
+        <a href="/2022/11/16/Why-filling-forms.html">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1744,7 +1744,7 @@ Yet it almost looks like we humans have evolved to hurt ourselves...
       
       
       <div class="card">
-        <a href="/blog/2022/11/13/Clean-your-social-network.html">
+        <a href="/2022/11/13/Clean-your-social-network.html">
           <div class="card-body">
             <!--
   Date format snippet
@@ -1806,14 +1806,14 @@ Do you feel like your social network is not what it used to be? The messages and
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/blog/2018/12/21/AI-in-2019.html" class="btn btn-outline-primary"
+  <a href="/2018/12/21/AI-in-2019.html" class="btn btn-outline-primary"
     prompt="Older">
     <p>Artificial Intelligence in 2019</p>
   </a>
   
 
   
-  <a href="/blog/2020/01/10/AI-in-2020s.html" class="btn btn-outline-primary"
+  <a href="/2020/01/10/AI-in-2020s.html" class="btn btn-outline-primary"
     prompt="Newer">
     <p>Artificial Intelligence in the year 2020: a new decade</p>
   </a>
@@ -1931,7 +1931,7 @@ Do you feel like your social network is not what it used to be? The messages and
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('search-results'),
-  json: '/blog/assets/js/data/search.json',
+  json: '/assets/js/data/search.json',
   searchResultTemplate: '<div class="pl-1 pr-1 pl-sm-2 pr-sm-2 pl-lg-4 pr-lg-4 pl-xl-0 pr-xl-0">  <a href="http://localhost:4000{url}">{title}</a>  <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">    {categories}    {tags}  </div>  <p>{snippet}</p></div>',
   noResultsText: '<p class="mt-5">Oops! No result founds.</p>',
   templateMiddleware: function(prop, value, template) {
