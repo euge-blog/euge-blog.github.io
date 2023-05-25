@@ -1,6 +1,51 @@
 [
   
   {
+    "title": "Should we worry about AI (machine-learning)?",
+    "url": "/2023/05/24/Should-we-worry-about-AI.html",
+    "categories": "",
+    "tags": "",
+    "date": "2023-05-24 00:00:00 -0400",
+    
+
+
+
+
+
+    "snippet": "Should we worry about AI (machine-learning)?I have to start this discussion with a note. AI = artificial intelligence. What that really means is not well defined. In my mind…Artificial intelligence that is nice — by DALL-E2I have to start this discussion with a note. AI = artificial intelligence...."
+  },
+  
+  {
+    "title": "A picture is worth a 1000 words",
+    "url": "/2023/03/30/A-picture-is-worth-a-1000-words.html",
+    "categories": "",
+    "tags": "",
+    "date": "2023-03-30 00:00:00 -0400",
+    
+
+
+
+
+
+    "snippet": "A picture is worth a 1000 wordsEvolution of large language models into artificial brains through multiple sensory modalitiesAs surprising as it is our very human predictive abilities hide a path to understanding our intelligence. How do we solve so many tasks, learn so many new experiences, how d..."
+  },
+  
+  {
+    "title": "How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?",
+    "url": "/2023/01/25/Transformers-GPT.html",
+    "categories": "",
+    "tags": "",
+    "date": "2023-01-25 00:00:00 -0500",
+    
+
+
+
+
+
+    "snippet": "How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?language models and transformers in  https://huggingface.co/spaces/stabilityai/stable-diffusionToday I was reading the excellent list of Transformers here:  https://github.com/NielsRogge/Transformer..."
+  },
+  
+  {
     "title": "Drop your dataset — part 2",
     "url": "/2022/12/06/Drop-dataset-part-2.html",
     "categories": "",

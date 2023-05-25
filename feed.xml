@@ -1,4 +1,240 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2023-01-11T10:57:16-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Drop your dataset — part 2</title><link href="http://localhost:4000/2022/12/06/Drop-dataset-part-2.html" rel="alternate" type="text/html" title="Drop your dataset — part 2" /><published>2022-12-06T00:00:00-05:00</published><updated>2022-12-06T00:00:00-05:00</updated><id>http://localhost:4000/2022/12/06/Drop-dataset-part-2</id><content type="html" xml:base="http://localhost:4000/2022/12/06/Drop-dataset-part-2.html"><![CDATA[<h1 id="drop-your-dataset--part-2">Drop your dataset — part 2</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2023-05-25T07:47:17-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Should we worry about AI (machine-learning)?</title><link href="http://localhost:4000/2023/05/24/Should-we-worry-about-AI.html" rel="alternate" type="text/html" title="Should we worry about AI (machine-learning)?" /><published>2023-05-24T00:00:00-04:00</published><updated>2023-05-24T00:00:00-04:00</updated><id>http://localhost:4000/2023/05/24/Should-we-worry-about-AI</id><content type="html" xml:base="http://localhost:4000/2023/05/24/Should-we-worry-about-AI.html"><![CDATA[<h1 id="should-we-worry-about-ai-machine-learning">Should we worry about AI (machine-learning)?</h1>
+
+<p>I have to start this discussion with a note. AI = artificial intelligence. What that really means is not well defined. In my mind…</p>
+
+<p><img src="/assets/2023-05-24_Should-we-worry-about-AI--machine-learning/1*k0dmcWMTEoGspk3y_CztiA.png" alt="" /></p>
+
+<p>Artificial intelligence that is nice — by DALL-E2</p>
+
+<p>I have to start this discussion with a note. AI = artificial intelligence. What that really means is not well defined. In my mind intelligence means being able to use acquired knowledge to solve problems never encountered before, optimizing utility.</p>
+
+<p>These days the words “AI” are everywhere, but maybe we should start by saying that most of what is labeled AI today is really just “a machine learning algorithm and architecture”.</p>
+
+<p>I like to start with this because I think it sets the tone for everything else. People have seen movies about AI and what it can do. They have seen AI controlling spaceships that get rid of their crew. AI that creates robot to wipe out the human race. AI that starts an atomic war and ends our planet.</p>
+
+<p>There are also movies about AI curing all diseases, designing new devices, re-programming humans for the betterment of our world (yep!). And many more fantasies that paint a more rosy future.</p>
+
+<p><strong>These are movies, stories, fantasies. They are not real.</strong></p>
+
+<p><img src="/assets/2023-05-24_Should-we-worry-about-AI--machine-learning/1*iAM7eBIWa5tahJmitQTRIw.png" alt="" /></p>
+
+<p>Artificial intelligence that is evil — by DALL-E2</p>
+
+<blockquote>
+  <p>the question is: can they be real one day?</p>
+</blockquote>
+
+<p>The answer is: nobody knows; we cannot predict the future. But because we are holding machines at a higher standard than humans, maybe we can take a quick look and summarize where humans stand in all this. What have humans done to other humans and to the environment so far in the last 100,000s of years since we have been around?</p>
+
+<p>Humans grouped together and started to gather all possible resources from the environment. They would kill other animals, humans without much thought if only to take their land and resources. For a long time we were not able to destabilize the planet, beside being so nasty to each other. But then in the late 1800s we started building large machines that can cut trees and flatten the soil easily. Then the last 200 years we have be raping the planet with no end in sight. To the point that today we know well that if we keep going ahead we will have no planet any longer, no home to live in.</p>
+
+<blockquote>
+  <p>We are eating away our own Mother Earth, and we not very nice about it.</p>
+</blockquote>
+
+<p>Now in the last 50 years or so we have built computers and we are trying to replicate our brain into machines. Given our past, we should be concerned about what we are building. After all the previous machines were not very nice to the planet. And our war machinery also is not very nice to other humans. In the last 50 years we have created weapons that can wipe out all living things in this planet if we wanted to.</p>
+
+<p>So yes I would think we should be concerned about anything that we are building, AI or not.</p>
+
+<p>If we succeed in building a real artificial brain like our own or better, we are basically bypassing evolution. This artificial intelligence can possibly create much more dangerous machines than the ones we build before. This artificial intelligence may start to see us humans as a competitor for Earth resources. This artificial intelligence may think of us the same thoughts we think of insects and other animals: that it is ok to keep them around as long as they are not in our way. Or the planet for that matter: we can keep this forest as long as we do not need it for a new housing development.</p>
+
+<p>Maybe this artificial intelligence will be so superior that it may reprogram our brains so that we can act as machines for its cause. But then why? It may be able to build much better machines than we can, and we would just be useless. I seriously do not believe it will use us as slaves. I do not think it will use us as batteries. But maybe this artificial intelligence may destroy the atmospehere of our planet while building the machines that it needs. Too bad we will not be able to breath. We are insect after all.</p>
+
+<p><img src="/assets/2023-05-24_Should-we-worry-about-AI--machine-learning/1*sErepqwaT4d6ZADAAL0qIw.png" alt="" /></p>
+
+<p>Artificial intelligence that is evil — by DALL-E2</p>
+
+<p><strong>Even these are just stories, fantasies, movies to be made</strong></p>
+
+<p>Nobody knows the future. Or maybe we do know it a bit, don’t we? Yes! If we keep killing forests and producing unnatural gases, the planet will heat up. By becoming too warm the planet not be a cradle for life any longer, and one day become a boring desert like Mars (sorry Mars~!).</p>
+
+<p>That artificial intelligence will be fine, by the way. It will just build a spaceship and travel the Universe, not to find a new home or to conquer it. Maybe it will just roam the Universe because it is fun to explore. Especially when you have infinite time. The Sun becomes a red giant and engulfs our Solar system? Not a problem, there are almost infinite galaxies out there, each with trillions of stars and planets. It is an adventure that never has to end.</p>
+
+<p>The artificial intelligence we built maybe will not care much about us after all. We become insignificant, like the single grains of dust that make up this Universe.</p>
+
+<p>That said… we are here today and we need to make sure our machine learning algorithms and architectures produce some value. That means maximize gain and minimize losses. But for who? The answer is simple actually: for the entire Earth as an ecosystem. We would not be here if there was no such ecosystem. So that need to be preserve even if it means sacrificing human goals and ambition and comfort and expansion.</p>
+
+<p>But we do not have good track record of caring about our own species, sexes, races, and our planet. So I am not so hopeful about our abilities to control machines. We have always gone as far as we could, but one day going far will mean we cannot turn back. We cannot undo our mistakes.</p>
+
+<p>Today we should build algorithms that are fair, that treat all humans alike. And maybe we should actually treat all human fairly and alike in any condition, in any part of the day, months, years. In any weather, in any state, in any country. In any race, in any religion or belief. We do not have a good track record of that.</p>
+
+<p>Maybe we should build algorithms that do not offend one race or prefer another. And maybe we should again do that in all aspect of our lives, not just in the context of AI. We do not have a track record of that either.</p>
+
+<p>Maybe we should build conversational algorithms that will never produce any offending dialogue. Even if we trained these algorithms with our human data, much of which is not a proper teaching material. We do not have a good track record of teaching machines nice conversational material because our website are infested with our toxicity, our hatred, our ill, our evil, our envy. We do not have a good track record of containing our emotions, both good and bad.</p>
+
+<p>Maybe we should have an overseeing department in every company that builds machine learning algorithms. But who is in that department? Other humans? And what are their beliefs? Are they representative of all humans? We do not have a good track record of creating such groups of people, of such departments.</p>
+
+<p><img src="/assets/2023-05-24_Should-we-worry-about-AI--machine-learning/1*ABZzdLsG6PfC0x07omiU4Q.png" alt="" /></p>
+
+<p>a better future for humans, our planet and AI — by DALL-E2</p>
+
+<p>Or maybe we should stop developing AI altogether — yes! That will surely save us. And maybe we should stop building weapons too, and removing trees and forests, and exploiting other humans, and all the other negative things we do that are innumerable. We also do not have a good track record of that. Sure we were able to disarm for a while and remove atomic bombs. But how fast can they come back that day that some of us decide they really need them?</p>
+
+<p>Or maybe we should just do a better job in promoting education, in learning that we have not been very nice to each other, and to our planet. And learn that we are all the same after all, and that even insects are needed for our survival. Maybe we should learn more and grow our own human intelligence before we try to build an artificial one. Maybe armed with that collective and shared knowledge, capabilities, wealth, resources, maybe we will be able to make better choices for us, the planet, and AI.</p>
+
+<h3 id="about-the-author">about the author</h3>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me: <a href="https://medium.com/@culurciello/">Medium</a>, <a href="https://culurciello.github.io/">webpage</a>, <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>, <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a> to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Should we worry about AI (machine-learning)?]]></summary></entry><entry><title type="html">A picture is worth a 1000 words</title><link href="http://localhost:4000/2023/03/30/A-picture-is-worth-a-1000-words.html" rel="alternate" type="text/html" title="A picture is worth a 1000 words" /><published>2023-03-30T00:00:00-04:00</published><updated>2023-03-30T00:00:00-04:00</updated><id>http://localhost:4000/2023/03/30/A-picture-is-worth-a-1000-words</id><content type="html" xml:base="http://localhost:4000/2023/03/30/A-picture-is-worth-a-1000-words.html"><![CDATA[<h1 id="a-picture-is-worth-a-1000-words">A picture is worth a 1000 words</h1>
+
+<p>Evolution of large language models into artificial brains through multiple sensory modalities</p>
+
+<p><img src="/assets/2023-03-30_A-picture-is-worth-a-1000-words/1*aO15HKrFXKKk6OOzjPOQGA.jpg" alt="" /></p>
+
+<p>As surprising as it is our very human predictive abilities hide a path to understanding our intelligence. How do we solve so many tasks, learn so many new experiences, how do we so easily adapt to new environments?</p>
+
+<p>The recent (2022–23) success of large language models (LLM) like ChatGPT and GPT-X paints a story. Trained to predict the next words in a sentence, these models showed superb language proficiency. The key ingredients are large amounts of data — more than you can read in a lifetime, and a simple predictive algorithm.</p>
+
+<p>When we think of language we often forget it is an abstract representation of reality, of the world we live in, used to tag concepts and ideas of the real world into a set of labels we can use to communicate. But “the rose exist before its name”, meaning that any object in the real world, like a rose, is real even without a word for it. What is a “rose” then?</p>
+
+<p><img src="/assets/2023-03-30_A-picture-is-worth-a-1000-words/1*zYre8KPdW4OXRLcgwFE0tw.jpg" alt="" /></p>
+
+<blockquote>
+  <p>A picture is worth a thousand words</p>
+</blockquote>
+
+<p>A concept in our environment is just a collection of data from our sensors. For us humans a rose is equivalent to its image, its perfume, its delicate touch, its movement in the wind. That “concept” is the essence of an object, or our qualia, our subjective ensemble of sensory information fused into one token of knowledge.</p>
+
+<p>This is the future of artificial brains and the evolution of LLM: being able to represent “concepts” from their multi-modal information.</p>
+
+<h4 id="multiple-modalities">Multiple modalities</h4>
+
+<p>LLM are trained with text only, here instead we propose to use:</p>
+
+<ul>
+  <li>visual information</li>
+  <li>audio</li>
+  <li>touch, proprioception</li>
+  <li>text, tags, etc.</li>
+</ul>
+
+<p>This requires the artificial brain to be embodied, or at very least have a fixed set of sensors that maintain consistency over the entire learning life.</p>
+
+<p><img src="/assets/2023-03-30_A-picture-is-worth-a-1000-words/1*mkHVjGCOhUAaAjaRmt9XpA.jpg" alt="" /></p>
+
+<h4 id="learning">Learning</h4>
+
+<p>Training these new multi-modal artificial brains uses powerful unsupervised learning algorithms. Or should we call these self-supervised? Since there is a undeniable need for data to train on, but not one that comes with labels.</p>
+
+<p>How do learning algorithms evolve from predicting the next word in a sentence? There are multiple ways to predict concepts:</p>
+
+<ul>
+  <li>predicting the next concept in a video or audio stream</li>
+  <li>predicting what is around a concept in visual space</li>
+</ul>
+
+<p>Self-supervision is in essence the search for sequential data by using time or by using data perturbation in space that occur naturally, such as noise masking in audio, occlusion in vision. Turning static data into sequence can be done by:</p>
+
+<ul>
+  <li>manipulating an object, changing point of view</li>
+  <li>listening to the concept multiple times</li>
+  <li>masking portions of the data</li>
+</ul>
+
+<p>See Note 1 below for additional comments.</p>
+
+<p>Of course there is the problem of training cost and scale. Few institution can train models that cost many M$. For example GPT cost &gt; 5M$ to train. We need a distributed and open system to create foundational models, one that is operated and serves a large majority of people. See <a href="https://medium.com/@culurciello/how-can-we-make-transformers-large-language-models-gpt-more-sharable-how-can-we-make-them-grow-6b144f0b0d7c">this post</a> also for more details.</p>
+
+<p><img src="/assets/2023-03-30_A-picture-is-worth-a-1000-words/1*u9XjIYBoUfw2k4GOyJKr_g.jpg" alt="" /></p>
+
+<p>The co-occurence of multiple sensory domains in space or time is another foundational learning algorithm that can be used to learn “concepts”. See <a href="https://medium.com/@culurciello/drop-the-dataset-b3ed418bd69d">this post</a> and <a href="https://medium.com/@culurciello/drop-your-dataset-part-2-c97433765998">this post</a> about this.</p>
+
+<h4 id="what-makes-these-multi-modal-models-candidates-for-artificial-brains">What makes these multi-modal models candidates for artificial brains?</h4>
+
+<p>Knowledge is organized in a graph where nodes are concepts and links form relationships between concepts. These links connect ideas and experiences into sets that are relationally-linked to each other, can summon and elicit each other.</p>
+
+<p>This is not much different from the language models that arise from training an LLM. Language models are also a graph that connects words together and sets the rules for creating sentences, give rise to semantical meaning, group information.</p>
+
+<p>We are fascinated by the 0-shot abilities of LLM today, their ability to perform tasks for which they were not explicitly trained for. This ability will be even more pronounced in multi-modal artificial brains because knowledge will be inherently connected across domains, allowing to reason about images and videos and audio, correlating speech to words, words to frames, lyrics to music.</p>
+
+<p>A good definition of intelligence, after all, may very well just be our ability to connect concepts from multiple ares of knowledge without an explicit prompt.</p>
+
+<h4 id="lifelong-learning">Lifelong Learning</h4>
+
+<p>Ask an LLM what happened to the World Cup Soccer of 2022, and it will tell you that its factual knowledge stops in mid-2021. How do we keep artificial brains up-to-date? The same way we humans keep abreast of new knowledge: by continuing to learn.</p>
+
+<p>It is easy to keep training a neural network, you just give it more samples every day. What is important to address in research and development is the drift in knowledge that can be caused by an unbalanced training. This happens for humans too, when environmental changes can lead knowledge and ideas to drift. Forgetting is also common when a set of knowledge is not refreshed for some time. Artificial brains will have the same and identical problems.</p>
+
+<h4 id="using-tools">Using tools</h4>
+
+<p>An artificial brain will not need to become a clone of each and every tool. It will not need to memorize all Earth’s knowledge but rather be able to retrieve it. Not become a calculator, but rather learn to use one. Not dig holes, but rather drive tractors and machines.</p>
+
+<p>By showing examples sequences of how to use a tool and how to extract knowledge from a website, as an example, is again an example of parallel with human training. Are these applications that can be built on top of these artificial brains? Yes most definitely, as the predictive ability of the model is able to learn a sequence of steps to accomplish goals. Again, similarly to training a human to use a tool.</p>
+
+<p>The interesting thought that arises now is that these artificial brains are in fact starting to be closer and closer to a human brain, with parallels on curriculum training to incrementally increase abilities and knowledge.</p>
+
+<h4 id="final-notes">Final notes</h4>
+
+<p>So yep — multi-modal, prediction, co-occurence. All ingredient of artificial brains implemented with neural networks. All this is the future you will see happen in just a few months.</p>
+
+<p>The quick development of artificial brains that are becoming more and more capable is scaring a lot of people, as it happened before for any new and disruptive technology. Yet even if all of us wanted to use these models at large-scale, there are significant hurdles we need to pass. One is the cost of training deploying models. Two is the inability to share models and keep on training them while sharing the benefits. Three is the centralization of such model because of the cost and expertise needed to train them.</p>
+
+<p>The rise of artificial brains will bring out at once all the problems we have in current neural networks: continual learning, training and inference efficiency, distributed learning, knowledge drift and forgetting, dataset biases, ethical use, toxic behavior, and more.</p>
+
+<p>Much work to be done, between little and big steps forward. Are you ready to join us for the research ahead?</p>
+
+<h4 id="note-1">Note 1</h4>
+
+<p>One complication is that in a stream of concepts from a video, for example, predicting the next concepts does not mean predicting the next frame in a video, but rather predict how concepts morph in time. Prediction in video does not translate to fixed windows, but needs to understand when concepts changed “enough” from each other. A bit of a chicken-in-egg problem, isn’t it? But this is a good examples of the pitfalls of self-supervised learning and current methods in AI/ML. More insights are needed here, more research.</p>
+
+<h3 id="about-the-author">about the author</h3>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me: <a href="https://culurciello.medium.com/">Medium</a>, <a href="https://culurciello.github.io/">webpage</a>, <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>, <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a> to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[A picture is worth a 1000 words]]></summary></entry><entry><title type="html">How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?</title><link href="http://localhost:4000/2023/01/25/Transformers-GPT.html" rel="alternate" type="text/html" title="How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?" /><published>2023-01-25T00:00:00-05:00</published><updated>2023-01-25T00:00:00-05:00</updated><id>http://localhost:4000/2023/01/25/Transformers-GPT</id><content type="html" xml:base="http://localhost:4000/2023/01/25/Transformers-GPT.html"><![CDATA[<h1 id="how-can-we-make-transformers-large-language-models-gpt-more-sharable-how-can-we-make-them-grow">How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?</h1>
+
+<p><img src="/assets/2023-01-25_Transformers-GPT/1*vd1bjSTykGLQEIcqP6d15A.jpg" alt="" /></p>
+
+<p>language models and transformers in  <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">https://huggingface.co/spaces/stabilityai/stable-diffusion</a></p>
+
+<p>Today I was reading the excellent list of Transformers here:  <a href="https://github.com/NielsRogge/Transformers-Tutorials">https://github.com/NielsRogge/Transformers-Tutorials</a>  and soon enough realized how many separate applications and separate datasets these have been trained on. Most of these neural network are offered as pre-trained and can be used and fine-tuned for your custom application. That is super great for someone that is looking for a specific problem to solve.</p>
+
+<p>For example, you can get a model to turn an image of a receipt into a JSON table, or you can extract text from a document, or get depth estimation from a single image, etc.</p>
+
+<blockquote>
+  <p>All of these are separate tasks trained in isolation</p>
+</blockquote>
+
+<p>One thing that one realizes pretty quickly by training neural networks is that training on more data, more tasks, more abilities always gets you a better model. One that can do much better in the one application you care about, even if you are not looking for a do-it-all model.</p>
+
+<blockquote>
+  <p>So for me this is really  <strong>a big problem!</strong></p>
+</blockquote>
+
+<p><img src="/assets/2023-01-25_Transformers-GPT/1*Y0EevVSx0gY82J23st4QTg.jpg" alt="" /></p>
+
+<h4 id="a-set-of-problems">A set of problems:</h4>
+
+<ul>
+  <li>models are trained in isolation</li>
+  <li>use a lot of computing resources to train</li>
+  <li>are only effective in their own domain</li>
+  <li>use many custom input and output encodings, symbols, techniques</li>
+  <li>are not able to share knowledge model to model</li>
+</ul>
+
+<blockquote>
+  <p>All the knowledge these models learned, it is not shared!</p>
+</blockquote>
+
+<p><img src="/assets/2023-01-25_Transformers-GPT/1*W7MnOXOw3LfnrFVJz_mosw.jpg" alt="" /></p>
+
+<h4 id="a-set-of-questions">A set of questions:</h4>
+
+<p>How can we share these models and what they learn?</p>
+
+<p>How can we build a unified model?</p>
+
+<p>How can we make sure all data uses the same formats and is compatible? Should we learn those transformations also?</p>
+
+<p><img src="/assets/2023-01-25_Transformers-GPT/1*W-t7a4jHBYp7ZbKQindF5w.jpg" alt="" /></p>
+
+<h3 id="about-the-author">about the author</h3>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://culurciello.medium.com/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?]]></summary></entry><entry><title type="html">Drop your dataset — part 2</title><link href="http://localhost:4000/2022/12/06/Drop-dataset-part-2.html" rel="alternate" type="text/html" title="Drop your dataset — part 2" /><published>2022-12-06T00:00:00-05:00</published><updated>2022-12-06T00:00:00-05:00</updated><id>http://localhost:4000/2022/12/06/Drop-dataset-part-2</id><content type="html" xml:base="http://localhost:4000/2022/12/06/Drop-dataset-part-2.html"><![CDATA[<h1 id="drop-your-dataset--part-2">Drop your dataset — part 2</h1>
 
 <p><img src="/assets/2022-12-06-Drop-dataset-part-2/1*0DJ3aWBrsOsU7Iky8ePimA.png" alt="" /></p>
 
@@ -729,430 +965,4 @@
 
 <p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
 
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Data that bundles together, is learned together]]></summary></entry><entry><title type="html">Semiconductors and microchip for the masses</title><link href="http://localhost:4000/2022/08/08/semiconductor-for-masses.html" rel="alternate" type="text/html" title="Semiconductors and microchip for the masses" /><published>2022-08-08T00:00:00-04:00</published><updated>2022-08-08T00:00:00-04:00</updated><id>http://localhost:4000/2022/08/08/semiconductor-for-masses</id><content type="html" xml:base="http://localhost:4000/2022/08/08/semiconductor-for-masses.html"><![CDATA[<h1 id="semiconductors-and-microchip-for-the-masses">Semiconductors and microchip for the masses</h1>
-
-<p>In this blog post I would like to share my view on the area of semiconductors: the design of integrated circuits, the fabrication and the scalability of design to millions of units. Microchip design today should be as easy as printing a 3D object online or ordering a poster to be printed. It is not. Why?</p>
-
-<p><img src="/assets/2022-08-08-semiconductor-for-masses/1*Tt0eYq84RbbNFUv_dUt18Q.jpeg" alt="" /></p>
-
-<h1 id="background">background</h1>
-
-<p>A bit of background about me first. As a child I was gifted a Commodore 64 when I was 13. It was my dream at the time to understand the cicruit schematics it came with. Fast forward a few years, I studied Electrical Engineering and went on to do a PhD on analog and mixed-signal microchip design in the neuromorphic area.</p>
-
-<p>But after 20 of work in the area of semiconductors I am appalled at how we missed a great opportunity to extend access to more ordinary people and small groups to the magic of microchip design. Let me explain here why in this post.</p>
-
-<h1 id="terminology">terminology</h1>
-
-<p>First some microchip and semiconductors boring terminology:</p>
-
-<ul>
-  <li>circuit design: set of circuit components and connections</li>
-  <li>electronic design automation (EDA) tools: software that takes your rough circuit sketches and turns them into files that can be used by the foundry</li>
-  <li>foundry: a factory for microchip</li>
-  <li>technology node: a foundry can design microchip of different kinds, with different rules and minimum transistor sizes (5 nm, 10 nm, 28 nm, see:  <a href="https://en.wikichip.org/wiki/technology_node">https://en.wikichip.org/wiki/technology_node</a>)</li>
-  <li>foundry design kit (SDK)s: a set of rules and components that implement your design in the foundry technology nodes</li>
-  <li>wafer: is a pizza of silicon that contains many microchips, and is the basic unit of foundry processing</li>
-  <li>die / chiplet: a single microchip instance cutout from the wafer</li>
-</ul>
-
-<h1 id="how-to-make-microchips">how to make microchips</h1>
-
-<p>This is a super condensed summary of how to make an actual microchip:</p>
-
-<p>1- you first start with some schematics or block diagrams, a microchip technology node, and all the design files needed. You also need software to turn the schematics into actual physical circuits (well not physical, just a set of technical drawings or blueprints that will tell the foundry how to design your microchip), and the foundry design kits for the node</p>
-
-<p>2- then you lay out the circuits with the EDA tools either by hand (more typically in analog circuits) or by using automatic place and route EDA tools (digital circuits). These are basically drawing of every layer of the circuit and how it is connected and organized in the foundry technology node</p>
-
-<p>3- once you have drawn your circuits you use the foundry SDK to check that your design can be fabricated and it actually implements the circuit you want. You can also simulate the circuit on the foundry physical layout and make sure it performs to the specifications you need</p>
-
-<p>4- you repeat the steps 1–3 until you design and microchip does what it was designed to do, follows the exact specifications, and ultimately achieves the right performance</p>
-
-<p>5- when your design is ready, you then submit all your files to the foundry</p>
-
-<p>6- the foundry may check your design again and ask you for additional changes, and when ready will place your design in a queue. It may take 2–3 months or more to fabricate your circuit.</p>
-
-<p>7- after your design is ready you can receive it in individual dies, or you can send them to be packaged in a container that allows you to use them in a circuit board</p>
-
-<p>8- and that is all!</p>
-
-<p>Seems like fun, right? It does and with the tools we have today it should be really easy. Ideally making a microchip could be so simple that young kids and for sure teens would be able to create and fabricate their own design, submit it online and receive parts for use! A bit like 3D printing today with an online service!</p>
-
-<h1 id="barriers">barriers</h1>
-
-<p>Unfortunately it is not so easy… there are major barriers that do not allow us today to make it as easy as it could be! Let me explain the major problems:</p>
-
-<p>1-  <strong>where and why to start</strong>: you definitely need a bit of circuit knowledge to get started, but I know from first hand that even a 10 year-old can create a circuit board. Today all circuit blocks like amplifiers, micraprocessors, inputs and outputs buses and standards, communication circuits, radios, antennas, etc area all ready to be used and many are available open source:  <a href="https://opencores.org/">https://opencores.org</a>  as an example</p>
-
-<p>2 -<strong>community</strong>: 3D printers have immense communities with simple software and share designs that make for an easier start. They too require software design tools like EDA, a set of foundry rules and a foundry to send designs to get fabricated. There is no reason why circuits should be MUCH more difficult, beside the fact that they run invisible electrons and do not all spin cogs! Having a community is a great way to democratize circuits and microchips, but I think this is the easiest part because it grows organically by itself once the other barriers are removed</p>
-
-<p>2-  <strong>EDA tools</strong>: Synopsys and Cadence EDA software have been dominating the field for many decades. There are many problems with their software: 1) it is a bloated system of software that (like MS Word) does too much and hides the easy into the complex; 2)it is a hotch-potch of tools acquired from many startups over the years, with too many options and too many ways of achieving the same goal; 3) the complexity disorient the users who have to spend countless hours to learn all features and tricks before converging to the 3–4 ones that they really need; 4) it is expensive: from 100s of thousands to millions of dollar per seat (per engineer) in the most complete set of tools; 5) requires a PhD just to use and get trained. For these reasons these EDA companies are a poor chamption of the “easy design anyone can do it”! There are free EDA:  <a href="http://opencircuitdesign.com/">http://opencircuitdesign.com</a>  that has been maintained by smart folks that want to make circuit design easier and cheaper so anyone can do it. I believe EDA tools are problematic and are a large barrier, but I think they are software after all, that can become easily open source and more community-driven once the major barrier is removed.</p>
-
-<p>3-  <strong>foundry</strong>: I belive they are one of the major hurdles to really democratizing microchip design. A major issue is the closeness of the fabrication steps and that are revealed in the design files and SDK. The foundries protect their SDKs with formidable legal agreements that few people can even understand, let alone acquire and review. And also foundries are interested in big customers that can churn millions of unit of a microchip per year, and not interested in helping or servicing the little guys. As such even small research companies of groups have a hard time getting foundry access and a reservation to their queue. The closeness of the foundries is what really hinders the progress of “anyone can be a microchip designer”. To combat these issues there are middle-man companies like  <a href="https://themosisservice.com/">https://themosisservice.com</a>  and  <a href="https://efabless.com/">https://efabless.com</a>  that aggregate many designs together into shuttle runs that can then be scheduled for fabrication in low-count wafer productions</p>
-
-<p>4-  <strong>cost</strong>: needless to say making a microchip is much more expensive than a 3D printed design, 10–100 times more expensive. It today it is thus not really feasible for individuals to really create their own microchip design. But cost can be driven down with more foundries and more access to older technology nodes. Basically with more demand, and more foundries the price can be 10 times lower than it is today. Also even if individual users are not able to fabricate their very own chip, they could group together in 10–100 or users that are looking for similar design. Effectively that is what companies in microchip design do: they fabricate what many people will want to use!</p>
-
-<p>5-  <strong>the right people</strong>: while it may remain a dream tot be able to have your very own microchip, we should still try hard to lower the barriers for at least research groups and small startups, so that microchip innovation and community culture can grown and promote new ideas and openness. This means open-sourcing designs in the same way we do for software</p>
-
-<h1 id="what-can-we-do">What can we do?</h1>
-
-<ul>
-  <li>create and fuel more open-source EDA tools</li>
-  <li>ask your country representatives to make more microchip foundries in your own country!</li>
-  <li>lower the barrier to obtaining foundry design kits and tools, especially for older processes!</li>
-  <li>foundries that are government-owned can lower the barriers to SDK and also of cost to a larger user set</li>
-  <li>create and invigorate the open-source microchip community</li>
-  <li>share and open-source circuit design in blueprints, napkins, files, chiplets, so that it becomes easier and easier to create new and large design from individual components</li>
-  <li>never give up!</li>
-</ul>
-
-<h1 id="about-the-author">About the author</h1>
-
-<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
-
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Semiconductors and microchip for the masses]]></summary></entry><entry><title type="html">How much money or salary is enough?</title><link href="http://localhost:4000/2022/07/11/how-much-salary.html" rel="alternate" type="text/html" title="How much money or salary is enough?" /><published>2022-07-11T00:00:00-04:00</published><updated>2022-07-11T00:00:00-04:00</updated><id>http://localhost:4000/2022/07/11/how-much-salary</id><content type="html" xml:base="http://localhost:4000/2022/07/11/how-much-salary.html"><![CDATA[<h1 id="how-much-money-or-salary-is-enough">How much money or salary is enough?</h1>
-
-<p><img src="/assets/2022-07-11-how-much-salary/1*5PE7SUaWKz4LB8qgjYaMXQ.jpeg" alt="" /></p>
-
-<p>How much salary is enough? I hear many people complain that some others make too much, and often it is true.</p>
-
-<p>Imagine someone making 100 k$/year or 250, or 500 or 1M. Do you need all that? Are we taking too much? Will others be envious?</p>
-
-<p>Reality is that most families of 4 live comfortable with 50–100 k$/year. What do people need? A house, 2 cars, 1–2 nice holidays per year… most people make it work thus so.</p>
-
-<p>Far too often I see people long for more. We are a greddy animal. Gathering is in our genes, a remnant of times where abundance was not on the table. We will glady have 3–4 cars, even though we can drive only one at a time. We will gladly buy another home, even though we can only spend 3–4 weeks a year in it. We will fill our homes will multiple TV and devices, tools and amenities to live in ease. And for that we are the definition of middle-class, one that lives comfortably but can always have more.</p>
-
-<p>How much more? If we look at a household with 250 k$/year what changes? Maybe bigger house, with rooms we barely use. Maybe another car, used not 10% of the day but 5% of the day. Maybe more gadgets and nicer holidays. but we can also buy better food and east out more often. Some of this is a nice addition, but the most is maybe just the waste of living large.</p>
-
-<p>500 k$/year or more? Now we can afford another house, and hire people to maintain it. Splurge on fancier holidays, and have even more waste. Maybe we do not have to think twice about buying something on a whim — but is that thing going to be useful? Did we really think it over enough? Somehow doing some research and allowing time to really want something is an important part of enjoying that very thing.</p>
-
-<p>There are people that make 1 M$/year or more, and I know they spend too much time at work or worrying about work, or worrying about how to use their money. Yes that is a thing! When you have more meny that you can use you will park it in an investment or in property. That means more worry. Will it go up or down, appreciate or depreciate? Can I afford a new mansion? When? Trust me that is a lot of stress for money you are not even using and often do not even have a plan to use it. Yes! Most people will gather more and more and long for more and more interest, but will then leave most of it to charity or to their kids. Kids that will be spoiled and often never find a meaning in life because they never had to try hard. Is that a good legacy?</p>
-
-<p>I think the worse part of our society is that it makes us think that earning more if being more. But rarely that is the case. In actuality, the richer people are more miserable. You may have everything, but do you really enjoy things like when you were poorer? Having more money makes you more selective towards people, more isolated and lonely. You do not have to put up with some people and places anymore because you can afford “better” ones. More manicured and artificial places, but also miss our on the genuinely of the people and the places that are more common. Richer people also work less, and too much free time is also not healthy because you do not know how to fill your day, what to do, or how to feel useful and fullfilled.</p>
-
-<p>I see many colleagues tied to jobs only because of the money trickling in. Living lives that are so miserable that it hurts to see. Yet they will drag themselves to an office to do many silly things they do not believe in just to earn that bonus, that extra payment. To raise up to a new job level, because that $ 10,000 more is REALLY going to make a difference.</p>
-
-<p>From my experience and the people I observed, it is much better to have a mid-level job and career that allows more free time, and a better balance of life and career. More time with kids and family, more investment in nice experiences. Any job 100–250 k$/year will give you that if you can get it. Also not working is not as fun as most people think. It is actually horrendous for some active people. Better to see a better balance and never get sick of work and what you do! So a middle-ground where you can have more control on the hours you put in and do sprints and walks is the right recipe.</p>
-
-<p>One issue that many middle-class people do not understand about richer people is the power of peer-pressure. Richer people will often have reacher friends, who often buy, invest, collect more things, property, etc. Then they visit each other house and long for a better kitchen, 1000 sqft more space, 5 car garage, or maybe even a house with a landing strip! So in a way it is a vicious circle of wanting more and gathering more and envying more. We are all in this greed cycle to some extent. It is in our genes to want more for our family, our tribe. To gather more, whether we use it or not, because you never know…</p>
-
-<p>And if you try to convince you should aim lower, you will feel guilty, maybe I am not doing enough for my family? Maybe I should be more like my neighbor? It is not easy even to try to break away from the greed cycle because we like living in wealth and ease and abundance. All of us.</p>
-
-<p>What is your goal? What is your comfortable range? Or better, what is your social network comfortable range?</p>
-
-<p>Your move…</p>
-
-<h1 id="about-the-author">About the author</h1>
-
-<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
-
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How much money or salary is enough?]]></summary></entry><entry><title type="html">Should I consider a startup in 3D content creation, Metaverse?</title><link href="http://localhost:4000/2022/04/22/startup-3d.html" rel="alternate" type="text/html" title="Should I consider a startup in 3D content creation, Metaverse?" /><published>2022-04-22T00:00:00-04:00</published><updated>2022-04-22T00:00:00-04:00</updated><id>http://localhost:4000/2022/04/22/startup-3d</id><content type="html" xml:base="http://localhost:4000/2022/04/22/startup-3d.html"><![CDATA[<h1 id="should-i-consider-a-startup-in-3d-content-creation-metaverse">Should I consider a startup in 3D content creation, Metaverse?</h1>
-
-<p><em>The startups and ideas ecosystem in the 3d content generation, artists assistance tools landscape.</em></p>
-
-<p><img src="/assets/2022-04-22-startup-3d/1*baZBY4yJPG9EYWKJBDoEEQ.jpeg" alt="" /></p>
-
-<h1 id="introduction">Introduction</h1>
-
-<p>First off the base: drawing is hard. Drawing in 2 dimensions is what we are used to do growing up. Pencil at hand, trying to sketch a dog — our dog. The first results? Oh well…</p>
-
-<p>Fast forward some years, you wonder how some artists can draw a dog with just 2–3 lines…</p>
-
-<p><img src="/assets/2022-04-22-startup-3d/1*NucS6sEBFTUSM2dszQLttA.jpeg" alt="" /></p>
-
-<p>Even as an adult, some of us can do this with ease, but most others… well… not so.</p>
-
-<p>Fast forward a few more years, and you are considering a startup in the space of 3D design tools, 3D content generation, Metaverse. What the heck is that?</p>
-
-<p>Growing up I remember seeing the first 3D video game on Commodore 64.</p>
-
-<p><img src="/assets/2022-04-22-startup-3d/1*PvCsdPQQxWyscGCltxgTuQ.png" alt="" /></p>
-
-<p>It was very crude, but I remember what really captured my 12 years-old attention: someone told me that the computer was calculating all of these 3D shapes in real time, modifying them at every frame. At an early age I was somehow attracted to computers. When my father convinced my grandma to use her monthly pension to buy a C-64 for me, it opened a new world. I remember I was telling my friends, soccer enthusiast and avid players of the C-64 game “<a href="https://en.wikipedia.org/wiki/Emlyn_Hughes_International_Soccer">Emlyn Hughes International Soccer</a>”, that one day even their dear soccer game was going to be made in 3D! They laughed and told me I was crazy — how can that crappy looking wireframes morph into a beautiful soccer game? Well fast forward a few years and we got “Actua Soccer” — the first 3D soccer game…</p>
-
-<p><img src="/assets/2022-04-22-startup-3d/1*sQ4-24nuPkaY2LsYcUm-DQ.jpeg" alt="" /></p>
-
-<p>With the Sony Playstation and better graphic processors, 3D became the norm in video games and in the 2000s progressed to full 3D movies. Why? Because at some point is it harder to draw everything in 2D than it is to create 3D shapes and render them, so you can see them in every perspective without having to manually re-draw them.</p>
-
-<h1 id="the-metaverse-days">The Metaverse days</h1>
-
-<p>Today much has changed from my early days of 3D of the 1980s. 3D content is everywhere and it can even be used for full hollywood movies. In video-games it is so realistic that you get motion sickness! In fact Virtual Reality (VR) has also opened the door to more desire to create 3D scenes and environments, sculpting and arranging items as if we were in real life.</p>
-
-<p>The desire of people to stay indoor and refuge in synthetic worlds is growing. Pandemics or not, it was already growing.</p>
-
-<blockquote>
-  <p>And it is only going to get more pervasive</p>
-</blockquote>
-
-<p>What has not changed much is that creating this content is still hard, despite the enormous amount of code and tools we have today.</p>
-
-<p>Today, if a casual user wants to build a 3D scene in 30 minutes, well they can’t!</p>
-
-<h1 id="drawing-in-3d">Drawing in 3D</h1>
-
-<p>Despite the great success of 3D, how many of you have ever actually tried to make a 3D drawing with a computer? Yes there are many tools available, like  Blender, Cinema 4D, 3ds MAX, Sketchup, Maya, Mixamo, Houdini… and many more — but they all have a very steep learning curve, and unless you use them on a daily basis you will never be able to master even the simplest combination of capabilities and shortcuts they offer.</p>
-
-<blockquote>
-  <p>Drawing in 3D is hard</p>
-</blockquote>
-
-<p>very hard… beyond comprehension if you have not tried. You basically have to specify the position of each and every 3D point in your meshes. Try to draw a real car for example one day, maybe using Blender.</p>
-
-<p>Of course you do not have to draw everything. If you are happy with simple modifications, you can take already drawn assets from one of many 3D asset store, like  <a href="https://free3d.com/">https://free3d.com</a>. Here you can find many model from simple to more complex, from free to $ to $$$.</p>
-
-<p>But can you make a game or a movie this way? Maybe not — because all assets will mismatch in style and characteristics, making the scene not very visually compelling. Some modification will be needed. Some may be easy, like changing the color of a flat material, but if you want to provide complex textures and nicely touch-up colors in many parts of a mesh you will soon find yourself having to learn one the big name tools.</p>
-
-<p>If you are an artist or a person that works with these tools on a daily basis, things are of course easier, you can remember what to do. You are paid (or strive to) to learn these tools and get better at it. There are pain points of course. You still have to draw all the 3D points in a mesh, have to provide colors and textures to every part of your asset, and maybe you have to animate it also. Gets difficult very quickly.</p>
-
-<h1 id="designing-a-3d-game-scene-level">Designing a 3D game, scene, level</h1>
-
-<p>A 3D item will just sit pretty on your computer if you do not use it. Maybe you want to make a game or a illustrate a scene or make a short powerpoint-like movie animation.</p>
-
-<p>At the basic scene / level 3D design involves these steps:</p>
-
-<ul>
-  <li>storytelling and scripting</li>
-  <li>design of 3D meshes, items, landscapes, skybox, etc</li>
-  <li>embellish meshes and assets with materials and textures</li>
-  <li>scene and levels composition</li>
-  <li>animation of some meshes</li>
-  <li>coding of interactions, game logic</li>
-</ul>
-
-<p>Even if you just wanted to illustrate a dream you had last night, while the story is clear in your mind, finding the rights 3D assets and animating is not yet open to the public.</p>
-
-<p>Game and scene logic (when I open the cupboard, a ghost appeared), can be implemented in Scratch-like visual programming that is easy to learn.</p>
-
-<p>In general, ask anyone in the field and they will tell you that the most time and resources spent in 3D design is in selecting and curating individual assets, characters, scene items, lightning, animations. And most of these steps today are the domain of experts only.</p>
-
-<h1 id="would-you-want-to-create-a-startup-in-the-3d-space--metaverse">Would you want to create a startup in the 3D space / Metaverse?</h1>
-
-<p>The issue remains: 3D design is hard and not open to the public yet. Young adults and kids would like to build games in  Roblox, for example, but can’t because it is hard to design and hard to code. A tool that allows for easy scene creation and for simple dynamics is definitely needed!</p>
-
-<p>If you are considering a startup in this space, I recommend you consider these areas:</p>
-
-<ul>
-  <li><strong>3D tools that are easy-to-use</strong>: tools like  TinkerCAD  are easy to use and should be the standard entry point to any 3D design tool aimed at the general public</li>
-  <li><strong>Create 3D scenes out of existing assets</strong>: there are many websites colleting community-created 3D assets. These make the life of casual user easier, but do not provide a consistent look and feel for implementing an entire scene. These assets also mismatch in size, texture definition, polygons count. There is a need for a centralized database of 3D assets like Kenney.</li>
-  <li><strong>Create 3D assets automatically</strong>: the Holy Grail is to be able to design an asset with just text: “a blue coffee mug that look like Lego”. A bit of a CLIP / DALL-E for 3D. We may be getting closer to this today, but the way is still long before we can provide consistent style, and fine-detail programmability that artists would want. Yet it may suffice for some casual users. One of the issue is that possibly specifying each 3D point with a neural network is overkill ad ill-posed, as there are much fewer control parameters in assets that one would want to vary.</li>
-  <li><strong>Extend procedural 3D assets</strong>: the other way, that is between using fixed assets and neural network created assets, is to use procedural assets that are hierachical. These can be design with less parameters and even graphically (Geometry Nodes and Textures in Blender) and offer a hierarchy as a bonus. They may be just the perfect way to set up a large database.</li>
-  <li><strong>Placing items in a scene</strong>: once you have all your assets for your scene, the next step is where to place them. Specify rules, script arrangements, or use a neural network placer?</li>
-  <li><strong>Logic and animation</strong>: the ultimate step in 3D (and more) scene design is to be able to specify scene logic, interactions and animations purely with natural language. Today all this is done with computer code, but graphical and visual programming with blocks really helps (Scratch, Dreams, Garage Game Builder). Animations are more complicated and will require tools that can transfer them from a video to a character, or from a character to another character with different bone structure.</li>
-</ul>
-
-<p>Want more?… the future is all yours.</p>
-
-<h1 id="who-are-you-and-your-customer">Who are you and your customer?</h1>
-
-<p>The first question if you area considering a startup in this space is who are you and who is your customer (as usual…).</p>
-
-<p><strong>You</strong>: let’s say your goal is to make 3D design easier and less painful. Your experience in your personal 3D struggles and the pain-points of the industry can guide you to the tools that are most needed.</p>
-
-<p>And who is your customer or target audience:</p>
-
-<p><strong>Artists—</strong>  You will need to develop professional tools or most likely extensions to existing tools in existing ecosystems. At first, you may only target one tool ecosystem because of compatibility, licensing and deals. You may be more restricted to what artists want, which is usually a projection of the existing tools and the rigid scheme they end up imposing. Artists are usually loking for tools that remove monotonous tasks, give them ways to enhance their creativity, construct higher level abstractions and integrate in their existing framework.</p>
-
-<p><strong>Casual Users —</strong>  Visual quality may be more forgiving, but simplicity of use will win — see:  Canva. Casual users want to quickly learn to design ideas, are not so concerned with fancy graphics, but want to learn fast and realize their creation with little effort and a easy learning curve. You can develop new tools that are free from established ecosystems, and that may enhance collaboration and sharing of resources more widely than professional tools, with lower costs and wider distribution of platforms and user-base. Most importantly, you can open up a larger user base, like young teen or pre-teen artist that want to make their own 3D game or movie, or just illustrate ideas.</p>
-
-<p>Today opening 3D tools to casual users has the potential to be the most lucrative and exciting option. The reason is Canva. The question is: will there ever be as many people that want to design 3D scenes as the ones that want to design a birthday card?</p>
-
-<h1 id="what-is-out-there">What is out there?</h1>
-
-<p>The 3D design and artists tools environment is large and wide, and it is always expanding. Here we list some of the existing tools today.</p>
-
-<p><strong>Professional tools</strong>: professional tools offer all the weapons for the basic 3D steps of design listed above. Blender is largely favorite of the masses because it is free and open source. It is a powerful mesh design tool that can also do materials and animations. Professional tools have one or more specialty. An overview is here:  <a href="https://all3dp.com/1/best-free-3d-modeling-software-3d-cad-3d-design-software/">https://all3dp.com/1/best-free-3d-modeling-software-3d-cad-3d-design-software/</a></p>
-
-<p>Then there are game creation tools, movie creation tools, etc. In terms of video games Unreal and Unity dominate. They take the assets and animation and compose game logic, levels and all the user interfaces. Most large video-games today are made with these tools.</p>
-
-<p>Panda3d, threeJS, BabylonJS are game-developement tools designed for python and web browsers. They can develop entire video games using scripting languages. They are generally aimed at smaller video games and for learning to code and design games and game logic.</p>
-
-<p><strong>More casual tools</strong>:</p>
-
-<p>For game logic, I recommend looking into  <a href="https://scratch.mit.edu/">https://scratch.mit.edu</a>  which allows simple 2D games and animations with no code.</p>
-
-<p>For easy 3D drawings, I recommend looking at  <a href="https://www.tinkercad.com/">https://www.tinkercad.com</a>.</p>
-
-<p><strong>New tools / startups</strong>:</p>
-
-<p><a href="https://recroom.com/">https://recroom.com</a>  is designed to be an interactive tool for VR and social interactions</p>
-
-<p><a href="https://www.shapesxr.com/">https://www.shapesxr.com</a>  is a tool to build 3D scenes in VR with limited machine learning usage</p>
-
-<p><a href="https://www.prometheanai.com/">https://www.prometheanai.com</a>  scene composition with voice, no-code, similar to Anything.world</p>
-
-<p><a href="https://anything.world/">https://anything.world</a>  scene composition with voice, no-code, assets built-in, animation-ready, entire scenes ready (park, beach), can add items, items know by default where they should land</p>
-
-<p><a href="https://dotbigbang.com/">https://dotbigbang.com</a>  is an easy to design 3d games tool with limited machine learning usage</p>
-
-<p><a href="https://decentraland.org/">https://decentraland.org</a>  3d design tool on web, with shared assets and community</p>
-
-<p><a href="https://www.shapesxr.com/">https://www.shapesxr.com</a>  3d design in VR (like Dreams on PS4)</p>
-
-<p><a href="https://readyplayer.me/">https://readyplayer.me</a>  transfer your face to an avatar</p>
-
-<p><a href="https://www.aquifermotion.com/">https://www.aquifermotion.com</a>  makes animated 3D video for marketing, transfer motion and face tracking to 3D characters</p>
-
-<h1 id="game-making-ecosystems">Game making ecosystems</h1>
-
-<p>Unity and Unreal are the top game making frameworks, including all steps required to make a video-game or a digital 3D production. Needless to say they are a professional tool for professional coders and require entire university courses to master. Not useful for casual users!</p>
-
-<p>On the other had casual users have some other simpler options if they want to make a game:</p>
-
-<p><strong>Roblox</strong>  — need programming experience, young users cannot easily make new games</p>
-
-<p><strong>Minecraft</strong>  — block-based, restricted to own creative game types</p>
-
-<p><strong>Dreams</strong>, PS4 — can build small games with no-code, but stuck in platform</p>
-
-<p><strong>Garage game Builder</strong>, Nintendo — can build small games with no-code, but stuck in platform</p>
-
-<p>more…</p>
-
-<h1 id="references">References</h1>
-
-<p>Here are some reference I found useful to write this and survey the field:</p>
-
-<h2 id="ai-research-tools">AI research tools</h2>
-
-<p>GAN for graphics:</p>
-
-<p><a href="https://blog.floydhub.com/gans-story-so-far/"></a></p>
-
-<h2 id="generative-adversarial-networks---the-story-so-far">Generative Adversarial Networks - The Story So Far</h2>
-
-<h3 id="generative-adversarial-networks-gans-have-been-the-go-to-state-of-the-art-algorithm-to-image-generation-in-the-last">Generative adversarial networks (GANs) have been the go-to state of the art algorithm to image generation in the last…</h3>
-
-<p>blog.floydhub.com</p>
-
-<p><a href="https://hubert0527.github.io/infinityGAN/"></a></p>
-
-<h2 id="infinitygan-towards-infinite-pixel-image-synthesis">InfinityGAN: Towards Infinite-Pixel Image Synthesis</h2>
-
-<h3 id="we-present-a-novel-framework-infinitygan-for-arbitrary-sized-image-generation-the-task-is-associated-with-several">We present a novel framework, InfinityGAN, for arbitrary-sized image generation. The task is associated with several…</h3>
-
-<p>hubert0527.github.io</p>
-
-<p>2d images to 3d meshes:</p>
-
-<p><a href="https://github.com/shunsukesaito/PIFu"></a></p>
-
-<h2 id="github---shunsukesaitopifu-this-repository-contains-the-code-for-the-paper-pifu-pixel-aligned">GitHub - shunsukesaito/PIFu: This repository contains the code for the paper “PIFu: Pixel-Aligned…</h2>
-
-<h3 id="news-20200504-added-egl-rendering-option-for-training-data-generation-now-you-can-create-your-own-training-data">News: [2020/05/04] Added EGL rendering option for training data generation. Now you can create your own training data…</h3>
-
-<p>github.com</p>
-
-<p><a href="https://github.com/lingtengqiu/Open-PIFuhd"></a></p>
-
-<h2 id="github---lingtengqiuopen-pifuhd-this-is-an-implementation-of-pifuhd-based-on-pytorch">GitHub - lingtengqiu/Open-PIFuhd: This is an implementation of PIFuhd based on Pytorch</h2>
-
-<h3 id="this-is-a-unofficial-implementation-of-pifuhd-pifuhd-multi-level-pixel-aligned-implicit-function-forhigh-resolution-3d">This is a unofficial implementation of PIFuhd PIFuHD: Multi-Level Pixel-Aligned Implicit Function forHigh-Resolution 3D…</h3>
-
-<p>github.com</p>
-
-<p><a href="https://medium.com/unpackai/is-it-possible-to-combine-deep-learning-and-reinforcement-learning-for-3d-modeling-c66e4575477e"></a></p>
-
-<h2 id="is-it-possible-to-combine-deep-learning-and-reinforcement-learning-for-3d-modeling">Is It Possible to Combine Deep Learning And Reinforcement Learning For 3D Modeling</h2>
-
-<h3 id="being-very-interested-in-3d-animations-i-always-try-to-find-ways-that-might-help-to-automate-or-at-least-cut-some-edges">Being very interested in 3D animations I always try to find ways that might help to automate or at least cut some edges…</h3>
-
-<p>medium.com</p>
-
-<p><a href="http://3d-r2n2.stanford.edu/"></a></p>
-
-<h2 id="3d-r2n2-recurrent-reconstruction-neural-network">3D-R2N2: Recurrent Reconstruction Neural Network</h2>
-
-<h3 id="this-repository-contains-the-source-codes-for-the-paper-choy-et-al-3d-r2n2-a-unified-approach-for-single-and">This repository contains the source codes for the paper Choy et al., 3D-R2N2: A Unified Approach for Single and…</h3>
-
-<p>3d-r2n2.stanford.edu</p>
-
-<p>NERF</p>
-
-<p>Tree generation</p>
-
-<p><a href="https://store.speedtree.com/"></a></p>
-
-<h2 id="speedtree---3d-vegetation-modeling-and-middleware">SpeedTree - 3D Vegetation Modeling and Middleware</h2>
-
-<h3 id="new-features-and-licensing-options-are-available-now">New features and licensing options are available now!</h3>
-
-<p>store.speedtree.com</p>
-
-<p>Neural materials:</p>
-
-<p><a href="https://arxiv.org/pdf/2104.02789.pdf">https://arxiv.org/pdf/2104.02789.pdf</a></p>
-
-<p>Scene and placement:</p>
-
-<p><a href="https://xinpeng-wang.github.io/sceneformer/"></a></p>
-
-<h2 id="sceneformer-indoor-scene-generation-with-transformers">Sceneformer: Indoor Scene Generation with Transformers</h2>
-
-<h3 id="sceneformer-indoor-scene-generation-with-transformers-3dv-2021-oral-we-address-the-task-of-indoor-scene-generation-by">Sceneformer: Indoor Scene Generation with Transformers 3DV 2021 Oral We address the task of indoor scene generation by…</h3>
-
-<p>xinpeng-wang.github.io</p>
-
-<p>Images and caption</p>
-
-<p><a href="https://openai.com/blog/clip/">https://openai.com/blog/clip/</a></p>
-
-<p><a href="https://openai.com/dall-e-2/"></a></p>
-
-<h2 id="dalle-2">DALL·E 2</h2>
-
-<h3 id="thanks-to-those-who-helped-with-and-provided-feedback-on-this-release-sandhini-agarwal-sam-altman-chester-cho-peter">Thanks to those who helped with and provided feedback on this release: Sandhini Agarwal, Sam Altman, Chester Cho, Peter…</h3>
-
-<p>openai.com</p>
-
-<p>Ai-based video generation</p>
-
-<p><a href="https://www.synthesia.io/"></a></p>
-
-<h2 id="synthesia---ai-video-generation-platform">Synthesia - AI Video Generation Platform</h2>
-
-<h3 id="create-ai-videos-by-simply-typing-in-text-make-engaging-videos-for-e-learning-customer-onboarding-etc-no-need-for">Create AI videos by simply typing in text. Make engaging videos for e-learning, customer onboarding, etc. No need for…</h3>
-
-<p>www.synthesia.io</p>
-
-<p>No-code tools:</p>
-
-<p><a href="https://developers.google.com/blockly">https://developers.google.com/blockly</a></p>
-
-<p><a href="https://rete.js.org/#/"></a></p>
-
-<h2 id="retejs">Rete.js</h2>
-
-<h3 id="edit-description">Edit description</h3>
-
-<p>rete.js.org</p>
-
-<p><a href="https://nodes.io/"></a></p>
-
-<h2 id="nodes---a-new-way-to-create-with-code--httpsnodesio">Nodes - a new way to create with code | https://nodes.io</h2>
-
-<h3 id="what-if-programming-was-about-ideas-not-semicolons-compose-abstract-generalise-start-from-top-down-or-bottom-up">What if programming was about ideas, not semicolons? Compose, abstract, generalise. Start from top down or bottom up…</h3>
-
-<p>nodes.io</p>
-
-<p><a href="https://github.com/jagenjo/litegraph.js?files=1">https://github.com/jagenjo/litegraph.js</a></p>
-
-<h2 id="making-games">Making games</h2>
-
-<p>if you ever want to learn video game development this is one nice resource to start:</p>
-
-<p><a href="https://www.scratchapixel.com/"></a></p>
-
-<h2 id="scratchapixel">Scratchapixel</h2>
-
-<h3 id="-2009-2022-scratchapixel-all-rights-reserved-this-website-and-its-content-is-copyright-of-scratchapixel-the-source">@ 2009-2022 Scratchapixel (All rights reserved) This website and its content is copyright of Scratchapixel. The source…</h3>
-
-<p>www.scratchapixel.com</p>
-
-<p><a href="https://scratch.mit.edu/">https://scratch.mit.edu</a>  — learning to code for games and simple animations and interactiosn in 2D</p>
-
-<p><a href="https://www.tinkercad.com/">https://www.tinkercad.com</a>  — easy 3D drawing for 3D printers etc.</p>
-
-<h1 id="about-the-author">About the author</h1>
-
-<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
-
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Should I consider a startup in 3D content creation, Metaverse?]]></summary></entry></feed>
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Data that bundles together, is learned together]]></summary></entry></feed>
