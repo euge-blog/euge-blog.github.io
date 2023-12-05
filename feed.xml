@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2023-05-25T07:47:17-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Should we worry about AI (machine-learning)?</title><link href="http://localhost:4000/2023/05/24/Should-we-worry-about-AI.html" rel="alternate" type="text/html" title="Should we worry about AI (machine-learning)?" /><published>2023-05-24T00:00:00-04:00</published><updated>2023-05-24T00:00:00-04:00</updated><id>http://localhost:4000/2023/05/24/Should-we-worry-about-AI</id><content type="html" xml:base="http://localhost:4000/2023/05/24/Should-we-worry-about-AI.html"><![CDATA[<h1 id="should-we-worry-about-ai-machine-learning">Should we worry about AI (machine-learning)?</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2023-12-05T17:47:10-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Artificial scientists and autonomous laboratories</title><link href="http://localhost:4000/2023/12/05/Artificial-scientists.html" rel="alternate" type="text/html" title="Artificial scientists and autonomous laboratories" /><published>2023-12-05T00:00:00-05:00</published><updated>2023-12-05T00:00:00-05:00</updated><id>http://localhost:4000/2023/12/05/Artificial-scientists</id><content type="html" xml:base="http://localhost:4000/2023/12/05/Artificial-scientists.html"><![CDATA[<p><img src="/assets/2023-12-05-Artificial-scientists/1.png" alt="" /></p>
+
+<p>designed by Dall-E-2</p>
+
+<h1 id="artificial-scientists-and-autonomous-laboratories">Artificial scientists and autonomous laboratories</h1>
+
+<h2 id="what-is-next-for-chatgpt"><strong><em>What is next for ChatGPT?</em></strong></h2>
+
+<p>One of the goal of machine learning is to reach the levels of artificial intelligence. AI, the word, we hear every day, is an empty promise if we are not striving to create artificial brains that can be at the level or above of our own brain.</p>
+
+<p>In the last 20 years machine-learning, notably in the form of neural networks, has produce an incessant set of innovations: from detecting, localizing, and categorizing the content of images, to learning sequences, predictive models, natural-language processing and understanding, just to name a few. But looking back all these innovations were aimed at solving individual problems, one-by-one with a tailor crafted solution. We were always starting with a dataset of inputs and desired outputs; we have been creating neural architectures designed to take the data and the task into account and developed many disconnected one-hit-songs models.</p>
+
+<p>But no more. Since we are and want to talk about AI, we will need to set course for a unified vision and a set of unified tools that can implement artificial brains.</p>
+
+<p>Intelligence is about creating knowledge graphs. Knowledge Graphs (KG), what is seemingly such a dry and ethereal concept, is just concepts in our brain, ideas, that are interlinked together by learning in the physical world. Take the words “Egyptian”, “Manx”, “cat” are individual concepts in our brain that are strongly linked, because “Egyptians loved cats” and “there is a type of cat called: Manx cat”. The words are connected points in our knowledge graph.</p>
+
+<p>Recent Large Language models (LLM) such as Generative Pre-trained Transformers (GPT — with ChatGPT being one of the most famous versions) are machine learning models that can predict the next word in a sequence of text. These models approximate a Knowledge Graph over words and portions of words, and their ability to produce high-quality text, plans, algorithms, drafts that are similar to human output gives us confidence that the path to AI is along these lines. The capabilities of these models and the emergent skills that are learned training them is still a topic of research and will be for quite some time. These models are very large and capable and were trained without fixed datasets of input and output pairs, so they are time-consuming to test.</p>
+
+<p>What is the future for ChatGPT? It is learning in the physical world. Our brain is also implementing a knowledge graph, but it is based on multi-modal “concepts”. When we learned the concept “cat” we did so by connecting visual, auditory, sensory representations of a “cat”, interlinking the way the cat moves, feels to touch, the noise it makes. The word “cat” is just a label that we use on the concept to allow us to communicate it to other people, given that our brains are disconnected (no WiFi, ethernet or radio link between them).</p>
+
+<p>Our future AI models are going to be called Large World Models (LWM) and they will be trained to predict the next representation in a multi-modal input data flow. The complexity of this training modality lies in the fact that the “next representation” of the real world is not as simple as predicting the next words in a text. Words are a knowledge “representation”, but multi-modal data like images and sounds are harder to break into parts. Is the next portion of the image on the right what we need to predict? Or is the one below or above? Is it the next 10 millisecond of sound, or the next note, or the next segment?</p>
+
+<p>Learning in the physical world also requires a body. We cannot learn multi-modal if we do not have a fixed set of sensors that can record and encode these modalities. This is the path needed to train an artificial robot brain. Learning will be based on physical interaction with the environment and prediction.</p>
+
+<p>Learning streams of “concepts” via predictive learning requires to predict the next concept from a set of previous ones. This is the main learning modality. Learning occurs in a continual fashion, but it is mostly inactive if our prediction matches the physical next state of concepts. In other world this artificial brain is ignoring every information that it already has when its predictive abilities are correct. When prediction fails, the artificial brain signals a “surprise” which enables learning; this example we stumbled on needs to be learned!</p>
+
+<p>Reinforcement learning occurs when we need to optimize for a specific goal. Our action affect the environment in ways we also need to learn and predict. It is not yet clear how to mix multiple learning modalities that could be pushing internal representation in different directions. Also learning sequences of concepts seems simple enough, but in the physical world “concepts” streams can be tricky: they are mostly attuned to changes in the environment and are not confined to a fixed sampling in space or time. It is about noticing changes in the environment, possibly because of our actions.</p>
+
+<p>Mental simulation must also play a fundamental role in reinforcement learning and planning, because they allow an artificial brain to be more efficient in sampling possibilities. Rather than trying every possible move at random, an effective and efficient agent needs to simulate many and only try a very small set.</p>
+
+<h2 id="artificial-scientists"><strong><em>Artificial Scientists</em></strong></h2>
+
+<p><img src="/assets/2023-12-05-Artificial-scientists/2.png" alt="" /></p>
+
+<p>designed by Dall-E-2</p>
+
+<p>What would it take to create an artificial scientist? This is an algorithm that can read the entire body of knowledge in one or multiple fields and is able to gather data, create hypotheses, run experiments, generate reports and theses.</p>
+
+<p>Some science like mathematics may be able to be trained purely on text and symbols. Experiments on LLM trained to perform mathematical proofs are promising. But for any physical science, the artificial scientist will be based on LWM, trained on literature and videos. Similar to human reading abilities, inferring words from vision, AI literature reading needs to be vision-based, because human-readable documents are a collection of not just text, but also plots, graphs, diagrams, tables, paragraphs titles, captions, etc. An artificial scientist needs to be able to read a plot: “what is the value of Y at X=1?” and also understand diagrams and complex figures: “what is block B connected to?”. Current LLM can already understand tables, databases, datasets by being able to write scripts and code interfacing and running on external files.</p>
+
+<p>The multi-modal LWM needed for an artificial scientist is a vision-based input model that can read pages from sequential blocks of pixels. This allows it to be able to read all components of an article. I believe this training and system will be able to generate sound science plans just as an LLM is able to plan for many activities. In fact, most of scientific literature imbues research plans and scripts for testing hypotheses.</p>
+
+<p>Artificial scientist trained in this fashion will thus be able to generate research plans. A research plan will begin with a set of hypotheses, a list of experiments that need to be performed. They will also have the ability to run external tools, such as simulators, code, scripts and read the output of those tools. They will be able to run tools multiple times, and aggregate all outputs into a final report, or collection of theses to summarize the results from experiments.</p>
+
+<p>Simulations are an ideal companion to autonomous research plans because they allow to test the hypotheses and obtain ground truth. These can then constitute a new set of training examples that can self-improve until hypotheses are validated or eliminated because of lack of resources (here: time).</p>
+
+<h2 id="autonomous-laboratories"><strong><em>Autonomous Laboratories</em></strong></h2>
+
+<p><img src="/assets/2023-12-05-Artificial-scientists/3.png" alt="" /></p>
+
+<p>designed by Dall-E-2</p>
+
+<p>An artificial scientist will be able to interface and run autonomous laboratories. These are physical machines that can be interlinked to performed experiments in large scale and with autonomy. An artificial scientist is the controller of an autonomous lab, in the same way that a brain is a controller for a body. Videos and audio are needed for an artificial scientist operating the physical world, thus the core artificial brain is a robotic LWM trained on videos operations of the laboratory, including visuals of inputs, outputs, desired outcomes. The artificial scientist controller will need to be able to read instrumentation files and reports, and examine samples either by visual or physical inspection, or by using yet another tool or machine.</p>
+
+<p>An autonomous laboratory of the simplest form is a manufacturing robot that assembles an item based on instructions. But the combination of an artificial scientist as controller allows the laboratory to do more than just follow instructions. It can generate output based on an incomplete set of instruction, in the same way that a caption can generate an image by mean of an artist. The complexity in an autonomous lab is not just its controller, the artificial scientist, but the instruments and materials needed to operate it, and the requirements for resetting, disinfecting, cleaning and restoring each tool to the initial conditions, ready for the next batch of processing.</p>
+
+<p>Autonomous labs need to interact with humans and thus learn human-automata teaming techniques. This is not unlike the artificial brain of a robot co-habiting space with other humans, pets, creatures.</p>
+
+<p><img src="/assets/2023-12-05-Artificial-scientists/4.png" alt="" /></p>
+
+<p>designed by Dall-E-2</p>
+
+<h1 id="about-the-author">about the author</h1>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">Should we worry about AI (machine-learning)?</title><link href="http://localhost:4000/2023/05/24/Should-we-worry-about-AI.html" rel="alternate" type="text/html" title="Should we worry about AI (machine-learning)?" /><published>2023-05-24T00:00:00-04:00</published><updated>2023-05-24T00:00:00-04:00</updated><id>http://localhost:4000/2023/05/24/Should-we-worry-about-AI</id><content type="html" xml:base="http://localhost:4000/2023/05/24/Should-we-worry-about-AI.html"><![CDATA[<h1 id="should-we-worry-about-ai-machine-learning">Should we worry about AI (machine-learning)?</h1>
 
 <p>I have to start this discussion with a note. AI = artificial intelligence. What that really means is not well defined. In my mind…</p>
 
@@ -859,110 +925,4 @@
 
 <p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
 
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How can we build an artificial brain from our knowledge of the human brain?]]></summary></entry><entry><title type="html">Data that bundles together, is learned together</title><link href="http://localhost:4000/2022/09/23/data-bundles-together.html" rel="alternate" type="text/html" title="Data that bundles together, is learned together" /><published>2022-09-23T00:00:00-04:00</published><updated>2022-09-23T00:00:00-04:00</updated><id>http://localhost:4000/2022/09/23/data-bundles-together</id><content type="html" xml:base="http://localhost:4000/2022/09/23/data-bundles-together.html"><![CDATA[<h1 id="data-that-bundles-together-is-learned-together">Data that bundles together, is learned together</h1>
-
-<p><img src="/assets/2022-09-23-data-bundles-together/1*vAZMmK9ZRMPXh55P6WPIbQ.jpeg" alt="" /></p>
-
-<h1 id="early-days">early days</h1>
-
-<p>It was the winter 1998 and I have just moved to Baltimore from Italy. I joined prof. Ernst Niebur at the Mind Brain Institute, Johns Hopkins University. At the time I was fascinated by the neuroscience of vision, and was trying to learn from neuroscience book how the brain works, how it makes sense of the stream of sensory information. One concept that was absolutely nebulous was how a brain would “learn”, or connect the sensory stream data to actionable insights. “Hebbian learning” kept coming up — a learning theory in neuroscience stating that “neurons that fire together, wire together”.</p>
-
-<p>Fast forward to 2004, the book “On Intelligence” by Jeff Hawkins &amp; Sandra Blakeslee was really exciting to me. Mostly because it brought back up the energy and hope I had back in 1998, while at Johns Hopkins. The hope was that by studying and trying to replicate the brain, one could finally figure out how it works, how it learns.</p>
-
-<p>In the book, Hebbian learning and repeated cortical columns were concepts that struck with me. I was working on artificial spiking neural networks and the concept of neurons firing together to make visual filters was not reading material anymore, was something I built and could measure and play with. This is unlike real neurons, that are much harder to “play” and “measure” given they are embedded in large networks and in a complex biochemical environment.</p>
-
-<p><img src="/assets/2022-09-23-data-bundles-together/1*af-tNiqd-3_ResjoDOFm5A.png" alt="" /></p>
-
-<h1 id="clustering">clustering</h1>
-
-<p>Yet it took me until 2012 to have a revelation about Hebbian learning . I was then starting to really work on machine learning using Torch7 and Lua, and thought that we could implement the concept of grouping together neurons that had similar outputs. For example filters that were responding to the same stimulus could be averaged together and combined. This was the idea behind clustering-learning that we developed and tested.</p>
-
-<p>Then some years went by, and I was still trying to understand how one would be able to build a more complex brain. The trend in the year 2010–2020 was to build custom neural networks for each and every possibly application. One would get a dataset, inspect samples, craft a neural network architecture, then a cost function, and then train and modify parameters until time / resources / will would run out. After a few times of doing this, it all became very dull and almost pointless. Yes you can solve some problems if you have a fixed dataset of input-output relationships, but what if the dataset changed? What if the task changed, or a new category or new task was added? It would all fall apart!</p>
-
-<blockquote>
-  <p>I thought this was a betrayal of the paradigm “learning from data”</p>
-</blockquote>
-
-<p>I started thinking for years about how one could learn complex tasks without forgetting the previous ones, and in a way that allowed to hierarchically build upon the knowledge discovered at earlier steps. In other word, a model that can support continual-learning and life-long learning, and that would require less or no tweaking of parameters — or at least change sporadically.</p>
-
-<h1 id="multi-modal">multi-modal</h1>
-
-<p>Today Hebbian learning came back once again to help me wrap my mind on a new brain and learning model. We spent a decade using machine-learning in isolation: image to text, text to text, text to image, sound to text, etc. But in our world all of possible sensory modality come to play together into a cohesive understanding of the world around us. A bird, for example, is not represented just by one image, it is video, it is motion, it is sound, it is all of these together! Imagine a waterfall: same thing! One image of a waterfall would not really represent what it is! It would look like a static object, lifeless, soundless. Not the roaring magnificence that one can perceive with human sense s— and image what we could do with even more sensory modalities!</p>
-
-<blockquote>
-  <p>multi-modal learning is key</p>
-</blockquote>
-
-<p>The interesting thing of learning multiple modalities at once (multi-modal learning) is that you do not necessarily need a dataset! Modalities signal together when something occurs. For example when your foot hits the ground while walking, the event produces sound. These are signal that “fire together”, so maybe it would be appropriate to “wire them together”, what do you think?</p>
-
-<p>You may ask now: what is an “event”? I use that word here because in the example of your foot hitting the ground and producing a sound I can remind you of a physical every-day reality. To you that sound is an “event”, but in reality we can group signal together even if they are not singular points in time, like for example the sound of the waterfall, which is continuous.</p>
-
-<p>If we can find a  <strong>space</strong>  where different modalities could be compared and organized together, that would surely form a sound foundation of knowledge that is hierarchical and connected. We call this step “embedding” of modalities. It means that for every multi-modal group of signal, we create a numerical representation (say 512 numbers) that represent the “ensemble” of modalities together. Individual modalities can still be sensed independently and compressed with neural networks, and successively are projected into the same  <strong>embedding space</strong>  so they can be grouped and compared.</p>
-
-<h1 id="assembling-knowledge">assembling knowledge</h1>
-
-<p>From the embedding space, we can now perform a critical learning step: we can force modalities that occur together to have the same representation, the same 512 numbers. We can do this training the embedding space to push events that happen together closer, and push apart events that are uncorrelated. Sounds familiar?</p>
-
-<p>Well today, this modality, called contrastive-learning, has been a prevalent way of training a new class of neural networks and a more complex set of data. This training modality is the core of Stable Diffusion text to image models (example below).</p>
-
-<p><img src="/assets/2022-09-23-data-bundles-together/1*dPvpYVK0RUu0hrfREu-80Q.png" alt="" /></p>
-
-<p><a href="https://github.com/CompVis/stable-diffusion">https://github.com/CompVis/stable-diffusion</a></p>
-
-<p>The goal of this blog post is to possibly convince you that we need to do more of this! We need to learn more modalities than just text and images, and combine them together into a singular embedding space. To me that new embedding space is a bit like a mini-cortex, a mini-brain, where attention-based cortical columns can make sense of the complex interaction of signals arising from life and the environment around us.</p>
-
-<p>For example, think of PDF documents, fliers, brochures, medical data—what do they have in common? They aggregate text, images, videos, tables, time-series data into single documents: they co-occur together, so if we projected to the embedding space and group them, we will build hierarchical knowledge of dependent data.</p>
-
-<p>Now imagine we took all the movies or videos on youtube. Same thing: we can use their text subtitles, text description, video and sound and learn an embedding space that will cluster events together. We can now sure learn what a waterfall is, because we will see it move, hear its sound.</p>
-
-<p>Now Hebbian learning sounds quite interesting because it could be the foundation of the next “Google”. If we can connect knowledge now just by text, like the Web 1.0–2.0, but by multiple modalities, we would then have a much more sophisticated and powerful semantic search. After all what is a word? It is just a representation (and embedding) of a real concept, a mixture of sensory signals, a qualia.</p>
-
-<p>And the revelation of this post, which I stumbled upon by searching a way to replicate brains over the years, is also surfacing from many colleagues in the area with the same life goals: building a clone of the human brain. See: HuggingFaces and Jira for example. I think you may recognize some of the underlying ideas.</p>
-
-<h1 id="advantages">advantages</h1>
-
-<p>What could we do with this? After all it seems like I am only giving you a recipe to group things together… what comes next is “prediction”. A theory of the brain by Friston suggests that the brain is predicting future events all the time, and ignores most events that can be predicted, and focuses attention on what cannot be predicted.</p>
-
-<p>Imagine you see a restaurant room full of tables: nothing much to report. But now you see a table standing with only two legs. You would be “surprised”! Because that is not common! In your knowledge all tables that stand have 4 or at least 3 legs!</p>
-
-<p>Now you see: if we have grouped data together that is common, we would have an easier time to figure out what is uncommon. Machine-learning today struggles with anomaly detection tasks like this.</p>
-
-<p>In addition embedding multi-modal information should have a big advantage in continual-learning. That is because as we had more data, it will have to be embedded into the same space, in a way averaging over concepts that we have learned before. And in a continual learning scenario, we would continue to build a knowledge graph that need to be consistent with reality, and thus robust to new datapoints. All this has to be proven, it is a conjecture right now.</p>
-
-<p>The other immense advantage of multi-modal learning is that it can be trained largely unsupervised! Meaning we do not need to curate and provide a large set of examples. We still need data, yes, but all we need is multi-modal data, not the labels. Training with contrastive learning techniques thus can relieves from the immense problem of creating an input/output dataset.</p>
-
-<h1 id="applications">applications</h1>
-
-<p>With contrastive learning and a common embedding space, we can thus organize knowledge into a neural graph, as data from different modalities is connected and grouped into semantical concepts that can be queried. This is similar to building a language without a language: a language of the brain, made of codes and relative position of concepts. In this space distance is a metric of connectivity, similarly to what happens in natural language processing, where similar concepts group together (see below).</p>
-
-<p><img src="/assets/2022-09-23-data-bundles-together/1*_i12gfIu6Y78ttG02pvgUQ.png" alt="" /></p>
-
-<p>semantic grouping of words</p>
-
-<p>Using this we can open to many potential applications:</p>
-
-<ul>
-  <li>understanding complex relationship in complex multi-modal documents</li>
-  <li>generating text, sounds, video, images</li>
-  <li>organizing human knowledge and finding new connections between data</li>
-  <li>connecting different areas of knowledge that are now loosely connected</li>
-  <li>automatic discovery of knowledge</li>
-</ul>
-
-<h1 id="final">final</h1>
-
-<p>I hope these ideas have piqued your interest in artificial brains and neural networks and help you think of how we can do more with the massive amount of data we have, how to learn how to learn, how to grow a brain.</p>
-
-<h1 id="notes">notes</h1>
-
-<ul>
-  <li>Hebbian learning is just a theory</li>
-  <li>there could be multiple other ways to learn and scale</li>
-  <li><a href="https://medicalxpress.com/news/2018-11-neurons-dont-wire.html">https://medicalxpress.com/news/2018-11-neurons-dont-wire.html</a></li>
-</ul>
-
-<h1 id="about-the-author">about the author</h1>
-
-<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
-
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Data that bundles together, is learned together]]></summary></entry></feed>
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How can we build an artificial brain from our knowledge of the human brain?]]></summary></entry></feed>
