@@ -22,25 +22,25 @@
 
   <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Computation and memory bandwidth in deep neural networks" />
+<meta property="og:title" content="Robotics and AI in 2024 and beyond — part 1" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Computation and memory bandwidth in deep neural networks" />
-<meta property="og:description" content="Computation and memory bandwidth in deep neural networks" />
-<link rel="canonical" href="http://localhost:4000/2017/05/01/memory-bandwidth.html" />
-<meta property="og:url" content="http://localhost:4000/2017/05/01/memory-bandwidth.html" />
+<meta name="description" content="Robotics and AI in 2024 and beyond — part 1" />
+<meta property="og:description" content="Robotics and AI in 2024 and beyond — part 1" />
+<link rel="canonical" href="http://localhost:4000/2023/12/13/robotics-2024-part1.html" />
+<meta property="og:url" content="http://localhost:4000/2023/12/13/robotics-2024-part1.html" />
 <meta property="og:site_name" content="Eugenio Culurciello Blog" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2017-05-01T00:00:00-04:00" />
+<meta property="article:published_time" content="2023-12-13T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Computation and memory bandwidth in deep neural networks" />
+<meta property="twitter:title" content="Robotics and AI in 2024 and beyond — part 1" />
 <meta name="twitter:site" content="@culurciello" />
 <meta name="google-site-verification" content="google_meta_tag_verification" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2017-05-01T00:00:00-04:00","datePublished":"2017-05-01T00:00:00-04:00","description":"Computation and memory bandwidth in deep neural networks","headline":"Computation and memory bandwidth in deep neural networks","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2017/05/01/memory-bandwidth.html"},"url":"http://localhost:4000/2017/05/01/memory-bandwidth.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-13T00:00:00-05:00","datePublished":"2023-12-13T00:00:00-05:00","description":"Robotics and AI in 2024 and beyond — part 1","headline":"Robotics and AI in 2024 and beyond — part 1","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2023/12/13/robotics-2024-part1.html"},"url":"http://localhost:4000/2023/12/13/robotics-2024-part1.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 
-  <title>Computation and memory bandwidth in deep neural networks | Eugenio Culurciello Blog
+  <title>Robotics and AI in 2024 and beyond — part 1 | Eugenio Culurciello Blog
   </title>
 
   <!--
@@ -407,8 +407,8 @@
         <span>
           
           
-          <a href="/2017">
-            2017
+          <a href="/2023">
+            2023
           </a>
         </span>
 
@@ -420,8 +420,8 @@
         <span>
           
           
-          <a href="/05">
-            05
+          <a href="/12">
+            12
           </a>
         </span>
 
@@ -433,8 +433,8 @@
         <span>
           
           
-          <a href="/01">
-            01
+          <a href="/13">
+            13
           </a>
         </span>
 
@@ -443,7 +443,7 @@
       
 
         
-          <span>Computation and memory bandwidth in deep neural networks</span>
+          <span>Robotics and AI in 2024 and beyond — part 1</span>
 
         
 
@@ -520,7 +520,7 @@
 
     <div class="post pl-1 pr-1 pl-sm-2 pr-sm-2 pl-md-4 pr-md-4">
 
-      <h1 data-toc-skip>Computation and memory bandwidth in deep neural networks</h1>
+      <h1 data-toc-skip>Robotics and AI in 2024 and beyond — part 1</h1>
 
       <div class="post-meta text-muted d-flex flex-column">
         <!-- Published date and author -->
@@ -541,7 +541,7 @@
   
     data-toggle="tooltip"
     data-placement="bottom"
-    title="Mon, May  1, 2017, 12:00 AM -0400"
+    title="Wed, Dec 13, 2023, 12:00 AM -0500"
   
 
   
@@ -551,10 +551,10 @@
   
 
   
-    May  1, 2017
+    Dec 13, 2023
   
 
-  <i class="unloaded">2017-05-01T00:00:00-04:00</i>
+  <i class="unloaded">2023-12-13T00:00:00-05:00</i>
 
 </span>
 
@@ -579,7 +579,7 @@
 
 
 <!-- return element -->
-<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="599 words">3 min</span>
+<span class="readtime" data-toggle="tooltip" data-placement="bottom" title="1023 words">5 min</span>
 
 
           <!-- page views -->
@@ -593,50 +593,53 @@
 
         
 
-        <h1 id="computation-and-memory-bandwidth-in-deep-neural-networks">Computation and memory bandwidth in deep neural networks</h1>
+        <h1 id="robotics-and-ai-in-2024-and-beyond--part-1">Robotics and AI in 2024 and beyond — part 1</h1>
 
-<p><em>Eugenio Culurciello, Aliasger Zaidy and Vinayak Gokhale</em></p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/2023-12-13-robotics-2024-part1/1.png" alt="" /></p>
 
-<p>Memory bandwidth and data re-use  in deep neural network computation can be estimated with a few simple simulations and calculations.</p>
+<p>a robot generated by a robot (DALL-E2)</p>
 
-<p>Deep neural network  computation requires the use of  <em>weight</em> data and  _input_data. Weights are neural network parameters, and input data (maps, activations) is the data you want to process from one layer to the next.</p>
+<p>Robots, such as the one populating sci-fi movies, are not yet part of our lives. We do not have robots that can cook, or dust our surfaces, fold our clothes, and do laundry, clean the house, nor we have robot brains that can drive our car in any environmental conditions. The reason is simply we have not been able to create an artificial robot brain “controller” that can deal with the multi-faceted complexity of our world.</p>
 
-<p>In general,  if a computation re-uses data, it will require less memory bandwidth. Re-use can be accomplished by:</p>
+<p>In this article we will explore ideas to create a robot brain and how to train it.</p>
 
-<ul>
-  <li>sending more inputs to be processed by the same weights</li>
-  <li>sending more weights to process the same inputs</li>
-</ul>
+<h1 id="physical-world-multi-modal-learning"><strong>Physical world multi-modal learning</strong></h1>
 
-<p>If there is no input or weight data re-use, then the bandwidth  is at a maximum for a given application. Let us give some examples:</p>
+<p>Robots need a brain that can understand the world in its entirety and based on a complex knowledge graph. The complexity in robotics is that both an understanding of the world and a connection to goal-oriented applications is required to be effective.</p>
 
-<p><strong>Linear layers:</strong> here a weight matrix of M by M is used to process a vector of M values with  <em>b</em>  bits. Total data transferred is:  <em>b(M+M²)</em> or <em>~bM²</em></p>
+<p>For a long time, we have tried to create robot brains by patching separate modules and algorithms, and this approach has not worked. Learning to recognize objects and to grasp them, or to move in space have all the same roots in understanding the three-dimensionality of space and the relationship between spaces and object visual perception. At the same time planning motion or a sequence of process steps requires the basic understanding of the impact of the robot action in the same space and onto the same objects.</p>
 
-<p>If the linear layer is used only for one vector, it will require to send the entire  <em>M²</em>  matrix of weights as computation occurs. If your system has  <em>T_operations/second of performance, then the time to perform the computation is  _bM²/T</em>. Given than  bandwidth <em>BW = total data transferred / tim__e</em>, in case of linear layers  <em>BW = T.</em></p>
+<p>What is required is a common model that can learn multi-modal experiences. A robot will have a set of motion capabilities, a vector of actions, and a set of sensors, for example vision, audio, proprioception. Learning needs to correlate all these modalities with the flow of actions and changes in the environment. This means that we need a robot brain capable of evaluating the sequence of sensory inputs and providing a sequence of outputs. A unified model will be able to understand space and objects, move, and manipulate objects.</p>
 
-<p>This means that if your system has 128 G-ops/s of performance, you will need a bandwidth of more than 128 GB/s to perform the operation at full system efficiency (provided, of course that the system can do this!).</p>
+<p>A robot brain needs to learn a knowledge graph in the physical world. What is a knowledge graph? It is a system that learns real-world “concepts” and can inter-link them based on their semantic and physical meaning and relationships. For example, the concept “cat” in our brain is created by seeing cats, hearing cats, interacting with cats. The fact that we can link worlds like  <em>Egyptian</em>  or  <em>cat</em>  or  <em>Mann</em> happens because these concepts are linked together in our knowledge. We need to build the same knowledge graph into a robot brain, so they can understand the world and all relationships between its components.</p>
 
-<p>Of course if you have multiple inputs for the same linear layer (multiple vectors that need to be multiplied by the same matrix) then:  <em>BW = T/B</em>, where B is the number of vectors or Batch.</p>
+<h1 id="goals-and-instructions"><strong>Goals and instructions</strong></h1>
 
-<p><strong>Convolutions:</strong>  for convolution operation, the bandwidth requirements are usually lower, as an input map data can be used in several convolution operation in parallel, and convolution weights are relatively small.</p>
+<p>We need robots to help us in our everyday activities and support us in tedious repetitive tasks. Folding dry clothes after a laundry session is an example; it is a repetitive activity that is nevertheless never the same. There is always a difference in what clothes to fold, what their state is, where you pick them up, and where you lay them down. There are infinite configurations that require high levels of generalization by a robot brain. More of this in the following section (learning).</p>
 
-<p>For example: a 13 x 13 pixel map in a 3x3 convolution operation from 192 input maps to 192 output maps (as, for example, in Alexnet layer 3) requires: ~4MB weight data and ~0.1MB input data from memory. This may require about 3.2 GB/s to be performed on a 128 G-ops/s system with ~99% efficiency (SnowFlake Spring 2017 version). The bandwidth usage is low is because the same input data is used to compute 192 outputs, albeit with different small weight matrices.</p>
+<p>A robot needs to listen to some instruction and execute it. Large language models make understanding human verbal instructions possible. The robot brain now needs to break down the instructions into a plan or successive steps to achieve the goal. Consider the example, for completing a goal: “pick up the blue bottle” when standing at a corner of a room. This simple command in text needs to unleash a sequence of planned motions and real-world interactions: figure out what are traversable areas in the room, where are obstacles, where is the target bottle, and planning motion towards it and an approach to grasping the item.</p>
 
-<p><strong>RNN:</strong>  memory bandwidth for recurrent neural networks is one of the highest.  <a href="http://proceedings.mlr.press/v48/amodei16.pdf">Deep Speech 2</a>  system or similar use 4 RNN layers of 400 size (see <a href="https://svail.github.io/rnn_perf/">here</a>  and  <a href="https://github.com/SeanNaren/deepspeech.pytorch">here</a>). Each layer uses the equivalent of 3 linear-layer-like matrix multiplications in a  <a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">GRU model</a>. During inference the input batch is only 1 or a small number, and thus running these neural network requires the highest amount of memory bandwidth, so high it usually it is not possible to fully utilize even efficient hardware at full utilization.</p>
+<p>The robot brain sequential planning is always the same: observe the environment, consult on the goal of the instructions, then perform some actions. This loop repeats many times until the goal is reached.</p>
 
-<p>In order to visualize these concepts, refer to this figure:</p>
+<p>Planning may be recalling steps in an example or previously completed sequence. Or it may involve mental simulation in the representation space to evaluate multiple possible action sequences.</p>
 
-<p><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="/assets/2017-05-01-memory-bandwidth/1*yIWwmtgKqIRJfhqDNQ2D6g.jpeg" alt="" /></p>
+<h1 id="embodiment"><strong>Embodiment</strong></h1>
 
-<p>Snowflake arithmetic intensity</p>
+<p>Imagine we have a video demonstration of a task. Learning to repeat the same task requires to learn a correlation between what we observe and the sequence of actions we want to perform. Here comes the first big problem: we need this data to come from the first-person perspective of the robot. In other word the sensing and actions need to be coming from the robot body. Learning would be much impossible if we cannot correlate perception and action. This requires the robot and learning experience to be embodied. The complexity is that we cannot easily get training data for such a robot unless we use an external “oracle” controller to gather them. Think of a human piloting a character in a videogame. Therefore, we need to control the robot and create a few examples of the task. This of course is a time-consuming data collection problem, given that we cannot train a robot brain with just 100 examples or maybe even 1000. We may need a large amount, maybe in the same order of magnitude as the samples used to train an LLM.</p>
 
-<p>This is the arithmetic intensity for our accelerator Snowflake. Arithmetic intensity is the number of operations performed on a byte of data. As you can see all neural network models tested perform at the maximum (roofline) efficiency of the device. On the other hand linear layers have very little data re-use and are limited by memory bandwidth constraints.</p>
+<p>It would be much easier if the robot could learn to imitate actions from a video, just like we do with YouTube videos. But the chicken-in-the-egg problem is that the robot has not learned to control its own body and does not know how to “imitate” an action.</p>
 
-<p><strong>PS.:</strong>  More about performance, roofline-plots and bandwidth  <a href="http://www.telesens.co/2018/07/26/understanding-roofline-charts/">here</a>.</p>
+<p>Where is the mirror-neuron for robots? How do we learn the capability of imitation?</p>
 
-<h1 id="about-the-author">About the author</h1>
+<p>We need to study how to develop a curriculum to learn progressively vision, 3d space, mobility, attention to other agents such as humans, and finally the ability to imitate them.</p>
 
-<p>I have almost 20 years of experience in neural networks in both hardware and software (a rare combination). See about me here:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://e-lab.github.io/html/contact-eugenio-culurciello.html">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>, and more…</p>
+<p><em>… end of part I</em></p>
+
+<h1 id="about-the-author">about the author</h1>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>
 
 
       </div>
@@ -671,19 +674,19 @@
 
     
       
-        <a href="https://twitter.com/intent/tweet?text=Computation and memory bandwidth in deep neural networks - Eugenio Culurciello Blog&url=http://localhost:4000/2017/05/01/memory-bandwidth.html" data-toggle="tooltip" data-placement="top"
+        <a href="https://twitter.com/intent/tweet?text=Robotics and AI in 2024 and beyond — part 1 - Eugenio Culurciello Blog&url=http://localhost:4000/2023/12/13/robotics-2024-part1.html" data-toggle="tooltip" data-placement="top"
           title="Twitter" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fa-fw fab fa-twitter"></i>
         </a>
     
       
-        <a href="https://www.facebook.com/sharer/sharer.php?title=Computation and memory bandwidth in deep neural networks - Eugenio Culurciello Blog&u=http://localhost:4000/2017/05/01/memory-bandwidth.html" data-toggle="tooltip" data-placement="top"
+        <a href="https://www.facebook.com/sharer/sharer.php?title=Robotics and AI in 2024 and beyond — part 1 - Eugenio Culurciello Blog&u=http://localhost:4000/2023/12/13/robotics-2024-part1.html" data-toggle="tooltip" data-placement="top"
           title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
           <i class="fa-fw fab fa-facebook-square"></i>
         </a>
     
       
-        <a href="https://telegram.me/share?text=Computation and memory bandwidth in deep neural networks - Eugenio Culurciello Blog&url=http://localhost:4000/2017/05/01/memory-bandwidth.html" data-toggle="tooltip" data-placement="top"
+        <a href="https://telegram.me/share?text=Robotics and AI in 2024 and beyond — part 1 - Eugenio Culurciello Blog&url=http://localhost:4000/2023/12/13/robotics-2024-part1.html" data-toggle="tooltip" data-placement="top"
           title="Telegram" target="_blank" rel="noopener" aria-label="Telegram">
           <i class="fa-fw fab fa-telegram"></i>
         </a>
@@ -789,735 +792,735 @@
   
 
   
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-
-  
-
-  
     
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
   
 
   
@@ -1636,6 +1639,9 @@
   
     
     
+  
+    
+    
       
       
         
@@ -1671,59 +1677,6 @@
     <h3 class="pt-2 mt-1 mb-4 ml-1"
       data-toc-skip>Further Reading</h3>
     <div class="card-deck mb-4">
-    
-      
-      
-      <div class="card">
-        <a href="/2023/12/13/robotics-2024-part1.html">
-          <div class="card-body">
-            <!--
-  Date format snippet
-  See: /assets/js/_utils/timeage.js
--->
-
-
-
-
-
-<span class="timeago small"
-  
-
-  
-   >
-
-  
-  
-
-  
-    Dec 13, 2023
-  
-
-  <i class="unloaded">2023-12-13T00:00:00-05:00</i>
-
-</span>
-
-            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>Robotics and AI in 2024 and beyond — part 1</h3>
-            <div class="text-muted small">
-              <p>
-                
-
-
-
-
-
-                Robotics and AI in 2024 and beyond — part 1
-
-
-
-a robot generated by a robot (DALL-E2)
-
-Robots, such as the one populating sci-fi movies, are not yet part of our lives. We do not have robots that ca...
-              </p>
-            </div>
-          </div>
-        </a>
-      </div>
     
       
       
@@ -1833,6 +1786,59 @@ Artificial intell...
         </a>
       </div>
     
+      
+      
+      <div class="card">
+        <a href="/2023/03/30/A-picture-is-worth-a-1000-words.html">
+          <div class="card-body">
+            <!--
+  Date format snippet
+  See: /assets/js/_utils/timeage.js
+-->
+
+
+
+
+
+<span class="timeago small"
+  
+
+  
+   >
+
+  
+  
+
+  
+    Mar 30, 2023
+  
+
+  <i class="unloaded">2023-03-30T00:00:00-04:00</i>
+
+</span>
+
+            <h3 class="pt-0 mt-1 mb-3" data-toc-skip>A picture is worth a 1000 words</h3>
+            <div class="text-muted small">
+              <p>
+                
+
+
+
+
+
+                A picture is worth a 1000 words
+
+Evolution of large language models into artificial brains through multiple sensory modalities
+
+
+
+As surprising as it is our very human predictive abilities hide a p...
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    
     </div> <!-- .card-deck -->
   </div> <!-- #related-posts -->
 
@@ -1844,17 +1850,17 @@ Artificial intell...
 
 <div class="post-navigation d-flex justify-content-between">
   
-  <a href="/2017/04/15/AI-past-present-future.html" class="btn btn-outline-primary"
+  <a href="/2023/12/05/Artificial-scientists.html" class="btn btn-outline-primary"
     prompt="Older">
-    <p>Artificial Intelligence: past, present, future</p>
+    <p>Artificial scientists and autonomous laboratories</p>
   </a>
   
 
   
-  <a href="/2017/05/01/snowflake.html" class="btn btn-outline-primary"
+  <span class="btn btn-outline-primary disabled"
     prompt="Newer">
-    <p>Snowflake</p>
-  </a>
+    <p>-</p>
+  </span>
   
 
 </div>
