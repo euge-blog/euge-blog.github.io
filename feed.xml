@@ -1,4 +1,110 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-02-27T09:41:55-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Robotics and AI in 2024 and beyond — part 2</title><link href="http://localhost:4000/2024/02/24/robotics-2024-part2.html" rel="alternate" type="text/html" title="Robotics and AI in 2024 and beyond — part 2" /><published>2024-02-24T00:00:00-05:00</published><updated>2024-02-24T00:00:00-05:00</updated><id>http://localhost:4000/2024/02/24/robotics-2024-part2</id><content type="html" xml:base="http://localhost:4000/2024/02/24/robotics-2024-part2.html"><![CDATA[<h1 id="robotics-and-ai-in-2024-and-beyond--part-2">Robotics and AI in 2024 and beyond — part 2</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-02-27T13:43:30-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Learning to see</title><link href="http://localhost:4000/2024/02/27/learning-to-see.html" rel="alternate" type="text/html" title="Learning to see" /><published>2024-02-27T00:00:00-05:00</published><updated>2024-02-27T00:00:00-05:00</updated><id>http://localhost:4000/2024/02/27/learning-to-see</id><content type="html" xml:base="http://localhost:4000/2024/02/27/learning-to-see.html"><![CDATA[<h1 id="learning-to-see">Learning to see</h1>
+
+<p>How do humans learn to make sense of the world? How do we learn what is us and what is others? How do we learn about moving in space, manipulating objects, physics, imitating others?</p>
+
+<p>It all starts with our senses, and one in particular: vision. Vision allows an entity to perceive the world from the distance, gathering a large amount of information per unit time. The other important sense is audition, but here we focus mostly on vision.</p>
+
+<p><img src="assets/2024-02-27-learning-to-see/1.png" alt="" /></p>
+
+<p>Gemini-Pro: “ a robot learning to see like a baby on a table with toys”</p>
+
+<h2 id="how-do-we-learn-to-see">How do we learn to see?</h2>
+
+<p>When human babies are born, there is not enough data in their DNA to program all the cortical weights involved in vision. If we want to create an artificial vision system, we ought to take inspiration and guidance on the human visual system.</p>
+
+<p>The human visual field covers a large spatial area, and there is a lot of information in the perceived visual scene. This is too much information, and there needs to be a mechanism to reduce it the minimum required for survival. Evolution had billions of years of trials and errors, and so the mammalian visual system is based on:</p>
+
+<ul>
+  <li>
+    <p>A blurry version of the entire visual field (peripheral vision)</p>
+  </li>
+  <li>
+    <p>A high resolution “focus area” that we can move around (fovea)</p>
+  </li>
+</ul>
+
+<p>Instead of seeing everything in high-fidelity, we see a large visual portion with very low fidelity, and only a small portion in high resolution. Say we have a visual field that in a robotic camera would be 5000 x 3000 pixels. Peripheral vision could be 500 x 300 and the fovea could be, say, 300 x 300 pixels. These are just example numbers (for more, see  <a href="https://en.wikipedia.org/wiki/Peripheral_vision">this</a>).</p>
+
+<p>Humans have to move their eyes (and head) in order to get all the details of a scene. We produce “<a href="https://en.wikipedia.org/wiki/Saccade">saccades</a>”, or eye movements, which then give us “fixations”, portions of content in high-resolution. Multiple fixations in a sequence give us the appearance of a unified visual field, even when they are a discrete set augmented by a low-resolution wide view.</p>
+
+<p>If we have to produce fixations, how do we figure out where to look next? How do babies know they need to look at people’s faces, for example, rather than moving leaves on a tree or just the ceiling? Looks like a chicken-in-the-egg problem. This means we will need some kind of visual attention, an algorithm that allow us to “scan” a scene for details, so that a complete picture can be created with a series of high-resolution fixations.</p>
+
+<h2 id="attention">Attention</h2>
+
+<p>Somehow the visual scene needs to tell us where to look. This is called “bottom-up” attention, and it a combination of visual details which grab your visual attention and make you move your eyes toward:</p>
+
+<ul>
+  <li>
+    <p>Motion in the field of view</p>
+  </li>
+  <li>
+    <p>High contrast areas</p>
+  </li>
+  <li>
+    <p>Contrast in colors</p>
+  </li>
+</ul>
+
+<p>All these visual features attract our attention, our bottom-up attention. This is not what we do when we are on a visual task, like looking for your keys at home. That is “top-down” attention. More on that later.</p>
+
+<p>But back to the main question: who do we learn to see? We do not have an answer today. But we have to start somewhere. Let’s think about babies in their first week of life. At the beginning they do not even know where to look, their eyes cross and they cannot even focus.</p>
+
+<p>Having some kind of bottom-up attention may be a way to pre-condition the visual system to be getting the right information, after all a robot (baby?) that only looks at the ceiling would not be useful or insightful. Possibly there is a built-in innate circuit for visual attention that we are born with.</p>
+
+<p>Now, we can argue that bottom-up attention, coupled with the sense of audition, directs a baby to look at someone’s face. Babies start to recognize caregivers and smile  <a href="https://www.whattoexpect.com/first-year/first-smile/">within 6 weeks</a>! Some aspects of face detection are even  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4496551/">present at birth</a>, possibly suggesting the presence of some kind of innate face-detector circuitry.</p>
+
+<h2 id="first-steps">First steps</h2>
+
+<p>How does a baby learn what are familiar faces, positive and negative facial expressions? There needs to be a “reward” mechanism, something that can tell a baby that something is  <em>good</em>  or  <em>bad</em>. Remember the baby’s brain does not know anything at first, and to the brain reward is just another signal. There has to be more, maybe this signal is wired so strongly to parts of the brain that it makes it react  <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4410745/">similarly to adults</a>. Reacting newborn babies feeling pain, for example, have elevated hearth rates of cry. It seems some of the reward signals are hardwired to behavior, and for a reason: survival.</p>
+
+<p>Recognizing the faces of friends and foes is important to newborn animals for survival, in the same way that it is important to recognize pain and discomfort.</p>
+
+<p>Thinking about replicating vision in an artificial system, like robotic vision, the information we just reviewed is important and revealing:</p>
+
+<ul>
+  <li>We need circuits to bootstrap vision, bottom-up visual attention</li>
+  <li>Some kind of reward sensing: pain and pleasure, energy gain and loss</li>
+  <li>Face detectors? Innate detectors? What is built in?</li>
+</ul>
+
+<p>The capability of active visual perception (learning to see) develops when the following sequence of exemplary events occurs:</p>
+
+<ul>
+  <li>Bottom-up attention produces proposals for fixations</li>
+  <li>Looking at the right direction give us a reward (right fixations)</li>
+  <li>The reward signal and looking in the right direction are correlated</li>
+  <li>This correlation teaches us how to direct our sight and where we should pay attention to!</li>
+</ul>
+
+<p>Examples are:</p>
+
+<ul>
+  <li>A baby looks around and sees the mother’s face. Gets a pleasure reward from that. Correlates faces with positive or negative rewards.</li>
+  <li>What else can stimulate a baby vision?</li>
+  <li>Can predictive abilities give a reward signal? For example a baby can look at something until it learns a “model” of that something, and if so, learn to ignore it. As such a pleasure signal is given while learning / not knowing the model</li>
+</ul>
+
+<p><img src="assets/2024-02-27-learning-to-see/2.png" alt="" /></p>
+
+<p>a sketch of a model: Mix-Match</p>
+
+<h2 id="training-a-neural-network-model-of-vision">Training a neural network model of vision</h2>
+
+<p>In order to replicate foveated visual systems in a robot, we need the following components:</p>
+
+<ul>
+  <li>A bottom-up visual attention model. This can be a pre-trained CNN + a motion detector, for examples  <a href="https://github.com/e-lab/pytorch-demos/blob/master/saliency/saliency_model.py">this code</a>.</li>
+  <li>Some hard-wired reward: seeing a face, orienting gaze and head toward sources of pleasure. We need to hard wire some of this in the model, for example it can be a separate add-on word that is added to the inputs. Adding it to the inputs will allow the network to learn to bypass it</li>
+  <li>A multi-modal Mix-Match Transformer model to learn correlation of right fixations and positive rewards (right, +rewards) and prediction (looking there may give me a +reward)</li>
+</ul>
+
+<p>This can bootstrap the learning or more (right, +reward) thus enabling to learn additional reward rules that foster more and more complex capabilities.</p>
+
+<h2 id="about-the-author">about the author</h2>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Learning to see]]></summary></entry><entry><title type="html">Robotics and AI in 2024 and beyond — part 2</title><link href="http://localhost:4000/2024/02/24/robotics-2024-part2.html" rel="alternate" type="text/html" title="Robotics and AI in 2024 and beyond — part 2" /><published>2024-02-24T00:00:00-05:00</published><updated>2024-02-24T00:00:00-05:00</updated><id>http://localhost:4000/2024/02/24/robotics-2024-part2</id><content type="html" xml:base="http://localhost:4000/2024/02/24/robotics-2024-part2.html"><![CDATA[<h1 id="robotics-and-ai-in-2024-and-beyond--part-2">Robotics and AI in 2024 and beyond — part 2</h1>
 
 <p><img src="/assets/2024-02-24-robotics-2024-part2/1.png" alt="" /></p>
 
@@ -592,162 +698,4 @@
 
 <p>This should be a Spring-cleaning type of yearly task that we should often perform to feel better and restore our network!</p>
 
-<p>9</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Clean your social network]]></summary></entry><entry><title type="html">Astrophotography for beginners</title><link href="http://localhost:4000/2022/11/13/Astrophotography-beginners.html" rel="alternate" type="text/html" title="Astrophotography for beginners" /><published>2022-11-13T00:00:00-05:00</published><updated>2022-11-13T00:00:00-05:00</updated><id>http://localhost:4000/2022/11/13/Astrophotography-beginners</id><content type="html" xml:base="http://localhost:4000/2022/11/13/Astrophotography-beginners.html"><![CDATA[<h1 id="astrophotography-for-beginners">Astrophotography for beginners</h1>
-
-<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*EKFerO_B6iguC65dYl84OA.jpeg" alt="" /></p>
-
-<p>This guide is designed to help people interested in astrophotography to hit the ground running without making mistakes or reading thousands of hours of forums.</p>
-
-<p>When I started I could not find a single guide or website with all the information I needed. Most of the site are of too many details and there are too many options for equipment, software. Here is a simpler list for you to get started with!</p>
-
-<p>Needless to say there is a great advantage on doing some research of your own, allowing you to:</p>
-
-<ul>
-  <li>spend more time as hobby and not rush to conclusions</li>
-  <li>learn more about all aspects of astronomy and astrophotography</li>
-  <li>give you something to do during the majority of time that the night sky is not clear or observable</li>
-</ul>
-
-<p>I will divide this into <em>phases</em> which you may want to follow to enjoy your journey and have more fun and collect more knowledge on the way. If you have absolute desire to just get some image and be done, then find and read phase 3 or 4 below only. But do not skip phase 1 unless you already have that knowledge!</p>
-
-<blockquote>
-  <p>Note: I am still a beginner and am learning myself, so please check this blog for updates again in the future</p>
-</blockquote>
-
-<h2 id="phase-1---learning-the-basics-and-having-fun"><strong>Phase 1</strong>  -learning the basics and having fun:</h2>
-
-<p>This is the basic setup that will cost you not more than 25–30$ but allow you to hit the ground running.</p>
-
-<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*er9G2oxn-PHqUrwHM2Fyfw.jpeg" alt="" /></p>
-
-<p>a great book</p>
-
-<ul>
-  <li>buy a nice book: like  <a href="https://www.goodreads.com/en/book/show/104139.Nightwatch"><em>NightWatch</em>  by Terence Dickinson</a>, for the cloudy nights and the long days. This will allow you to learn all the basics and be ready to enjoy the night skies!</li>
-  <li>go out and learn the dark night skies: use the sky maps in the book above, and a cell-phone virtual reality app like  <a href="https://www.fifthstarlabs.com/"><em>Sky Guide</em></a>  is one I found effective</li>
-</ul>
-
-<p>Why: because you will be able to enjoy the night sky and recognize objects without a telescope or camera, and share your knowledge with others as you walk outside at night!</p>
-
-<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*tqxUc8slzMXDdt_3_mfNLg.png" alt="" /></p>
-
-<p>initial telescope setup</p>
-
-<h2 id="phase-2--get-a-simple-telescope-and-tripod">Phase 2 — get a simple telescope and tripod</h2>
-
-<p>This setup will cost you ~150–500$.</p>
-
-<ul>
-  <li>beginner telescope and tripod like the:  <a href="https://www.celestron.com/products/powerseeker-127eq-telescope">Celestron PowerSeeker 127EQ</a>which is enough to start learning how to point a telescope and how the sky rotate around you and you have to manually track it! It will be hard to see planets in detail with this, but you can get really good observing the moon, and bright targets like Andromeda, and the Orion Nebula.</li>
-  <li>be aware that this is not easy but it can be fun and leads to some quality time spent outside, especially in Fall or Spring when temperatures and mosquitoes are not a bother.</li>
-  <li>Another options is also the  <a href="https://www.svbony.com/sv48p-90mm-f5-5-refractor-telescope/">SVBONY SV48P Telescope</a>, but requires you to buy a separate tripod and objective lenses. It is a more advanced step, but the advantage is that this telescope can also be used for the next 1–2 phases!</li>
-  <li>A tripod I really liked and that can be used for more phases later is this:  <a href="https://astronomy-imaging-camera.com/product/zwo-tc40-carbon-fiber-pipe-tripod">ZWO TC40 Carbon Fiber Tripod</a>. There are much cheaper options online, albeit not as light and stable as this one.</li>
-</ul>
-
-<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*7dmEq-pZpDDEGddt4kUSWQ.png" alt="" /></p>
-
-<p>simple setup</p>
-
-<h2 id="phase-3--simple-astrophotography">Phase 3 — simple astrophotography</h2>
-
-<p>This setup will cost you ~1,000–1,500$.</p>
-
-<ul>
-  <li>A photography camera like the  <a href="https://www.usa.canon.com/shop/p/eos-rp?color=Black&amp;type=New">Canon EOR Rp</a>, or Rebel t7, i90D, depending on budget. An APS-C camera is enough but if you like to be full-frame and ready for the next steps I recommend a full-frame camera like the EOR R/Rp or similar. The best cameras are the one with large pixels and that do not suffer from self-heating. The Canon EOS Rp is a good compromise of large pixels, decent pixel count and low self-heating.</li>
-  <li>A camera telephoto zoom lens, like the Canon EF 75–300MM f/4–5.6 III USM or the Rokinon / Samyang 135mm f2 lens that is adored by nigh-sky photographers!</li>
-  <li>A camera sky tracker, like the <a href="https://www.ioptron.com/product-p/3550.htm">iOptron Skyguider Pro</a>  is needed to move the camera and be able to perform long exposures. This will require you to get a sturdy tripod, but hopefully you will already have this from a previous phase. In order to use this mount you will have to polar alight it — meaning you align the mount to the Earth’s axis of rotation. This mount has a small telescope inside to see Polaris and align to it, best if using a cell-phone app like PS Align. This is a required step if you want the mount to track your stars and targets. It will require some good knowledge of where Polaris is and a 5–10 minutes to properly align. Your knowledge from Phase 1 will come handy to find Polaris, and you will need patience to correctly align. If you are off in your alignment your stars and targets will trail and smear your photo. I suggest getting practice, but be aware that kneeling down to find Polaris is sometimes a bit of a struggle and you want to get going — but resist the urge and align well!</li>
-  <li>After correct alignment with Polaris, you will be able to shoot photos with long exposure of a few minutes. I often use 30s, 60s, 180s or 5 minutes. The longer you expose and the more stable and aligned you need to be. I found 60–180s to be the best spot for this setup.</li>
-</ul>
-
-<p><img src="/assets/2022-11-13-Astrophotography-beginners/1*Z9arDI7x1vDa10Rz43hVrg.png" alt="" /></p>
-
-<p>an advanced setup</p>
-
-<h2 id="phase-4--more-advanced-astrophotography">Phase 4 — more advanced astrophotography</h2>
-
-<p>This setup will cost you ~4,000–5,000$.</p>
-
-<ul>
-  <li>a better astrophotography telescope capable of full-frame photos is the  <a href="https://williamoptics.com/products/telescope/zenithstar">William Optics Zenithstar</a>  series</li>
-  <li>Full frame imaging will require you also to buy a field flattener like the  <a href="https://williamoptics.com/2019-all-new-adjustable-flat6aiii-t-mount-not-included">William Optics FLAT6AIII</a>, so you stars will be point-like and not distorted even at the edge of your full frame camera (in photography this undesired effect is called vignetting). If you have a APS-C camera and do not care too much of getting a large field, you can do without a flattener.</li>
-  <li>a computer controlled go-to mount, like the:  <a href="https://astronomy-imaging-camera.com/product/zwo-am5-harmonic-equatorial-mount">ZWO AM5 Harmonic Drive Hybrid AZ/EQ Mount</a>, is a superb upgrade from what you are used to before, allowing you to simply align to polaris and then use the go-to functions to directly and accurately point to any objects in the sky. This makes targeting a breeze, but also takes away some of the fun of finding targets, and does not build your knowledge of the sky.</li>
-</ul>
-
-<p>I also recommend the following extras to make observing easy and even more accurate:</p>
-
-<ul>
-  <li><a href="https://astronomy-imaging-camera.com/product/asiair-plus">ZWO ASIAir Plus Wireless Camera Controller</a>  for Astrophotography. This is a full computer controller, but makes you life so much easier if you want to take long session of hours! It allows you to control your mount, camera and more with a call-phone or tablet app, and even helps you in polar alignment, finding targets, etc. I highly recommend this computer because it can amplify your abilities and really remove a lot of frustrations.</li>
-  <li>There is a less expensive option for computer control:  <a href="https://www.astroberry.io/">https://www.astroberry.io/</a>  but will require you to spend more time to set-up and test and make sure all your equipment is supported. In case of a Canon EOS Rp camera for examples, I was not able to make the astroberry work, but the ASIAir was perfect and a breeze!</li>
-  <li>a guide-camera and small telescope, like the: ZWO 30 mm f/4 Guide Scope and ZWO ASI290MM Guide Camera i necessary if you want a more refined tracking of targets, so your images are even shaper!</li>
-</ul>
-
-<h2 id="phase-5--the-ultimate-setup">Phase 5 — the ultimate setup</h2>
-
-<p>This setup is for professional astrophotographers with a large budget of ~10,000$ or more.</p>
-
-<ul>
-  <li>Celestron EdgeHD 11” OTA — a very capable telescope that can be used with f10 for deep sky targets and f2 for larger targets!</li>
-  <li>ZWO ASI6200mm pro — a professional camera</li>
-  <li>filter wheel — to image different wavelengths separately</li>
-  <li>iOptron HEM44 with High Precision Encoder (HEM44EC) — a more powerful mount to support the heavier telescope and equipment</li>
-</ul>
-
-<h2 id="processing-photos">Processing photos</h2>
-
-<p>Do not waste money on software, the best is luckily free. I used some paid alignment software and it was highly inferior or not working at all! GIMP is a free photo editor like PhotoShop.</p>
-
-<ul>
-  <li>align photots with  <a href="http://www.hnsky.org/astap.htm">ASTAP</a>. Use AstroM white star to avoid saturation in de-mosaic methods.</li>
-  <li>process photos with  <a href="https://www.gimp.org/">GIMP</a></li>
-</ul>
-
-<h1 id="references">References</h1>
-
-<h2 id="books">Books</h2>
-
-<ul>
-  <li><a href="https://www.goodreads.com/en/book/show/104139.Nightwatch">NightWatch by Terence Dickinson</a></li>
-</ul>
-
-<h2 id="websites">Websites:</h2>
-
-<ul>
-  <li><a href="https://www.cloudynights.com/">https://www.cloudynights.com/</a>  — best site overall for posts, classified ads, and massive number of reviews and posts (be aware, needs long hours to read and search!)</li>
-  <li><a href="https://astrobackyard.com/7-astrophotography-tips/">https://astrobackyard.com/</a>– really good for beginners, but became too large and too many video and equipment review that can be confusing</li>
-</ul>
-
-<h2 id="equipment">Equipment:</h2>
-
-<ul>
-  <li><a href="https://www.celestron.com/products/powerseeker-127eq-telescope">Celestron PowerSeeker 127EQ</a></li>
-  <li><a href="https://www.usa.canon.com/shop/p/eos-rp?color=Black&amp;type=New">Canon EOR Rp</a></li>
-  <li><a href="https://www.ioptron.com/product-p/3550.htm">iOptron Skyguider Pro</a></li>
-  <li><a href="https://williamoptics.com/products/telescope/zenithstar">William Optics Zenithstar</a></li>
-  <li><a href="https://williamoptics.com/2019-all-new-adjustable-flat6aiii-t-mount-not-included">William Optics FLAT6AIII</a></li>
-  <li><a href="https://astronomy-imaging-camera.com/product/zwo-am5-harmonic-equatorial-mount">ZWO AM5 Harmonic Drive Hybrid AZ/EQ Mount</a></li>
-</ul>
-
-<h2 id="computers">Computers</h2>
-
-<ul>
-  <li><a href="https://astronomy-imaging-camera.com/product/asiair-plus">ZWO ASIAir Plus Wireless Camera Controller</a></li>
-  <li><a href="https://www.astroberry.io/">https://www.astroberry.io/</a>  if you want to make your own computer with a Raspberry Pi</li>
-</ul>
-
-<h2 id="apps--software">Apps / Software:</h2>
-
-<ul>
-  <li><a href="https://www.fifthstarlabs.com/">https://www.fifthstarlabs.com/</a>  — Sky Guide cell-phone App</li>
-  <li>Align photos:  <a href="http://www.hnsky.org/astap.htm">http://www.hnsky.org/astap.htm</a>  — this is the best software and it is free! Do not spend money on some inferior software, learn and use this!</li>
-  <li>GIMP  <a href="https://www.gimp.org/">https://www.gimp.org/</a></li>
-  <li><a href="https://www.cloudynights.com/topic/607208-basic-gimp-29-guide-for-quick-astro-photo-editing/">https://www.cloudynights.com/topic/607208-basic-gimp-29-guide-for-quick-astro-photo-editing/</a>  — this is what I use to process images with GIMP. This is one of the simplest ways!</li>
-  <li><a href="https://www.youtube.com/watch?v=Tl4Ie92MuTs">https://www.youtube.com/watch?v=Tl4Ie92MuTs</a>  — GIMP processing tutorial I leaned and use!</li>
-</ul>
-
-<h1 id="about-the-author">about the author</h1>
-
-<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
-
-<p>I spend some of my free time, especially in the late Fall, Winter, early Spring months to look at the sky.</p>
-
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Astrophotography for beginners]]></summary></entry></feed>
+<p>9</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Clean your social network]]></summary></entry></feed>
