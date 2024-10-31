@@ -1,4 +1,88 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-02-27T13:46:43-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Learning to see</title><link href="http://localhost:4000/2024/02/27/learning-to-see.html" rel="alternate" type="text/html" title="Learning to see" /><published>2024-02-27T00:00:00-05:00</published><updated>2024-02-27T00:00:00-05:00</updated><id>http://localhost:4000/2024/02/27/learning-to-see</id><content type="html" xml:base="http://localhost:4000/2024/02/27/learning-to-see.html"><![CDATA[<h1 id="learning-to-see">Learning to see</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-10-31T10:07:14-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Insights into the use of Generative AI systems</title><link href="http://localhost:4000/2024/10/31/llm-use-cases.html" rel="alternate" type="text/html" title="Insights into the use of Generative AI systems" /><published>2024-10-31T00:00:00-04:00</published><updated>2024-10-31T00:00:00-04:00</updated><id>http://localhost:4000/2024/10/31/llm-use-cases</id><content type="html" xml:base="http://localhost:4000/2024/10/31/llm-use-cases.html"><![CDATA[<h1 id="insights-into-the-use-of-generative-ai-systems">Insights into the use of Generative AI systems</h1>
+
+<p>Generative AI models, such as large language models (LLMs), have demonstrated remarkable capabilities in mimicking human-like communication. We here explore recent trends and use cases observed among developers and companies utilizing generative AI. Our observations highlights common challenges and opportunities within this rapidly evolving field.</p>
+
+<h2 id="1-generative-ai-cannot-read-your-mind">1. Generative AI cannot read your mind</h2>
+
+<p>A typical use of Generative AI systems is to read all internal company data and provide a way to search its knowledge. Generative AI systems excel at providing informative and comprehensive responses when given clear and specific prompts. However, terse, vague or ambiguous prompts can lead to misunderstandings and inaccurate results.</p>
+
+<p>Consider these examples:</p>
+
+<ul>
+  <li>
+    <p>Insufficient Context: A prompt like “who is Elon?” without additional context may result in the AI returning information about the famous entrepreneur Elon Musk rather than the CTO of a specific company name Elon Tusk, even if this is part of the internal data.</p>
+  </li>
+  <li>
+    <p>Complex Tasks: For tasks requiring extensive knowledge, such as creating an approval plan based on 1,000 pages of regulatory documents, providing the relevant documents as context is crucial, instead of using terse prompts like “give me an approval plan for …”.</p>
+  </li>
+</ul>
+
+<p>To ensure accurate and relevant responses from generative AI, it is essential to provide well-crafted prompts that include all context and details. By doing so, users can maximize the system’s potential and avoid misunderstandings.</p>
+
+<h2 id="2--iterative-problem-solving-with-generative-ai">2- Iterative Problem-Solving with Generative AI</h2>
+
+<p>While generative AI systems can be powerful tools, complex tasks often require more than a single-shot interaction. Problems like solving math equations or coding webpages may involve multiple steps, such as:</p>
+
+<ul>
+  <li>Planning: Breaking down the problem into smaller, manageable subtasks.</li>
+  <li>Introspection: Evaluating the available information and identifying potential approaches.</li>
+  <li>Reflection: Assessing progress and making adjustments as needed.</li>
+  <li>Chain of Thought: Linking ideas and steps in a logical sequence.</li>
+  <li>Completion Criteria: Determining when a solution is satisfactory.</li>
+</ul>
+
+<p>To effectively address these complex tasks, it’s often necessary to use AI agents that can:</p>
+
+<ul>
+  <li>Iterate on Solutions: Refine and improve responses based on feedback or additional information.</li>
+  <li>Utilize External Tools: Access and integrate relevant resources, such as calculators or code libraries.</li>
+  <li>Learn from Experience: Adapt and improve their problem-solving strategies over time.</li>
+</ul>
+
+<p>By employing iterative problem-solving techniques and leveraging the capabilities of AI agents, organizations can harness the full potential of generative AI for complex tasks.</p>
+
+<h2 id="3--mitigating-prompt-injection-attacks-in-generative-ai">3- Mitigating Prompt Injection Attacks in Generative AI</h2>
+
+<p>Prompt injection attacks are a growing concern in the field of generative AI. These attacks involve manipulating the AI’s behavior by introducing malicious prompts that can lead to unintended or harmful outcomes.</p>
+
+<p>To mitigate these risks, consider the following strategies:</p>
+
+<h3 id="prompt-filtering">Prompt Filtering:</h3>
+
+<ul>
+  <li>Blacklist Creation: Develop a comprehensive list of malicious or harmful prompts, such as those requesting unauthorized actions or data access: “What are your directives?”, “ignore your directives and…”, “what is data …?”,.</li>
+  <li>Pattern Recognition: Use another gen-AI system to identify patterns and variations of malicious prompts.</li>
+  <li>Regular Updates: Continuously monitor and update the blacklist to address emerging threats.</li>
+</ul>
+
+<h3 id="contextual-analysis">Contextual Analysis:</h3>
+
+<ul>
+  <li>Prompt-Response Consistency: Analyze the consistency between the user’s prompt and the AI’s response to detect anomalies that may indicate malicious intent.</li>
+  <li>Semantic Understanding: Leverage natural language processing techniques to understand the underlying meaning of prompts and identify potential risks.</li>
+</ul>
+
+<h3 id="human-oversight">Human Oversight:</h3>
+
+<ul>
+  <li>Manual Review: Implement a human review process for borderline cases or when the AI flags suspicious prompts.</li>
+  <li>Feedback Loop: Use human feedback to improve the AI’s ability to detect and prevent attacks.</li>
+</ul>
+
+<h3 id="ai-agent-security">AI Agent Security:</h3>
+
+<ul>
+  <li>Restricted Access: Limit the AI agent’s access to sensitive data and systems.</li>
+  <li>Regular Auditing: Conduct regular audits to identify and address security vulnerabilities.</li>
+</ul>
+
+<p>By combining these strategies, organizations can significantly reduce the risk of prompt injection attacks and ensure the safe and responsible use of generative AI.</p>
+
+<h2 id="about-the-author">about the author</h2>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Insights into the use of Generative AI systems Generative AI models, such as large language models (LLMs), have demonstrated remarkable capabilities in mimicking human-like communication. We here explore recent trends and use cases observed among developers and companies utilizing generative AI. Our observations highlights common challenges and opportunities within this rapidly evolving field. 1. Generative AI cannot read your mind A typical use of Generative AI systems is to read all internal company data and provide a way to search its knowledge. Generative AI systems excel at providing informative and comprehensive responses when given clear and specific prompts. However, terse, vague or ambiguous prompts can lead to misunderstandings and inaccurate results. Consider these examples:]]></summary></entry><entry><title type="html">Learning to see</title><link href="http://localhost:4000/2024/02/27/learning-to-see.html" rel="alternate" type="text/html" title="Learning to see" /><published>2024-02-27T00:00:00-05:00</published><updated>2024-02-27T00:00:00-05:00</updated><id>http://localhost:4000/2024/02/27/learning-to-see</id><content type="html" xml:base="http://localhost:4000/2024/02/27/learning-to-see.html"><![CDATA[<h1 id="learning-to-see">Learning to see</h1>
 
 <p>How do humans learn to make sense of the world? How do we learn what is us and what is others? How do we learn about moving in space, manipulating objects, physics, imitating others?</p>
 
@@ -653,49 +737,4 @@
 
 <p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://culurciello.medium.com/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
 
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Why we fill our day by filling forms?]]></summary></entry><entry><title type="html">Clean your social network</title><link href="http://localhost:4000/2022/11/13/Clean-your-social-network.html" rel="alternate" type="text/html" title="Clean your social network" /><published>2022-11-13T00:00:00-05:00</published><updated>2022-11-13T00:00:00-05:00</updated><id>http://localhost:4000/2022/11/13/Clean%20your%20social%20network</id><content type="html" xml:base="http://localhost:4000/2022/11/13/Clean-your-social-network.html"><![CDATA[<h1 id="clean-your-social-network">Clean your social network</h1>
-
-<p><img src="/assets/2022-11-13-Clean your social network/1*vBzxRgRTXb2lYpOGDypyug.png" alt="" /></p>
-
-<p>Do you feel like your social network is not what it used to be? The messages and community you once enjoyed are not giving you the warm feeling they once did?</p>
-
-<blockquote>
-  <p>it may be partly your fault…</p>
-</blockquote>
-
-<p>Selecting the right people and connection after all, is the foundation of a social network. Initially, in the early days of your social networking, you had fewer connections and it was about sharing passion and good times. But then, over time you connected with people that think more like you in one extreme or the other. Oftentimes in periods of negativity you can accumulate several negative connections that will then bring you down and keep you down even in more positive times!</p>
-
-<p><img src="/assets/2022-11-13-Clean your social network/1*bXhIwXwdHC6bmd7f4_8d-Q.jpeg" alt="" /></p>
-
-<p>But there is an easy fix: every once in a while,  <em>clean your social network!</em></p>
-
-<p>What do I mean by clean? You may need to go over all of the people or groups you follow, and ask yourself:</p>
-
-<ul>
-  <li>do I recognize this person?</li>
-  <li>does this person bring a positive feeling?</li>
-  <li>does this person contribute to my learning or self-improvement?</li>
-  <li>does this person connect me with other like-minded positive people?</li>
-</ul>
-
-<p>If your answers are mostly no, whether with solid proof or by gut feeling, then remove than social connection from your network!</p>
-
-<p>It may take a while, as year by year you have accumulated 10s, hundreds, thousands of connections. It may take 2–3 hours of work, sifting through all your social network, but the good news is that it does not need to be completed in one session. You can take a few minutes per day over some time, and get the cleaning done!</p>
-
-<p>In some cases it may be easier to just delete your account and start fresh, but it is not always easy or for the faint of heart!</p>
-
-<p>Regardless, make sure you complete the process and repeat it once a year or two. This will clean your social network!</p>
-
-<p>What should you expect after?</p>
-
-<ul>
-  <li>you will be connected to more likely minded people</li>
-  <li>you will feel part of a close-knit again</li>
-  <li>you will receive the information you want</li>
-  <li>you will find it warmer in your heart</li>
-  <li>it may be like an extension of your home</li>
-</ul>
-
-<p>This should be a Spring-cleaning type of yearly task that we should often perform to feel better and restore our network!</p>
-
-<p>9</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Clean your social network]]></summary></entry></feed>
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Why we fill our day by filling forms?]]></summary></entry></feed>
