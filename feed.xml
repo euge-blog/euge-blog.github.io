@@ -1,4 +1,240 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2024-10-31T10:07:14-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Insights into the use of Generative AI systems</title><link href="http://localhost:4000/2024/10/31/llm-use-cases.html" rel="alternate" type="text/html" title="Insights into the use of Generative AI systems" /><published>2024-10-31T00:00:00-04:00</published><updated>2024-10-31T00:00:00-04:00</updated><id>http://localhost:4000/2024/10/31/llm-use-cases</id><content type="html" xml:base="http://localhost:4000/2024/10/31/llm-use-cases.html"><![CDATA[<h1 id="insights-into-the-use-of-generative-ai-systems">Insights into the use of Generative AI systems</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-01-03T07:25:20-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Artificial Intelligence, AI in 2025 and beyond</title><link href="http://localhost:4000/2025/01/03/AI-in-2025.html" rel="alternate" type="text/html" title="Artificial Intelligence, AI in 2025 and beyond" /><published>2025-01-03T00:00:00-05:00</published><updated>2025-01-03T00:00:00-05:00</updated><id>http://localhost:4000/2025/01/03/AI-in-2025</id><content type="html" xml:base="http://localhost:4000/2025/01/03/AI-in-2025.html"><![CDATA[<h1 id="artificial-intelligence-ai-in-2025-and-beyond">Artificial Intelligence, AI in 2025 and beyond</h1>
+
+<h2 id="some-thoughts">SOME THOUGHTS…</h2>
+
+<p>We are reaching the second quarter of the 21<sup>st</sup> century: it is an exciting milestone. I have been in “adult” life in the last 25 years and most of it was dedicated to learning technologies such as electrical engineering, computer design, AI, machine-learning, microchip design, etc.</p>
+
+<p><img src="/assets/2025-01-03-AI-in-2025/1.jpg" alt="" /></p>
+
+<p>Gemini-Pro: “a robot learning to see like a baby on a table with toys”</p>
+
+<p>Looking back at the last 25 years, much has changed, and little has changed. In the year 2000 we had cellphones, and we had the Internet, albeit it was not as fast. We had social networks, but we could not really carry a computer and apps with us yet. AI was non-existent but there were plenty of computer algorithms such as internet search. Actually… we did have the Palm Pilot, so we did have a computer in our hands. Also: it did have apps.</p>
+
+<p>Our cars had mostly combustion engines, and we had no robots to help around the house. Our TV were much bulkier and the screen much smaller. We had video game consoles, and we also had portable video games… that we have even in the previous quarter century!</p>
+
+<p>Our lives did not change much, but they also did. We spend a lot less time with other people now. We work with them online and we play with them online. We used to talk to them on the phone, but now we prefer to text them. We get aggravated much more often for the use of words uttered online, and we are less amenable to meet face-to-face or cry on each other shoulders.</p>
+
+<p>One thing that changed is how we interact with computers and code today. Since the last 2-3 years we have seen the rise of foundational AI models. These are model that can provide a variety of use without the need to be explicitly programmed or provided with large number of examples.</p>
+
+<p>What is next in the field of AI? What is gaining traction and what is just smoke? This is the main content of this article.</p>
+
+<h2 id="automatic-computer-code">AUTOMATIC COMPUTER CODE</h2>
+
+<p>When I started working on neural networks, around 2010, we were dreaming of writing the last program we will ever need to write: the neural network that learns it all and can now code itself.</p>
+
+<p><em>Now we are there.</em></p>
+
+<p>We have foundational models that can write code, and when looped into agents, they can also run the code, gather error messages, and correct their own code. They can even write modules to extend their capabilities—as in a dream scenario Matrix-like movie.</p>
+
+<p>Today one can write an entire cell-phone application from scratch without having to write a single line of code, and at the most needing to feed-back manually error messages and asking the agent: ”please fix it”. Similarly, one can write multi-file coding projects to completion, even graphical interfaces, for example feeding-back Java-script issues from a web demo.</p>
+
+<p>I said we are there, but it is not quite…</p>
+
+<p>Agentic coding models today can write an entire program that is mostly functional. Error messages can be fixed by the agent, but sometimes agents get stuck in a loop because they cannot find the right file or web link. Or they get stuck because they feed back the same information and answers over and over.</p>
+
+<p>The trouble comes when we have some graphical output, as in a web page or a cell-phone application or when using an external graphical tool. Then current coding agents operate open-loop, meaning that they do not have yet the ability to feed-back graphical output information. Given that we already have multi-modal models that can “look” at images and screen capture snippets, I would say we will be able to close the loop soon. Today you can experiment with web-based AI Studio tools to have them code a website based on an image of another website, or a cell-phone app view.</p>
+
+<p>Outlook: gaining significant traction</p>
+
+<h2 id="generating-writing">GENERATING WRITING</h2>
+
+<p>Of course, AI that can write for you have been around a couple of year starting with ChatGPT and all its siblings foundational large-language models (LLMs). The tool can be prompted to provide well-written text, or to improve existing text snippets or paragraphs. It makes us all proficient writers.</p>
+
+<p><img src="/assets/2025-01-03-AI-in-2025/2.jpg" alt="" /></p>
+
+<p>If you tried to generate significant portions of text with LLMs, you know that the best way is to describe what you want generated with the maximum number of words. This sometimes will reveal the nature of the beast: it takes significant text input to specify all we want to be generated. This is even so when using coding AI models or foundational AI models with graphical outputs.</p>
+
+<p>Most of us may start with a list of bullet-points notes, and LLM often reply by extending such lists, but not necessarily generating entire paragraphs for each. It will take more effort and prompting to get what you need.</p>
+
+<p>Summarization of text is very effective if the input is just a few pages. When trying to gather information from hundreds of pages, the best approach may be to do it step by step, by breaking down the input text into a few pages, and running the same prompt on each. Retrieval-augmented generation, or RAG, is a technique to feed large amounts of text to an LLM. Think hundreds or thousands of pages from many documents. RAG has severe limitations because it does not use the full power of the LLM. Foundational models build a knowledge graph that connects all concepts they were trained on. RAG instead retrieves pieces of text by similarity using smaller and more limited AI models, and then feeds the prompt and retrieved section to the LLM.</p>
+
+<p>A better approach is using the full LLM power on the entire body of text we want to use. This is of course costly, as we will need an LLM to really read all pages and extract the information we want. Say for example we want to search for “the recipe for eggplant pasta” over 100 cooking books. This is easily done with RAG or a simple and old basic text search. The power of LLM comes when you need to search nuanced version for your text that need understanding. For example: “what recipe need to stir-fry and eggplant in small cubes or slices?” may need more than just plain text search. You can think of even more difficult examples that will quickly reveal limitation of RAG, such as “Summarize the take-home points of this meeting transcript”.</p>
+
+<p>An LLM agent may need to parse the entire body of text, and then summarize useful content into a “working memory”. This can be then fed to the LLM to provide answer against a prompt, or to extract information. This is more costly, but it is also similar to the way humans parse large amount of text or data. Divide and conquer.</p>
+
+<p>One area that still needs work is when you need to fill a form or document using data from many other documents. This tedious job is an everyday frustration for everyone working a desk job, yet it has not been satisfactory addressed to data. One reason is that documents are intrinsically graphical, and filling forms requires an understanding of the graphical sections and where to place content, and under which section. This is often obvious to a human, but not as obvious to an LLM. Complications also arise from the need to extract characters and words from the document (OCR) and the relative position of the form input areas.</p>
+
+<p>Outlook: text-based LLMs are improving and very useful for desk jobs. More features are surely coming.</p>
+
+<h2 id="generating-images-and-videos">GENERATING IMAGES AND VIDEOS</h2>
+
+<p>Generative AI gets our attention even more when we see the images and videos it can create by just using textual prompts. The power of connecting images and captions allowed the creation of masterful neural networks that can transform text into images, images into videos, refine image, augment resolution, add or remove portions of an image or video, and even create them from noise.</p>
+
+<p><img src="/assets/2025-01-03-AI-in-2025/3.jpg" alt="" /></p>
+
+<p>Today image generation is very advanced and can produce any kind of realistic or stylized array of pixels. The new tools also allow to directly change or adapt portion of an image to our descriptions and commands. This was not the case in the past, but even commercial tools now allow to mark a region of interest, sometimes automatically, and then change it as desired.</p>
+
+<p>Video on the other hand is still in infancy, producing short segments that are consistent, but rarely more than a handful of seconds long. Videos of a single person talking or close-up can generally fare better, and can be even used as digital customer-care agents.</p>
+
+<p>Even entire video games can be realized in the direct movie format today. These are video game sequences produced entirely with textual inputs. They do rely on the same video-generating techniques but are impressive in the way they emulate the changes as if you were moving inside a 3D world of a modern video-game. These tools will surely be utilized to create in-game animations and other video snippets for gaming, and also for video effects and movies production.</p>
+
+<p>Outlook: video-producing foundational AI models have still some ways to go before being able to produce substantial parts of our videos and movies.</p>
+
+<h2 id="applications-of-llms">APPLICATIONS OF LLMs</h2>
+
+<p>What are the next possible applications of foundational AI models? If you look online today there seems to be an LLM for everything: law, healthcare, educational tutors, meeting aids and summarizers. If you can turn your data into text, LLMs are going to be the best way to solve your problem, whether it is writing or organizing textual knowledge or generating new text from existing text.</p>
+
+<p>The ease of use of LLM, the fact that they need less data and the complex training techniques of Neural Networks 1.0 (the ones from ~2010 to 2020) significantly lowered the barrier to creating and adapting foundational models for a variety of uses. This also means that a team without AI or neural network expertise can now create entire businesses just using foundational cloud-based LLMs and models. This in a way satisfies the wish of neural network researchers: they wrote the last program you will ever need!</p>
+
+<p>What makes an application of LLMs a viable business opportunity, or a just a useful tool? Most application of LLM will require large complex models that reside online, therefore requiring hefty monthly usage fees. If the value added to the user is higher than those fees, then there is a clear business model. As an example, a LLM that can help lawyers navigated thousands of pages to prepare for trial is a probably going to make money. On the other hand, an application as “ask me any question about cats/dogs, and how to take care of them” may be satisfied by smaller LLM models but more importantly may not afford the same monthly or yearly payments from its potential users.</p>
+
+<p>What is exciting for investor is that the field of foundational AI model gave software as a service (SaaS) another large push, potentially gaining much from little investment. But lowering the barrier to entry means also more noise, more competition, with difficult value proposition or clear advantages for users. This translates to company that are not really deep-tech, but rather a purely marketing play with a really good user forum and customers interaction team.</p>
+
+<p>One suggestion to investors and startup founders is to look at niche areas of use of LLMs, in small potential focused pockets of advantage, where the value is high. Examples could be “AI for mining materials”, “AI for common hearth diseases”, “AI for quantum computing” and so forth. Many of these niche applications may require the use of multi-modal models, to differentiate by added functionality that goes beyond parsing just text data.</p>
+
+<p>Another idea to consider is to try to rely on local, smaller open-source foundational models and LLMs, thus opening the door to a large reduction in cost of operations. Even better if the software or application can be installed on user hardware (their phones or PCs) thus removing the needs for custom cloud setups.</p>
+
+<p>Outlook: text-based applications are already saturated and the ease of use of AI tools and LLM is lowering the barrier to entry. Today anyone can make AI applications very easily.</p>
+
+<h2 id="multi-modal-llms">MULTI-MODAL LLMs</h2>
+
+<p>Multi-modal LLMs are foundational AI models that build a knowledge graph based non only of text and words, but also on concepts available in other forms of media. For example, the idea of a “cat” is not just the word, but also the way it looks, moves, purrs, smells. Similarly, we need AI foundational models to be able to create a knowledge graph over the data we are most familiar with text, images, videos, plots, diagrams, tables, databases, dataset files, and more.</p>
+
+<p>What will this do? It will give foundational AI model the ability to work and reason more closely to the human plethora of senses, and thus a more real understanding of the physical world.</p>
+
+<p>What applications will this enable? The first one is in coding foundational models that can close the loop with graphical outputs. For example, we can use multi-modal AI models to create webpages, cellphone applications, but also complex graphics as in photo editing, 3D models, engineering and architectural designs, mechanical parts, etc.</p>
+
+<p>As an example, today it is still very difficult to design 3D objects given the sophistication and complexity of tools such as Blender, 3D software editors, CAD tools for engineering, architecture, mechanical design. Similarly, video editing and photo editing depends on too many menus and highly complex operational pipelines, often offering multiple solution to achieve the same objective. Multi-modal LLMs will be able to remove or lower the barrier of entry to a wider set of users.</p>
+
+<p>Outlook: multi-modal foundational AI models are going to provide yet another major revolution in automation and concept learning.</p>
+
+<p><img src="/assets/2025-01-03-AI-in-2025/4.jpg" alt="" /></p>
+
+<h2 id="robotics">ROBOTICS</h2>
+
+<p>The field of robotics is still behind. Robots today offer very limited abilities to help us on everyday tasks such as cooking, cleaning the house, driving in all-weather situations, automating a home. The main reason is the lack of a robotic brain that can learn embodied multi-modal concepts.</p>
+
+<p>Generative AI models, and specifically multi-modal foundational models are the core of a robotic brain. The missing step for robotics is embodiment. This means correlating the robot own actions with the multi-modal concepts if can perceive. Datasets that show how a robot should move to fulfill a task are few and cannot be easily transferred to other robots or configurations. We have a myriad of video of people performing any task, but these do not contain explicit sequences of control for arms and legs and actuators.</p>
+
+<p>Humans learn to imitate by watching others perform a task. We have not yet devised an algorithm that can do the same and with the same learning speed. In other words, the missing piece is an algorithm that can learn by watching videos. Learn to control its own limbs in the same way as the actors in the video.</p>
+
+<p>Outlook: robotics is still behind the revolution of generative AI models and will be for another few years.</p>
+
+<h2 id="embedded-ai">EMBEDDED AI</h2>
+
+<p>Embedded AI foundational models is one area that has not progressed as much as their cloud counterpart. This is because of the more limited computing capabilities of embedded devices – these devices are similar to cell-phones hardware than a laptop, and also the more limited capabilities of smaller AI foundational models.</p>
+
+<p>Embedded AI can have major application in smart cameras, home appliances, smart homes, but also on drones, bicycles and scooters, robotics, and vehicles. These devices need to have a combination of medium-range LLMs and / or high-performing vision systems. These models would allow embedded devices to understand a visual scene of at least 1080p resolution, ideally 4K and operating in real-time. They can also offer the ability to run 8B to 30B equivalent LLM models on device and with at least 10 or more tokens per second of outputs.</p>
+
+<p>Embedded processors like the RockChip RK3588, NXP iMX8 processor, or the Qualcomm Snapdragon X Plus offer powerful standard CPUs coupled with high-performance AI accelerators and embedded GPUs. These processors, coupled with small AI foundational models and proper high-quality trained models, can offer a solution for the space of embedded applications.</p>
+
+<p>One note to add is that beside all the complex AI capabilities we have today, simple solutions such as turning on a light when a person enters a dark room still require an expert to set up and deploy… clearly we have a lot to do to make the technology work for us, including all software and hardware manufacturers, so that simple things as home automation can finally bring us really smart homes. But this is just an example we can all understand, because imagine the same devices working in a smart factory, helping reduce cost, improve safety for workers, and monitor all aspects of production.</p>
+
+<p>Outlook: expect more and more capabilities from small portable embedded devices, getting progressively close to the same cloud capabilities of one year ago, at least from a single user perspective.</p>
+
+<h2 id="ai-hardware">AI HARDWARE</h2>
+
+<p>AI needs hardware to run. The recent surge of LLM has put some serious demand on the potential of silicon-based microchips. Traditionally memory microchips and computer processor microchips have been implemented in different silicon manufacturing processes, with different materials and substrates that make them impossible to merge. In addition, the 2D layout of microprocessors puts a constraint over how many wires of the same length one can afford to connect neighboring microchips. The combination of these issues has made memory interactions with processors a bottleneck. The 2D nature of microchips also places constraints on the number of processing elements that can be arranged in proximity. So really the limitation of modern microchips is density and 2D confinement. We will see that it boils down to wires per unit area.</p>
+
+<p>What precludes us from making 3D microchips? HEAT – as modern microprocessors and memory microchips produce heat during operation at high frequency which cannot be easily removed in a sandwich of many layers. Typically, heat is removed with fluid immersion or air-cooling. The latter being the prevalent mode, given that fluids complicate the design of circuit boards and add a lot of cost and manufacturing complexity. But what about complete fluid immersion? That is one of the best ways to deal with the problem at least at scale, but again introduces additional complexity: we will have to fish the computer out of fluid every time we need to service it.</p>
+
+<p>Another issue in making 3D stacks of microchips is that they will need to share wires between them. These wires need to reliably connect each microchip, but today fabrication processes limit the yield of 3D integration to about 10 layers, after which the rate of failed connections limits the viability and efficiency of 3D stacks.</p>
+
+<p>Even using fluid immersion cooling, the real limitation remains how many wires we can place in a unit area. It is possible to run more stacked microchip at a lower speed if we can share information between them. This means we need many wires to connect the microchips, ideally 1000s per millimeter square. Today this limitation is we can place a wire every 25-micron square, more than 1000 wires per millimeter square. The formula to calculate how much data we can share between microchips is approximately:</p>
+
+<p>Data interchange = number of wires * frequency of operation of each wire</p>
+
+<p>Of course, how much data interchange (also called memory bandwidth) needed is a function of individual applications. The issue remains: memory and processor are separated and not often 3D integrated.</p>
+
+<p>The modern AI microchips use stacks of memory in their HBM memory, today 8 layers running ~1000 wires at 8 GHz. Processors can sometimes have another memory stacked on top: SRAM, but it is not yet typical.</p>
+
+<p>Because of these limitations today AI microchips can provide only a limited number of Tera-operations per Watt (performance per Watt of electrical power). LLMs today require large number of processing elements and large amounts of memory, all connected by very large memory bandwidth. That is because LLM are often large neural networks using 8 or 70 or hundreds or thousands of GB in weights only. All those weights need to be available on the AI processor every time we ask it to compute a new token, therefore putting enormous constraints to recent memory microchips.</p>
+
+<p>One would want today to speed LLM 100 if not thousands of times, but the limitation of microchips, their fabrication, arrangement, wires and thermal profiles makes it impossible to achieve more than a few efficiency multipliers for the next few years. In addition, there is no other technology that can come to help the need for more efficiency in AI hardware.</p>
+
+<p>Outlook: do not expect your AI hardware to run much faster or more efficient for the foreseeable future</p>
+
+<p><img src="/assets/2025-01-03-AI-in-2025/5.jpg" alt="" /></p>
+
+<h2 id="ai-data-centers">AI DATA CENTERS</h2>
+
+<p>The demand for AI data centers has surged significantly with the raise of foundational AI models, and it has increased further in the last 2-3 years. Electrical power delivery is now one of the main reasons that limits the expansions of data centers, because it takes time to adapt the national power grid to support the large amounts of energy required by AI data centers (AI-DC). 50-100 MW are now the norm, with large data centers requiring 500 MW or more. These amounts of power production are not easy to come by and are also limited by the shortage of power transformers (not to be confused with the neural network transformers that power foundational AI models), some of which require 18 months to be manufactured.</p>
+
+<p>Data Centers continue to be a commodity in the foundational AI age. The value of buildings, wires, racks and maintenance is very low. The real value is the AI hardware and computers, specifically AI processors like GPUs. These specialized GPUs for AI now are moving up the chain: today we can buy special clusters and entire racks for data centers.</p>
+
+<p>Who is making money in data centers? The makers of microchips for GPUs, computing, networking, and computer memory are the real winners. But also providers of software to manage data centers and their operation, including data and databases are also in more demand, albeit many open-source and free solutions exist and are openly available.</p>
+
+<p>Outlook: AI data centers will continue to expand in the next 10 years, fueled by new multi-modal models and larger foundational models for robotics and real-life applications.</p>
+
+<h2 id="privacy">PRIVACY</h2>
+
+<p>With foundational AI models primarily being in the cloud, users of the technology have less chances to keep their data at home and are being forced to place more and more of it online. This opens the door to sovereign monitoring and surveillance, which is already commonplace in many retrograde countries.</p>
+
+<p><img src="/assets/2025-01-03-AI-in-2025/6.jpg" alt="" /></p>
+
+<p>Computers and storage have been moving to the cloud for a while, because it is easier to have someone else assemble and maintain if for you. It does come with a price! Usually the cost is 2-3x more than DIY computers on-site.</p>
+
+<p>One complication with generative AI is the size of the models and the hardware requirements which can be above and beyond what one can afford on-site. For example, large 70B or 400B models can only be run respectively on a 1-GPU and 8-GPU systems with discrete large GPUs. Only smaller model 7B or less than 30 B can run on laptop-grade hardware. This clearly makes the cloud move inviting, again at the expense of more price.</p>
+
+<p>But not everyone is comfortable to send data to a cloud provider. Small and medium enterprises with a considerable know-how are not keen on using the cloud. And so are many consumers and citizens that are considering privacy of their own data a priority.</p>
+
+<p>One movement that is taking hold is to host all data and some foundational AI models locally on your own hardware. Laptops, desktop PCs and small networked devices for data are being converted to local AI powerhouse, sitting together with the data. These devices can implement local RAG system, local knowledge and search, and can also implement coding AI tools that use the company own data locally. They can also be used by consumer to batch-label a large collection of video and photos, and for other personal data needs, such as filling forms and documents based on your own private legal documents.</p>
+
+<p>Not to say that cloud data and privacy do not go together. Most cloud provider offer industry excellence in data and computer security. But there are lingering issues: one is that by concentrating data and computers, the cloud providers are also target or many more cybersecurity infiltration attempts; second is that computer security is never guaranteed by default, as new exploits are discovered daily and promptly used by malicious agents. That is also not to say that every local home setup is secure. But if provided with the right safeguards and software that enforces good security measures, it can be more secure than a giant well-known cloud provider.</p>
+
+<p>Outlook: the cloud will try to expand, but a small contingency of local and private devices is making their way and will become progressively more important.</p>
+
+<h2 id="training-ai-foundational-models">TRAINING AI FOUNDATIONAL MODELS</h2>
+
+<p>High-quality training material is fundamental to training AI foundational models. All the first generation of LLMs (2022-2023) were trained on very large collection of text from the Internet, magazines, publications, and all the data that we could easily access. But recently, it became apparent that smaller models trained on high-quality material were as good as larger models trained on much more data. Today models that are 400 or even 70 B compete with models much larger of 1-2 years ago.</p>
+
+<p>But what is high-quality training material? It is basically textbook-quality information of well-known facts rather than the confabulations and dialogues of random people talking about facts on the internet. It is like school versus street knowledge. Imagine we take all the training material we use for human students from when they are baby to well past University. Imagine we feed all the expert textbooks on all subjects we want our LLM to be familiar in. If we apply a curriculum, step-by-step, year-by-year for all this content, we have very well distilled quality material that is superior to what one can get by absorbing it though the environment over the years. Similarly, using school grade material to train LLMs makes them learn much faster and be more accurate than training with data from discussion forums. Do not get me wrong, some discussion forums are full of useful information also, but they need to be used only after pre-training with high quality training material. That is very much equivalent to how humans learn!</p>
+
+<p><img src="/assets/2025-01-03-AI-in-2025/7.jpg" alt="" /></p>
+
+<p>So where do we get this high-quality material? For k-12 school material, it is easily available in many free textbooks and courses, including student exercises and their solutions. And then there are the more advanced textbooks from college to grad-school to expert manuals. Publications are not high-quality material because they are not yet validated by practice and wide use, and because scientific papers do not reveal all the disadvantages of techniques, but rather they are biased to the advantages for publications. Textbooks instead average our knowledge over many years and they mostly only report techniques and ideas that are validated. More importantly textbooks can provide more information on what works and what does not, under which conditions scientific techniques are valid or not, and thus provide high-quality knowledge.</p>
+
+<p>This topic really makes you think what is knowledge and how is knowledge acquired. LLMs behave like humans when acquiring knowledge, and research demonstrated that a curriculum approach from simple concept to more complex topics is the way to go. Using the right information, as opposed to all possible information also leads to better learning. Humans can learn fact from experience, from word of mouth, gossip, and urban legends, but that knowledge is not always correct or grounded.</p>
+
+<p>Outlook: high-quality training material to train LLMs is the new gold.</p>
+
+<p><img src="/assets/2025-01-03-AI-in-2025/8.jpg" alt="" /></p>
+
+<h2 id="future">FUTURE</h2>
+
+<p>What does the future of foundational AI have in reserve for us? Here are some ideas based on the content of this article:</p>
+
+<ul>
+  <li>Foundational models will get smaller and powerful</li>
+  <li>High-quality training data is of paramount importance</li>
+  <li>Cloud will continue to grow, but embedded, private, local solutions will grow faster</li>
+  <li>Robotics will advance slowly for a few years. Similar prospects for autonomous vehicles</li>
+  <li>Your data privacy will become more important and force a push away from the cloud</li>
+  <li>AI hardware will promise to get more efficient, but will face physical barriers</li>
+  <li>Build the infrastructure not the apps</li>
+</ul>
+
+<p>We have a part in this future, both to guide applications and / or to build them. Enough reading: time to act!</p>
+
+<h3 id="ps">PS:</h3>
+<p>this essay was written without generative AI. Yes it shows…</p>
+
+<h2 id="about-the-author">about the author</h2>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Artificial Intelligence, AI in 2025 and beyond]]></summary></entry><entry><title type="html">What about my hair?</title><link href="http://localhost:4000/2024/12/17/what-about-my-hair.html" rel="alternate" type="text/html" title="What about my hair?" /><published>2024-12-17T00:00:00-05:00</published><updated>2024-12-17T00:00:00-05:00</updated><id>http://localhost:4000/2024/12/17/what-about-my-hair</id><content type="html" xml:base="http://localhost:4000/2024/12/17/what-about-my-hair.html"><![CDATA[<h1 id="what-about-my-hair">What about my hair?</h1>
+
+<p>For all the advances in technology and all the promises of space exploration I still think we are behind in our understanding of life and our own abilities.</p>
+
+<p>For decades we talked about specialized medicine that can be tailored to an individual person, that can cure an illness without side effects. Or gene therapy, where unfortunate individual that have nefarious mutations would obtain a fix for their erroneous DNA.</p>
+
+<p>Technology, and especially AI makes us think that we can achieve all these goals in a short time. AI being code can in fact be changed and updated faster than generations of DNA mutations. But AI being code also does not live in the physical space, and it is not yet able to interact with our world. At least not in the way we want. An autonomous car is AI on wheels acting on the physical world. But our forecast of having fully functional self-driving cars right about now were in fact incorrect, a gross miscalculation of our abilities to drive AI (pun intended). We are in fact many years away from cars that can reliably drive in the snow and heavy rain to the same level as human beings.</p>
+
+<p>Unfortunately, we drank our own Kool-aid. And similarly, AI is not going to help us to understand our biology anytime soon. Why? Maybe partly because of the fixation of that field of science to understand it all. Or many other fields of science, thinking that we are in fact clearly able to derive equations and laws for everything and that our mind would be able to understand it all, no matter the number of variables or components in the system.</p>
+
+<p>But we can only understand the smoke as a trend. We can model the smoke with equations that on average give us an approximate view of how the smoke cloud evolves in time. We will never understand how each particle of smoke is moving and having all equations for all of them. That would be insane. Then why do they want to doit for every cell in our body or every neuron or synapse in our brain?</p>
+
+<p>Think we are being tough? But then what about my hair? Suppose you need more of your own hair on your head… well we do not even have a way to grow our own hair back. In other words, we cannot even force our body to grow more hair where we want to.</p>
+
+<h3 id="ps">PS:</h3>
+<p>this essay was written without generative AI. Yes it shows…</p>
+
+<h2 id="about-the-author">about the author</h2>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[What about my hair? For all the advances in technology and all the promises of space exploration I still think we are behind in our understanding of life and our own abilities. For decades we talked about specialized medicine that can be tailored to an individual person, that can cure an illness without side effects. Or gene therapy, where unfortunate individual that have nefarious mutations would obtain a fix for their erroneous DNA. Technology, and especially AI makes us think that we can achieve all these goals in a short time. AI being code can in fact be changed and updated faster than generations of DNA mutations. But AI being code also does not live in the physical space, and it is not yet able to interact with our world. At least not in the way we want. An autonomous car is AI on wheels acting on the physical world. But our forecast of having fully functional self-driving cars right about now were in fact incorrect, a gross miscalculation of our abilities to drive AI (pun intended). We are in fact many years away from cars that can reliably drive in the snow and heavy rain to the same level as human beings. Unfortunately, we drank our own Kool-aid. And similarly, AI is not going to help us to understand our biology anytime soon. Why? Maybe partly because of the fixation of that field of science to understand it all. Or many other fields of science, thinking that we are in fact clearly able to derive equations and laws for everything and that our mind would be able to understand it all, no matter the number of variables or components in the system. But we can only understand the smoke as a trend. We can model the smoke with equations that on average give us an approximate view of how the smoke cloud evolves in time. We will never understand how each particle of smoke is moving and having all equations for all of them. That would be insane. Then why do they want to doit for every cell in our body or every neuron or synapse in our brain? Think we are being tough? But then what about my hair? Suppose you need more of your own hair on your head… well we do not even have a way to grow our own hair back. In other words, we cannot even force our body to grow more hair where we want to. PS: this essay was written without generative AI. Yes it shows…]]></summary></entry><entry><title type="html">Insights into the use of Generative AI systems</title><link href="http://localhost:4000/2024/10/31/llm-use-cases.html" rel="alternate" type="text/html" title="Insights into the use of Generative AI systems" /><published>2024-10-31T00:00:00-04:00</published><updated>2024-10-31T00:00:00-04:00</updated><id>http://localhost:4000/2024/10/31/llm-use-cases</id><content type="html" xml:base="http://localhost:4000/2024/10/31/llm-use-cases.html"><![CDATA[<h1 id="insights-into-the-use-of-generative-ai-systems">Insights into the use of Generative AI systems</h1>
 
 <p>Generative AI models, such as large language models (LLMs), have demonstrated remarkable capabilities in mimicking human-like communication. We here explore recent trends and use cases observed among developers and companies utilizing generative AI. Our observations highlights common challenges and opportunities within this rapidly evolving field.</p>
 
@@ -618,123 +854,4 @@
 
 <p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://culurciello.medium.com/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
 
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?]]></summary></entry><entry><title type="html">Drop your dataset — part 2</title><link href="http://localhost:4000/2022/12/06/Drop-dataset-part-2.html" rel="alternate" type="text/html" title="Drop your dataset — part 2" /><published>2022-12-06T00:00:00-05:00</published><updated>2022-12-06T00:00:00-05:00</updated><id>http://localhost:4000/2022/12/06/Drop-dataset-part-2</id><content type="html" xml:base="http://localhost:4000/2022/12/06/Drop-dataset-part-2.html"><![CDATA[<h1 id="drop-your-dataset--part-2">Drop your dataset — part 2</h1>
-
-<p><img src="/assets/2022-12-06-Drop-dataset-part-2/1*0DJ3aWBrsOsU7Iky8ePimA.png" alt="" /></p>
-
-<p>In the previous post I have given some ideas on how we can overcome the limitation of current neural network training without using supervised datasets. I want to go into more details here to provide more ideas and insights into the evolution of neural network training: neural nets v2.0 or software v3.0.</p>
-
-<h2 id="relationships">relationships</h2>
-
-<p>First of all let us remember that in machine learning the focus is to learn relationships in the data. Training data is in the form of one or multiple samples: {input, desired_output} and the machine learning algorithm has to learn a relationship between “input” and “desired_output”. That is to say that if you give it: “input”, the machine learning algorithm will provide you with: “desired_output”.</p>
-
-<p>This is simple dataset and a point-to-point application of machine learning. A neural network model can be used as “black box” to learn the above relationship. Other machine learning models can be used also but I will not discuss those here.</p>
-
-<h2 id="generalization">generalization</h2>
-
-<p>Neural networks today are mostly trained using the “relationships” approach of learning, fed with supervised data from a static dataset. We have hoped that point-to-point application of our dataset would generalize and interpret a large number of new data even if it was not identical to the exact examples in the dataset.</p>
-
-<p>The issues with a static dataset and current neural network training techniques are:</p>
-
-<ul>
-  <li>dataset generally do not evolve, are static</li>
-  <li>neural network training cannot use new samples because of  <a href="https://en.wikipedia.org/wiki/Catastrophic_interference">forgetting</a></li>
-  <li>we do not have labels for  <a href="https://en.wikipedia.org/wiki/Online_machine_learning">online learning</a> — who labels unseen data?</li>
-</ul>
-
-<p>These issues limit applicability only in confined and fixed domains where a dataset can be provided and such dataset is applicable to future online data.</p>
-
-<p><img src="/assets/2022-12-06-Drop-dataset-part-2/1*4chmqjWyBwZdG3JPcRFQmQ.jpeg" alt="" /></p>
-
-<p>label “cat”</p>
-
-<h2 id="what-is-a-label-anyway">what is a label anyway?</h2>
-
-<p>But it may be interesting to try to first think of what is a “label” for our data. For example the input is a picture of a cat, and the label is the word “cat”.</p>
-
-<p>The concept of “cat” exists even without the word and if you happened to grow up alone observing the world, you would likely know what a cat is, but maybe have no word for it. Humans use word to communicate between each other because they all have disconnected brains and need words to share knowledge.</p>
-
-<p>So in a way, we are training neural networks with supervised dataset just to learn our language! So that the neural network output is something we can understand. But this is not the only way. We can use unsupervised learning techniques like clustering which will, for example, put all pictures of cats in a category, and other pictures of dogs in another, and so forth. But these categories will not have a name because we have not given it one yet. But they will exist and be useful nevertheless. After all all we need is to see one sample input from the cat category to recognize: yes, that is a picture of a cat, and all pictures in this category are pictures of a cat, so this category is “cat”!</p>
-
-<h2 id="language">language</h2>
-
-<p>At the beginning of neural networks, late 2000s we started learning the relationship {images, label}. In teh dataset  <a href="http://yann.lecun.com/exdb/mnist/">MNIST</a>, for example, there are pictures of digits and the labels are “0”, ”1”, ”2”, etc. Later in 2002 onward, we had ImageNet with picture of dogs and the labels were “terrrier”, “pomeranian”, etc. Then in 2014 or so we moved to image captioning, to learn more complex relationship between our human language and some data (pictures). We are thus forming a multi-modal interaction of images and words.</p>
-
-<p>The large language models neural networks that are popular these days (12/2022  <a href="https://openai.com/blog/chatgpt/">ChatGPT</a>, for example) are not trained supervised on couple of {input, desired_outputs}. They are trained to predict the next word in a sentence, unsing single-modal training on text only. This self-supervised technique is much preferred to a curated dataset, but will require more data to learn — not a problem for text, as we have huge amount of human data online and digitized!</p>
-
-<p>The large neural network language models are impressive because they somehow look like conversational entities that are human-like, and can report and provide useful information through dialogues-like interactions and even some reasoning!</p>
-
-<p>But these models were trained on text only, so we cannot the expect to really understand the world we live in without all the rest of sensing modalities. So if you find the recent large language models impressive, imagine what they could be if they were trained on text, images, videos, audio, more all together!</p>
-
-<h2 id="multiple-modalities">multiple modalities</h2>
-
-<p>We want to use neural networks applied to our world, and therefore we will likely start from a human-like perception. Vision, auditory, touch, smell, etc. there will be many sensing modalities that we need to use to acquire a large knowledge of the world in a way that we can scale it and continue to adapt it to the world during the neural network “life”.</p>
-
-<p>I proposed the architecture  <a href="https://medium.com/@culurciello/how-can-we-build-an-artificial-brain-from-our-knowledge-of-the-human-brain-48fbd1ed82ca">Mix-Match</a>  before in another post to be able to absorb all the world’s data into a single neural network. This network is trained on a dataset, yes, but not a curated dataset of inputs/outputs samples. Rather is fed multi-modal data that is sparsely labeled, and mostly self-labeled by co-occurrence of multi-modal data in pace or time.</p>
-
-<p>I believe that the future of applicable neural networks is in the training with multi-modal data, where the relationship between different data modalities are combined into powerful  embedding of concepts. This can be done by simply applying a  Hebbian-like learning  regularization. This regularization strengthens the connection of multiple concepts occurring closely in space or in time, as for example a figure in a paper and its caption, or a video of walking and the sound of feet hitting the ground.</p>
-
-<p>Supervision happens automatically in multi-modal data trained this way because all the modality, including textual descriptions are embedded in the same space. This is a great advantage to a curated but limited dataset.</p>
-
-<h2 id="intelligence">intelligence</h2>
-
-<p>Suppose we define intelligence as the ability to solve new problem based on our acquired knowledge. Without knowledge of any sort there is no intelligence, so we will have to start from somewhere.</p>
-
-<p>The question one can ask on the Mix-Match model is how do we encode data from ultiple modalities, can we use pre-trained encoders. And the answer is we should not, because by doing so we are constrained to a set of neural networks that are trained supervised. But if we fine-tune or let these encoder evolve, maybe… I think these encoders should be trained from scratch on the new multi-modal set of data, and maybe shared across multiple training systems.</p>
-
-<p>The other bug question is: will Mix-Match experience final concepts embeddings drift when trained? For example if we embed the knowledge of “cat” via image, videos, text, will a new set of documents and data move this embedding so much that it will be “forgotten”? I do not not yet have an answer to this question, but I see that data trained with contrastive embeddings in a similar way is more robust to learning shifts than training on a standard supervised dataset (see  <a href="https://arxiv.org/abs/2111.01124">here</a>  for example).</p>
-
-<p>If we think that new large natural language models with neural network provide some kind of intelligent behavior (for example solving simple math problems), I think you can understand that Mix-Match models will be able to do much more of that, and also reason about what they see and hear, thus providing a real robot brain!</p>
-
-<h1 id="about-the-author">about the author</h1>
-
-<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://culurciello.medium.com/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
-
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Drop your dataset — part 2]]></summary></entry><entry><title type="html">Why we fill our day by filling forms?</title><link href="http://localhost:4000/2022/11/16/Why-filling-forms.html" rel="alternate" type="text/html" title="Why we fill our day by filling forms?" /><published>2022-11-16T00:00:00-05:00</published><updated>2022-11-16T00:00:00-05:00</updated><id>http://localhost:4000/2022/11/16/Why-filling-forms</id><content type="html" xml:base="http://localhost:4000/2022/11/16/Why-filling-forms.html"><![CDATA[<h1 id="why-we-fill-our-day-by-filling-forms">Why we fill our day by filling forms?</h1>
-
-<p><img src="/assets/2022-11-16-Why-filling-forms/1*aRItl7e-elF90HHF1hhcdg.jpeg" alt="" /></p>
-
-<p>I do not know about you, but one of the worst way to spend time for me is  <em>filling forms</em>.</p>
-
-<p>Yet it almost looks like we humans have evolved to hurt ourselves, and this time by creating more and more forms to fill!</p>
-
-<blockquote>
-  <p>Why? Cry!</p>
-</blockquote>
-
-<p><img src="/assets/2022-11-16-Why-filling-forms/1*-oXHcLdb8MA03aJttbYvpg.jpeg" alt="" /></p>
-
-<p>You get a form on the web, fill your shipping information, your credit card, etc. Luckily most computers OS does this for us to some extend. It is not confident enough sometimes, even though filling web forms is the easiest today for a computer. Yet it still ask us input by input, click away!</p>
-
-<p>And yes I complain much less about that, because we do have some automation that somehow works (not all the times) and save us time.</p>
-
-<blockquote>
-  <p>Kudos to us! We did that!</p>
-</blockquote>
-
-<p>On the other hand, you sometimes get actual documents to fill today, in the old times you had to do it with paper and pencil, and there we go: there was and there is no automation there in sight. None has seen a robot, let alone one capable of writing. Luckily again we have computers, so many of these forms we can fill today on a computer. Most of these are PDF forms, some fillable — great! Some are computer generated and you can jump form to form and input text by typing, but some forms are scanned and they do not allow you to fill them easily. You have to create boxes and input text, manually — that is super painful!</p>
-
-<p>And yet we still communicate with this inferior form of data transmission to this day! Let alone we have millions of forms scanned or in paper form sitting in our data warehouses, and one day we will have to digitize them and even transcribe the… good luck. We do not have any of these tools today, even though computer vision experts have been at it for decades!</p>
-
-<p><img src="/assets/2022-11-16-Why-filling-forms/1*rFlUGS0GDoobPGJMI67xdw.png" alt="" /></p>
-
-<p>But back to filling forms!!! Imagine a dream system:</p>
-
-<ul>
-  <li>you put all your private document into a folder</li>
-  <li>you input a form to the dream system</li>
-  <li>the dream system goes and fetches all data the form needs from your folder of documents</li>
-  <li>it then pastes all in the form</li>
-  <li>and presents the form to you, filled</li>
-  <li>heart full of joy!</li>
-</ul>
-
-<p>Why, oh why can’t we have that today?</p>
-
-<p>Oh I guess I’ll have to work on it…</p>
-
-<h1 id="about-the-author">about the author</h1>
-
-<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://culurciello.medium.com/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
-
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Why we fill our day by filling forms?]]></summary></entry></feed>
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?]]></summary></entry></feed>
