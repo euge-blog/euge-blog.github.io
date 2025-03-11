@@ -1,4 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-01-03T07:25:20-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Artificial Intelligence, AI in 2025 and beyond</title><link href="http://localhost:4000/2025/01/03/AI-in-2025.html" rel="alternate" type="text/html" title="Artificial Intelligence, AI in 2025 and beyond" /><published>2025-01-03T00:00:00-05:00</published><updated>2025-01-03T00:00:00-05:00</updated><id>http://localhost:4000/2025/01/03/AI-in-2025</id><content type="html" xml:base="http://localhost:4000/2025/01/03/AI-in-2025.html"><![CDATA[<h1 id="artificial-intelligence-ai-in-2025-and-beyond">Artificial Intelligence, AI in 2025 and beyond</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-03-11T15:49:39-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Robotics, manufacturing and the future</title><link href="http://localhost:4000/2025/03/11/robotics-future.html" rel="alternate" type="text/html" title="Robotics, manufacturing and the future" /><published>2025-03-11T00:00:00-04:00</published><updated>2025-03-11T00:00:00-04:00</updated><id>http://localhost:4000/2025/03/11/robotics-future</id><content type="html" xml:base="http://localhost:4000/2025/03/11/robotics-future.html"><![CDATA[<h1 id="robotics-manufacturing-and-the-future">Robotics, manufacturing and the future</h1>
+
+<p><img src="/assets/2025-03-11-robotics-future/1.jpg" alt="" /></p>
+
+<p>If there is one news article on call-to-action to read this Spring <a href="https://semianalysis.com/2025/03/11/america-is-missing-the-new-labor-economy-robotics-part-1/">this is it</a></p>
+
+<p>Europe and US have slowly hemorrhaged manufacturing capabilities in the last 40 years. Not just in cars, equipment, appliances, but also advanced manufacturing of microchips, sensor, processors.</p>
+
+<p>Research funding to innovate in robotics and manufacturing come from all over the world, not just US, but a lot of the innovations until year 2020 or so were.
+Yet we failed to translate research into a revolution that can bring back to our home countries cheap and fast manufacturing.</p>
+
+<h2 id="why">Why?</h2>
+
+<p>1- because of a short investment cycle that forces to productize in 12-18 months in a field that required more time and more iterations</p>
+
+<p>2- the BARRIER of physical embodied manipulation and locomotion data, and the lack of coherent robotic platforms</p>
+
+<p>3- the scarce interaction between manufacturing and the robotic research products: often not fancy robots but simple contraptions win in a factory. One of a kind machines, but built out of manufacturing components that are often the same at different scales and operating on different materials</p>
+
+<p>4- we failed to create a cheap factory of factories, where iterating on design can be fast, instead we shipped it all happily abroad, losing speed along the way</p>
+
+<h2 id="what-can-we-do">WHAT CAN WE DO?</h2>
+
+<ul>
+  <li>Co-locate research and manufacturing test facilities. Everyone loves a desk job, but robotics needs constant testing in the field</li>
+  <li>More rapid prototyping at home. Production can still be elsewhere, but fast iterations on design are paramount</li>
+  <li>Keep applied research money flowing: grants and government funding should come from active collaborations with industry</li>
+  <li>Create factory cities, where fast manufacturing and prototypes can be developed all or most in one location</li>
+  <li>Train the workforce to operate machines, to produce multiples of their manual capability, to think and devise and implement. Shift from passive jobs to more active roles and mentality: “how can I improve this?”, “”how can I make more money for the company that employs me?”</li>
+</ul>
+
+<h2 id="yes-but">YES BUT:</h2>
+<ul>
+  <li>These plans may sound good, but unless there is strong home-based manufacturing and sales of robotics, they cannot succeed</li>
+  <li>We still do not have proper brains for robots that can operate mostly autonomously - this may be an advantage, as it gives us some time to think and plan</li>
+</ul>
+
+<h2 id="about-the-author">about the author</h2>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Robotics, manufacturing and the future]]></summary></entry><entry><title type="html">Artificial Intelligence, AI in 2025 and beyond</title><link href="http://localhost:4000/2025/01/03/AI-in-2025.html" rel="alternate" type="text/html" title="Artificial Intelligence, AI in 2025 and beyond" /><published>2025-01-03T00:00:00-05:00</published><updated>2025-01-03T00:00:00-05:00</updated><id>http://localhost:4000/2025/01/03/AI-in-2025</id><content type="html" xml:base="http://localhost:4000/2025/01/03/AI-in-2025.html"><![CDATA[<h1 id="artificial-intelligence-ai-in-2025-and-beyond">Artificial Intelligence, AI in 2025 and beyond</h1>
 
 <h2 id="some-thoughts">SOME THOUGHTS…</h2>
 
@@ -802,56 +843,4 @@
 
 <p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me: <a href="https://culurciello.medium.com/">Medium</a>, <a href="https://culurciello.github.io/">webpage</a>, <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>, <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
 
-<p>If you found this article useful, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a> to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[A picture is worth a 1000 words]]></summary></entry><entry><title type="html">How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?</title><link href="http://localhost:4000/2023/01/25/Transformers-GPT.html" rel="alternate" type="text/html" title="How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?" /><published>2023-01-25T00:00:00-05:00</published><updated>2023-01-25T00:00:00-05:00</updated><id>http://localhost:4000/2023/01/25/Transformers-GPT</id><content type="html" xml:base="http://localhost:4000/2023/01/25/Transformers-GPT.html"><![CDATA[<h1 id="how-can-we-make-transformers-large-language-models-gpt-more-sharable-how-can-we-make-them-grow">How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?</h1>
-
-<p><img src="/assets/2023-01-25_Transformers-GPT/1*vd1bjSTykGLQEIcqP6d15A.jpg" alt="" /></p>
-
-<p>language models and transformers in  <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion">https://huggingface.co/spaces/stabilityai/stable-diffusion</a></p>
-
-<p>Today I was reading the excellent list of Transformers here:  <a href="https://github.com/NielsRogge/Transformers-Tutorials">https://github.com/NielsRogge/Transformers-Tutorials</a>  and soon enough realized how many separate applications and separate datasets these have been trained on. Most of these neural network are offered as pre-trained and can be used and fine-tuned for your custom application. That is super great for someone that is looking for a specific problem to solve.</p>
-
-<p>For example, you can get a model to turn an image of a receipt into a JSON table, or you can extract text from a document, or get depth estimation from a single image, etc.</p>
-
-<blockquote>
-  <p>All of these are separate tasks trained in isolation</p>
-</blockquote>
-
-<p>One thing that one realizes pretty quickly by training neural networks is that training on more data, more tasks, more abilities always gets you a better model. One that can do much better in the one application you care about, even if you are not looking for a do-it-all model.</p>
-
-<blockquote>
-  <p>So for me this is really  <strong>a big problem!</strong></p>
-</blockquote>
-
-<p><img src="/assets/2023-01-25_Transformers-GPT/1*Y0EevVSx0gY82J23st4QTg.jpg" alt="" /></p>
-
-<h4 id="a-set-of-problems">A set of problems:</h4>
-
-<ul>
-  <li>models are trained in isolation</li>
-  <li>use a lot of computing resources to train</li>
-  <li>are only effective in their own domain</li>
-  <li>use many custom input and output encodings, symbols, techniques</li>
-  <li>are not able to share knowledge model to model</li>
-</ul>
-
-<blockquote>
-  <p>All the knowledge these models learned, it is not shared!</p>
-</blockquote>
-
-<p><img src="/assets/2023-01-25_Transformers-GPT/1*W7MnOXOw3LfnrFVJz_mosw.jpg" alt="" /></p>
-
-<h4 id="a-set-of-questions">A set of questions:</h4>
-
-<p>How can we share these models and what they learn?</p>
-
-<p>How can we build a unified model?</p>
-
-<p>How can we make sure all data uses the same formats and is compatible? Should we learn those transformations also?</p>
-
-<p><img src="/assets/2023-01-25_Transformers-GPT/1*W-t7a4jHBYp7ZbKQindF5w.jpg" alt="" /></p>
-
-<h3 id="about-the-author">about the author</h3>
-
-<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://culurciello.medium.com/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
-
-<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[How can we make Transformers, Large Language models, GPT, more sharable? How can we make them grow?]]></summary></entry></feed>
+<p>If you found this article useful, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a> to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[A picture is worth a 1000 words]]></summary></entry></feed>
