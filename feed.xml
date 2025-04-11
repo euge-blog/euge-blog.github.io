@@ -1,4 +1,144 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-03-11T15:49:39-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">Robotics, manufacturing and the future</title><link href="http://localhost:4000/2025/03/11/robotics-future.html" rel="alternate" type="text/html" title="Robotics, manufacturing and the future" /><published>2025-03-11T00:00:00-04:00</published><updated>2025-03-11T00:00:00-04:00</updated><id>http://localhost:4000/2025/03/11/robotics-future</id><content type="html" xml:base="http://localhost:4000/2025/03/11/robotics-future.html"><![CDATA[<h1 id="robotics-manufacturing-and-the-future">Robotics, manufacturing and the future</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-04-11T10:14:52-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Eugenio Culurciello Blog</title><subtitle>A minimal, responsive, and powerful Jekyll theme for presenting professional writing.</subtitle><entry><title type="html">100x microsystems and microchips</title><link href="http://localhost:4000/2025/03/27/microsystems.html" rel="alternate" type="text/html" title="100x microsystems and microchips" /><published>2025-03-27T00:00:00-04:00</published><updated>2025-03-27T00:00:00-04:00</updated><id>http://localhost:4000/2025/03/27/microsystems</id><content type="html" xml:base="http://localhost:4000/2025/03/27/microsystems.html"><![CDATA[<h1 id="100x-microsystems-and-microchips">100x microsystems and microchips</h1>
+
+<p><img src="/assets/2025-03-27-microsystems/1.png" alt="" /></p>
+
+<h2 id="history-and-microchips">History and microchips</h2>
+
+<p>The microchips fueled the Silicon Valley revolutions in the 1970s and made the US the leading nation in the field of designing, creating, and scaling the use of integrated circuits. Soon followed by a revolution in Japan, Korea and Europe.</p>
+
+<p>But in the late 90s, semiconductor fabrication started to migrate to Asia, first the chip packaging industry, where TSMC (Taiwan Semiconductor Manufacturing Company) emerged as a major player. Then the “fabless” model, where companies design chips but outsource manufacturing, became more prominent and all US manufacturers happily outsourced the US national talent and technology abroad.</p>
+
+<p>What was kept in the US was the design of integrated circuits and products. In a way, this is similar to other heavy industries like steel, chemicals, materials, car manufacturing industries that slowly globalized their operation in the 1970s and 1980s.</p>
+
+<h2 id="today">Today</h2>
+
+<p>Today the US has shed most of the production capability of advanced microchips, and to make things worse, also has a deep shortage of workers and know-how in the area of microchip fabrication, instrumentation and tools, deployment of fabrication facilities (fabs).</p>
+
+<p>To make matters even worse, most of the microchip production of advanced components is in the geo-politically unstable island of Taiwan.</p>
+
+<p>Europe maintained leadership in the area of microchip machinery needed in the fabs.</p>
+
+<p>All the microchips you use in your car, microwave oven, fridge, computer, laptop, iphone, cell-phone, internet router, etc. are all built outside of the US. And that would be OK if it wasn’t that pretty much all of them are currently built only in Taiwan.</p>
+
+<p>Globalization helps industry save cost by moving laborious and manual work to cheaper countries, but it does not help when the global trade is affected and there is a national need for the industry to manufacture on its own soil.</p>
+
+<h2 id="what-has-happened-to-building-microchips">What has happened to building microchips?</h2>
+
+<p>The way to keep advanced industries like the US in a prominent position is to keep advancing the field and innovate. But one can hardly innovate on something they do not produce anymore, or have no knowledge of the challenges of production.</p>
+
+<p>Many of us today would like to see the development of microchip have the same trajectory of writing coding or 3D printing: use your cheap design tools at home, design your microchip, based on a cheap or free library of components, send it off to fabrication in a cheap and shared run, receive the parts after some time in the mail.</p>
+
+<p>But no… We spoke about the barrier before: <a href="https://euge-blog.github.io/2022/08/08/semiconductor-for-masses.html">https://euge-blog.github.io/2022/08/08/semiconductor-for-masses.html</a></p>
+
+<p>In a nutshell the barriers (mountains) are:</p>
+
+<ul>
+  <li>No cheap CAD (computer aided design) software for microchips, coupled with foundry design kits</li>
+  <li>Legal barriers in obtaining foundry design kits and circuit components (IPs) or intellectual property to enable Lego-like modularity</li>
+  <li>Expensive production runs in modern fabrication processes</li>
+  <li>Lack of design foundries readily available for prototyping and production, especially in niche areas of microchips like memories</li>
+  <li>Funding an ecosystem to break these in US has failed because it keeps funding large corporation that have no interest to change their modus operandi, and in fact have squandered a fortune in taxpayers monty over the last 2 decades obfuscating the design of microchip even further</li>
+</ul>
+
+<p>These are seemingly insurmountable barriers to progress, but in reality all that is needed are better business models that foster sharing resources without sacrificing trade secrets.</p>
+
+<p>Articles like this one: <a href="https://semianalysis.com/2025/03/11/america-is-missing-the-new-labor-economy-robotics-part-1/">https://semianalysis.com/2025/03/11/america-is-missing-the-new-labor-economy-robotics-part-1/</a> also talk about how iterating with groups in two continents 12h apart is not an effective way, and that building small cities where manufacturing in an area is concentrated can help to boost productivity and innovation.</p>
+
+<p>Smart and industrious colleagues have spent years trying to democratize microchips: <a href="https://www.zeroasic.com/">https://www.zeroasic.com/</a> but unless they have the backup of a continuous stream of funding and the right attention of the leadership, they cannot alone move mountains.</p>
+
+<p>Beside democratizing microchip design, another issue is innovation in fabrication techniques.</p>
+
+<h2 id="the-illusion-of-light">The illusion of light</h2>
+
+<p>Today microchips are built by light and gas. Gas is cheap but light is becoming the most expensive “material”.</p>
+
+<p>Microchips today start with a flat disk of silicon, that is patterned using masks and light exposure of a very small wavelength, to produce nano-meter features. Features of a transistor used to be 1-2 micron wide in the 1990s, and progressively shrunk to today’s 5-3 nanometers. Today microchip fabrication requires the use of a light that is deep in the ultraviolet spectrum (small wavelength = small features) but is VERY expensive to produce and focus (lenses do not work, finding material to bend lights is a research endeavor).</p>
+
+<p>If you think one day we could have the equivalent of a 3D printer at home to forge our microchips you would be surprised to learn that the current machine needed just to produce light for microchip fabrication is 2-containers big and cost a fortune. No 3D printer anytime soon 😔</p>
+
+<p>Light is just not the way down any longer. We need to find better ways.</p>
+
+<h2 id="the-missing-100x">The missing 100x</h2>
+
+<p>AI today is still at least 100x less efficient than what we want it to be, taking the human brain as a proxy.</p>
+
+<p>Today digital microchips powering your computers, laptop, cell-phone use power proportional to:</p>
+
+<p>Static: P = I_leak V<br />
+Dynamic: P = A C V^2 f</p>
+
+<p>I_leak is the current that leaks off circuit when they are supposed to be OFF (but powered). <br />
+V is the operation voltage of the circuit<br />
+A is the fraction of time the circuit is active - say 50%typically<br />
+f is the frequency of operation of the circuit</p>
+
+<p>What can be done to reduce the power consumed by your processors?</p>
+
+<p>Modern circuits operate by using a clock that generally uses ~50% of the overall power of a circuit. If your laptop uses 20 W of power, 10 are “wasted” by the clock tree.</p>
+
+<p><strong>IDEA #1: remove clocks</strong></p>
+
+<p>Circuit designers have been trying to save power, reducing V to the physical limits of devices, today close to 0.7 V. Also by reducing C = making devices smaller = light-based scaling.</p>
+
+<p>Today, barring a complete change of fabrication technologies, we can only do:<br />
+<strong>IDEA #2: reduce f</strong></p>
+
+<p>This means reducing the frequency of operation  = doing less. We cannot do this unless we also increase the number of devices accordingly. Instead of running 1 device at 1 GHz, run 1M devices at 1 KHz. Does this help?</p>
+
+<p>It can only help if we make sure the I_leak of devices is low, so having more devices does not instead raise the power consumption, and that devices are used “less” per unit time. This may mean using older microchip processes with less leakage, at the expense of more capacitance C.</p>
+
+<p><strong>IDEA #3: reduce A</strong></p>
+
+<p>Instead of using all your devices at 50% of the duty cycle, run them most sparsely, say 1% of the time. This would reduce power by 50x.</p>
+
+<p>This requires re-thinking our algorithms so that they make use of sparsity in data or events.</p>
+
+<h2 id="to-the-rescue">To the rescue</h2>
+
+<p>What technologies can offer the gains we need?</p>
+
+<p>I argue that we ought to move away from the current microchip fabrication technologies and instead revolutionize the field with new ideas. This is not easy as the current techniques are the pinnacle of human abilities in positioning layers of atoms, manipulating material at the atomic scale.</p>
+
+<p>Can we go beyond silicon technologies?</p>
+
+<ul>
+  <li>The brain uses biological neurons</li>
+  <li>The human brain the most complex computing device in the known universe</li>
+</ul>
+
+<p>Yet our ability to manipulate biology at the scale and resolution of microchip technologies is not yet developed.</p>
+
+<p><img src="/assets/2025-03-27-microsystems/2.png" alt="" /></p>
+
+<p>Also do you want a brain on your desktop drinking orange juice while doing your taxes? 😀</p>
+
+<p>What other technologies can we use? TBD.</p>
+
+<p>Before we can answer this question we need to know what kind of “device” we are looking for. Maybe we need a “transistor” or something we can turn ON / OFF using an input signal (digital or analog). Or maybe we need a “neuron” that is again something we can turn ON/OFF or make it pulse (spike) based on MANY analog input signals.</p>
+
+<p>Or maybe the basic building blocks are a transistor and a capacitor, or equivalent: one switch to get signal in and a storage tank to store some inputs.</p>
+
+<p>In the most general sense we need to have a device that can take an input and use it to control its output. If we had such a device, we could build computers with it.</p>
+
+<h2 id="thoughts">Thoughts</h2>
+
+<p>In general, losing manufacturing to another country is never a good idea. It drains the brains and hands that can do specific jobs and also the opportunity for innovation.</p>
+
+<p>Maybe one of the main reasons we do not have flying cars today is that we never tried. We were just too busy to reduce costs at the expense of innovation.</p>
+
+<p>But what about reducing manufacturing costs IN YOUR OWN COUNTRY? This is the true INNOVATION!</p>
+
+<p>It requires innovation in automation, robotics, high-throughput machinery, streamlined processes to obtain and process raw materials, store them, retrieve them, manipulate and forge.</p>
+
+<p>Without local need for better manufacturing, we will lose this kind of innovation to other countries, slowing eroding competitiveness.</p>
+
+<p>Only the government can help maintain manufacturing leadership, the ones with the vision to see the future and stick to long term 10s of years plans. It needs to concentrate factories and resources around a few areas, create an ecosystem.</p>
+
+<h2 id="about-the-author">about the author</h2>
+
+<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me:  <a href="https://medium.com/@culurciello/">Medium</a>,  <a href="https://culurciello.github.io/">webpage</a>,  <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>,  <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
+
+<p>If you found this article useful, please consider a  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a>  to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[100x microsystems and microchips]]></summary></entry><entry><title type="html">Robotics, manufacturing and the future</title><link href="http://localhost:4000/2025/03/11/robotics-future.html" rel="alternate" type="text/html" title="Robotics, manufacturing and the future" /><published>2025-03-11T00:00:00-04:00</published><updated>2025-03-11T00:00:00-04:00</updated><id>http://localhost:4000/2025/03/11/robotics-future</id><content type="html" xml:base="http://localhost:4000/2025/03/11/robotics-future.html"><![CDATA[<h1 id="robotics-manufacturing-and-the-future">Robotics, manufacturing and the future</h1>
 
 <p><img src="/assets/2025-03-11-robotics-future/1.jpg" alt="" /></p>
 
@@ -737,110 +877,4 @@ Yet we failed to translate research into a revolution that can bring back to our
 
 <p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me: <a href="https://medium.com/@culurciello/">Medium</a>, <a href="https://culurciello.github.io/">webpage</a>, <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>, <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
 
-<p>If you found this article useful, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a> to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Should we worry about AI (machine-learning)?]]></summary></entry><entry><title type="html">A picture is worth a 1000 words</title><link href="http://localhost:4000/2023/03/30/A-picture-is-worth-a-1000-words.html" rel="alternate" type="text/html" title="A picture is worth a 1000 words" /><published>2023-03-30T00:00:00-04:00</published><updated>2023-03-30T00:00:00-04:00</updated><id>http://localhost:4000/2023/03/30/A-picture-is-worth-a-1000-words</id><content type="html" xml:base="http://localhost:4000/2023/03/30/A-picture-is-worth-a-1000-words.html"><![CDATA[<h1 id="a-picture-is-worth-a-1000-words">A picture is worth a 1000 words</h1>
-
-<p>Evolution of large language models into artificial brains through multiple sensory modalities</p>
-
-<p><img src="/assets/2023-03-30_A-picture-is-worth-a-1000-words/1*aO15HKrFXKKk6OOzjPOQGA.jpg" alt="" /></p>
-
-<p>As surprising as it is our very human predictive abilities hide a path to understanding our intelligence. How do we solve so many tasks, learn so many new experiences, how do we so easily adapt to new environments?</p>
-
-<p>The recent (2022–23) success of large language models (LLM) like ChatGPT and GPT-X paints a story. Trained to predict the next words in a sentence, these models showed superb language proficiency. The key ingredients are large amounts of data — more than you can read in a lifetime, and a simple predictive algorithm.</p>
-
-<p>When we think of language we often forget it is an abstract representation of reality, of the world we live in, used to tag concepts and ideas of the real world into a set of labels we can use to communicate. But “the rose exist before its name”, meaning that any object in the real world, like a rose, is real even without a word for it. What is a “rose” then?</p>
-
-<p><img src="/assets/2023-03-30_A-picture-is-worth-a-1000-words/1*zYre8KPdW4OXRLcgwFE0tw.jpg" alt="" /></p>
-
-<blockquote>
-  <p>A picture is worth a thousand words</p>
-</blockquote>
-
-<p>A concept in our environment is just a collection of data from our sensors. For us humans a rose is equivalent to its image, its perfume, its delicate touch, its movement in the wind. That “concept” is the essence of an object, or our qualia, our subjective ensemble of sensory information fused into one token of knowledge.</p>
-
-<p>This is the future of artificial brains and the evolution of LLM: being able to represent “concepts” from their multi-modal information.</p>
-
-<h4 id="multiple-modalities">Multiple modalities</h4>
-
-<p>LLM are trained with text only, here instead we propose to use:</p>
-
-<ul>
-  <li>visual information</li>
-  <li>audio</li>
-  <li>touch, proprioception</li>
-  <li>text, tags, etc.</li>
-</ul>
-
-<p>This requires the artificial brain to be embodied, or at very least have a fixed set of sensors that maintain consistency over the entire learning life.</p>
-
-<p><img src="/assets/2023-03-30_A-picture-is-worth-a-1000-words/1*mkHVjGCOhUAaAjaRmt9XpA.jpg" alt="" /></p>
-
-<h4 id="learning">Learning</h4>
-
-<p>Training these new multi-modal artificial brains uses powerful unsupervised learning algorithms. Or should we call these self-supervised? Since there is a undeniable need for data to train on, but not one that comes with labels.</p>
-
-<p>How do learning algorithms evolve from predicting the next word in a sentence? There are multiple ways to predict concepts:</p>
-
-<ul>
-  <li>predicting the next concept in a video or audio stream</li>
-  <li>predicting what is around a concept in visual space</li>
-</ul>
-
-<p>Self-supervision is in essence the search for sequential data by using time or by using data perturbation in space that occur naturally, such as noise masking in audio, occlusion in vision. Turning static data into sequence can be done by:</p>
-
-<ul>
-  <li>manipulating an object, changing point of view</li>
-  <li>listening to the concept multiple times</li>
-  <li>masking portions of the data</li>
-</ul>
-
-<p>See Note 1 below for additional comments.</p>
-
-<p>Of course there is the problem of training cost and scale. Few institution can train models that cost many M$. For example GPT cost &gt; 5M$ to train. We need a distributed and open system to create foundational models, one that is operated and serves a large majority of people. See <a href="https://medium.com/@culurciello/how-can-we-make-transformers-large-language-models-gpt-more-sharable-how-can-we-make-them-grow-6b144f0b0d7c">this post</a> also for more details.</p>
-
-<p><img src="/assets/2023-03-30_A-picture-is-worth-a-1000-words/1*u9XjIYBoUfw2k4GOyJKr_g.jpg" alt="" /></p>
-
-<p>The co-occurence of multiple sensory domains in space or time is another foundational learning algorithm that can be used to learn “concepts”. See <a href="https://medium.com/@culurciello/drop-the-dataset-b3ed418bd69d">this post</a> and <a href="https://medium.com/@culurciello/drop-your-dataset-part-2-c97433765998">this post</a> about this.</p>
-
-<h4 id="what-makes-these-multi-modal-models-candidates-for-artificial-brains">What makes these multi-modal models candidates for artificial brains?</h4>
-
-<p>Knowledge is organized in a graph where nodes are concepts and links form relationships between concepts. These links connect ideas and experiences into sets that are relationally-linked to each other, can summon and elicit each other.</p>
-
-<p>This is not much different from the language models that arise from training an LLM. Language models are also a graph that connects words together and sets the rules for creating sentences, give rise to semantical meaning, group information.</p>
-
-<p>We are fascinated by the 0-shot abilities of LLM today, their ability to perform tasks for which they were not explicitly trained for. This ability will be even more pronounced in multi-modal artificial brains because knowledge will be inherently connected across domains, allowing to reason about images and videos and audio, correlating speech to words, words to frames, lyrics to music.</p>
-
-<p>A good definition of intelligence, after all, may very well just be our ability to connect concepts from multiple ares of knowledge without an explicit prompt.</p>
-
-<h4 id="lifelong-learning">Lifelong Learning</h4>
-
-<p>Ask an LLM what happened to the World Cup Soccer of 2022, and it will tell you that its factual knowledge stops in mid-2021. How do we keep artificial brains up-to-date? The same way we humans keep abreast of new knowledge: by continuing to learn.</p>
-
-<p>It is easy to keep training a neural network, you just give it more samples every day. What is important to address in research and development is the drift in knowledge that can be caused by an unbalanced training. This happens for humans too, when environmental changes can lead knowledge and ideas to drift. Forgetting is also common when a set of knowledge is not refreshed for some time. Artificial brains will have the same and identical problems.</p>
-
-<h4 id="using-tools">Using tools</h4>
-
-<p>An artificial brain will not need to become a clone of each and every tool. It will not need to memorize all Earth’s knowledge but rather be able to retrieve it. Not become a calculator, but rather learn to use one. Not dig holes, but rather drive tractors and machines.</p>
-
-<p>By showing examples sequences of how to use a tool and how to extract knowledge from a website, as an example, is again an example of parallel with human training. Are these applications that can be built on top of these artificial brains? Yes most definitely, as the predictive ability of the model is able to learn a sequence of steps to accomplish goals. Again, similarly to training a human to use a tool.</p>
-
-<p>The interesting thought that arises now is that these artificial brains are in fact starting to be closer and closer to a human brain, with parallels on curriculum training to incrementally increase abilities and knowledge.</p>
-
-<h4 id="final-notes">Final notes</h4>
-
-<p>So yep — multi-modal, prediction, co-occurence. All ingredient of artificial brains implemented with neural networks. All this is the future you will see happen in just a few months.</p>
-
-<p>The quick development of artificial brains that are becoming more and more capable is scaring a lot of people, as it happened before for any new and disruptive technology. Yet even if all of us wanted to use these models at large-scale, there are significant hurdles we need to pass. One is the cost of training deploying models. Two is the inability to share models and keep on training them while sharing the benefits. Three is the centralization of such model because of the cost and expertise needed to train them.</p>
-
-<p>The rise of artificial brains will bring out at once all the problems we have in current neural networks: continual learning, training and inference efficiency, distributed learning, knowledge drift and forgetting, dataset biases, ethical use, toxic behavior, and more.</p>
-
-<p>Much work to be done, between little and big steps forward. Are you ready to join us for the research ahead?</p>
-
-<h4 id="note-1">Note 1</h4>
-
-<p>One complication is that in a stream of concepts from a video, for example, predicting the next concepts does not mean predicting the next frame in a video, but rather predict how concepts morph in time. Prediction in video does not translate to fixed windows, but needs to understand when concepts changed “enough” from each other. A bit of a chicken-in-egg problem, isn’t it? But this is a good examples of the pitfalls of self-supervised learning and current methods in AI/ML. More insights are needed here, more research.</p>
-
-<h3 id="about-the-author">about the author</h3>
-
-<p>I have more than 20 years of experience in neural networks in both hardware and software (a rare combination). About me: <a href="https://culurciello.medium.com/">Medium</a>, <a href="https://culurciello.github.io/">webpage</a>, <a href="https://scholar.google.com/citations?user=SeGmqkIAAAAJ">Scholar</a>, <a href="https://www.linkedin.com/in/eugenioculurciello/">LinkedIn</a>.</p>
-
-<p>If you found this article useful, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a> to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[A picture is worth a 1000 words]]></summary></entry></feed>
+<p>If you found this article useful, please consider a <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=Q3FHE3BWSC72W">donation</a> to support more tutorials and blogs. Any contribution can make a difference!</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Should we worry about AI (machine-learning)?]]></summary></entry></feed>
